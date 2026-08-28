@@ -1,4 +1,4 @@
-import { readFile, readdir, stat } from 'node:fs/promises';
+import { access, readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
@@ -6,9 +6,11 @@ import { fileURLToPath } from 'node:url';
 const codeRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const siteRoot = path.resolve(codeRoot, '..');
 const sourceCode = codeRoot;
-const sourceAssets = path.join(siteRoot, '素材');
+const externalAssets = path.join(siteRoot, '素材');
 const publicCode = path.join(codeRoot, 'public', '代码');
 const publicAssets = path.join(codeRoot, 'public', '素材');
+const hasExternalAssets = await access(externalAssets).then(() => true).catch(() => false);
+const sourceAssets = hasExternalAssets ? externalAssets : publicAssets;
 const activeAssetDirectories = ['logo', 'photo', 'qr', 'screen', 'visual'];
 const failures = [];
 
