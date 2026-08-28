@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const codeRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const publicRoot = path.join(codeRoot, 'public');
 const distRoot = path.join(codeRoot, 'dist');
-const staticRoot = path.join(distRoot, 'static');
+const staticRoot = path.join(distRoot, 'client');
 
 await rm(distRoot, { recursive: true, force: true });
 await mkdir(path.join(distRoot, 'server'), { recursive: true });
