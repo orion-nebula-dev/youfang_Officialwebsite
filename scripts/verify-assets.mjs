@@ -68,7 +68,7 @@ for (const [id, record] of Object.entries(siteData.assets)) {
   if (!await exists(path.join(sourceAssets, record.src))) {
     failures.push(`${id}: active asset missing at ${record.src}`);
   }
-  if (typeof record.sourcePath === 'string' && !await exists(path.join(sourceAssets, record.sourcePath))) {
+  if (hasExternalAssets && typeof record.sourcePath === 'string' && !await exists(path.join(sourceAssets, record.sourcePath))) {
     failures.push(`${id}: source path missing at ${record.sourcePath}`);
   }
   if (registeredPaths.has(record.src)) {
