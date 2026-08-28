@@ -2,7 +2,11 @@
 // 路径根从本脚本自身的 URL 推导，不依赖部署目录名，站点可部署在任意子路径或域名根。
 const scriptUrl = new URL(document.currentScript.getAttribute('src'), document.baseURI);
 const siteRoot = scriptUrl.href.replace(/\?.*$/, '').replace(/js\/site\.js$/, '');
-const assetRoot = siteRoot.replace(/[^/]+\/$/, '');
+// 本地预览时代码位于 /代码/、素材位于同级 /素材/；Site 发布后两者都位于站点根目录。
+const siteRootUrl = new URL(siteRoot);
+const assetRoot = decodeURIComponent(siteRootUrl.pathname).endsWith('/代码/')
+  ? new URL('../', siteRootUrl).href
+  : siteRoot;
 const page = document.body.dataset.page || '';
 
 function siteLink(file) { return `${siteRoot}${file}`; }

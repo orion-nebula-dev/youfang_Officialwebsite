@@ -2,7 +2,10 @@
 // 路径根从本脚本自身的 URL 推导，与 site.js 一致，不依赖部署目录名。
 const brandScriptUrl = new URL(document.currentScript.getAttribute('src'), document.baseURI);
 const brandSiteRoot = brandScriptUrl.href.replace(/\?.*$/, '').replace(/js\/brand-detail\.js$/, '');
-const brandAssetRoot = brandSiteRoot.replace(/[^/]+\/$/, '');
+const brandSiteRootUrl = new URL(brandSiteRoot);
+const brandAssetRoot = decodeURIComponent(brandSiteRootUrl.pathname).endsWith('/代码/')
+  ? new URL('../', brandSiteRootUrl).href
+  : brandSiteRoot;
 const brandAsset = (id) => {
   const record = SITE_DATA.assets[id];
   const file = typeof record === 'string' ? record : record?.src;
