@@ -1,0 +1,1305 @@
+{
+  "label": "original",
+  "url": "https://www.busyming.com/",
+  "capturedAt": "2026-08-10T10:58:19.740Z",
+  "console": {
+    "errors": [],
+    "warnings": [],
+    "pageErrors": []
+  },
+  "captures": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "screenshots/original-1440-real.png",
+      "signals": {
+        "href": "https://www.busyming.com/",
+        "title": "湖南鸣鸣很忙商业连锁有限公司-中国成熟且稳步发展的食品饮料零售商",
+        "lang": "zh_CN",
+        "bodyTextChars": 700,
+        "scrollHeight": 2837,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "h1": [],
+        "headings": [
+          {
+            "tag": "h2",
+            "text": "Sorry，当前栏目暂无内容!"
+          },
+          {
+            "tag": "h2",
+            "text": "Sorry，The current column has no content!"
+          }
+        ],
+        "metaDescription": "湖南鸣鸣很忙商业连锁有限公司中国成熟且稳步发展的食品饮料零售商，旗下现有零食很忙、赵一鸣两大品牌。其中，零食很忙起步于2017年湖南长沙，赵一鸣零食起步于2019年江西宜春。",
+        "counts": {
+          "links": 48,
+          "images": 23,
+          "video": 2,
+          "canvas": 0,
+          "sections": 0,
+          "forms": 0,
+          "buttons": 0,
+          "inputs": 11,
+          "interactive": 59,
+          "scripts": 9,
+          "stylesheets": 6
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [
+          "https://www.busyming.com/npublic/libs/core/ceccjquery.min.js,require.min.js,lib.min.js,page.min.js?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/npublic/commonjs/common.min.js?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/npublic/commonjs/language/zh_CN.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/cmsAjax.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/pl_util.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/sensors/md.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/sensors/sensorsdataNew.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000&instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/upload/js/83b23a730dbe41ac8c80dbc3d1c0cde3.js?11?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/js/690dc2db517d44f6b5fea47d82505278.js?0403?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper"
+        ],
+        "stylesheets": [
+          "https://www.busyming.com/npublic/libs/css/ceccbootstrap.min.css,global.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/css/site.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/css/home_b88db9ef6b3aafbbaadee50f7252e75e.min.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/cd2b8404620346a4a47d1186e0864d58.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/302755ff14de432388789204ce263422.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/1cad080ed8da444fa51a97bd284c2029.css?0107?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper"
+        ],
+        "sections": [],
+        "fonts": [
+          "swiper-icons",
+          "alibabapuhuiti-3-55-regular",
+          "alibabapuhuiti-3-105-heavy",
+          "alibabapuhuiti-3-75-semibold",
+          "alibabapuhuiti-3-45-light",
+          "swiper-icons"
+        ],
+        "images": [
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e4f9cc3c-4866-427f-8c6b-1e3f3c2113bd.png",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 800,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e4f9cc3c-4866-427f-8c6b-1e3f3c2113bd.png",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 800,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image1.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/31dfb828-13e1-4e68-ac64-ee1a54ae9049.jpg",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/b1dce401-6a89-470a-b3ab-c446d662459b.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/20eeae06-052a-4891-9021-a101cd6edaa0.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/f4771c2c-4379-4644-af45-131b47fb1773.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/10962a57-1bf0-4f5e-b9ba-002bac7facf5.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d703657d-ef37-4c89-91f2-cf513c8017a9.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/411c3be2-ec1b-418c-98ad-15a9e82420dc.png",
+            "alt": "赵一鸣零食",
+            "width": 400,
+            "height": 366
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/ed45e4db-2352-49a0-ba8a-cd95f53d72dd.png",
+            "alt": "赵一鸣零食",
+            "width": 500,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/11a51a33-d4ce-4184-928e-6368c0dd01e2.png",
+            "alt": "零食很忙",
+            "width": 400,
+            "height": 366
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d0dedabe-2063-46e2-8f84-42f190d11cfd.png",
+            "alt": "零食很忙",
+            "width": 500,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/c527bc40-c728-41a3-995f-926b40667ca9.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/b57c261c-4828-40dd-98bc-98bd7346b5ab.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d56bd58f-bd22-4fd1-ab1f-aa55e1bad2c2.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/371308db-53dc-4daf-b1d0-fad356dc3eb4.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/371308db-53dc-4daf-b1d0-fad356dc3eb4.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/8d477565-baeb-45ff-8cfe-e1e480b04c5c.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/85a2ec54-3257-4438-9e29-87f51f01b3c0.png",
+            "alt": "官方公众号",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/93bacb69-a15d-415b-95f6-63f35820e9d9.png",
+            "alt": "官方微博",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/93bacb69-a15d-415b-95f6-63f35820e9d9.png",
+            "alt": "官方抖音",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://www.busyming.com/npublic/img/playVideo.png",
+            "alt": "",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e2acfa94-167b-461b-9329-fa713e70c671.jpg",
+            "alt": "视频标题",
+            "width": 1920,
+            "height": 960
+          }
+        ],
+        "videos": [
+          {
+            "src": "https://omo-oss-video110.thefastvideo.com/portal-saas/pg2025041214165531013/cms/vedio/840ddcf6-f22d-4865-8d09-4435efc17361.mp4",
+            "poster": "https://omo-oss-image1.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/31dfb828-13e1-4e68-ac64-ee1a54ae9049.jpg",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "src": "https://omo-oss-video110.thefastvideo.com/portal-saas/pg2025041214165531013/cms/vedio/840ddcf6-f22d-4865-8d09-4435efc17361.mp4",
+            "poster": "",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "首页",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "关于我们",
+            "href": "https://www.busyming.com/about.html"
+          },
+          {
+            "text": "企业介绍",
+            "href": "https://www.busyming.com/about.html#c_static_001-1756178365972"
+          },
+          {
+            "text": "企业文化",
+            "href": "https://www.busyming.com/about.html#wh"
+          },
+          {
+            "text": "品牌IP",
+            "href": "https://www.busyming.com/about.html#ppip"
+          },
+          {
+            "text": "发展历程",
+            "href": "https://www.busyming.com/about.html#fzlc"
+          },
+          {
+            "text": "企业优势",
+            "href": "https://www.busyming.com/about.html#c_static_001_P_63273-17572295555510"
+          },
+          {
+            "text": "门店展示",
+            "href": "https://www.busyming.com/mdzs.html"
+          },
+          {
+            "text": "集团资讯",
+            "href": "https://www.busyming.com/news.html"
+          },
+          {
+            "text": "品牌视频",
+            "href": "https://www.busyming.com/video/2049311683814764544.html"
+          },
+          {
+            "text": "新闻报道",
+            "href": "https://www.busyming.com/news.html"
+          },
+          {
+            "text": "投资者关系",
+            "href": "https://www.busyming.com/tzgx.html"
+          },
+          {
+            "text": "招股文件",
+            "href": "https://www.busyming.com/ztwj.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "业绩报告",
+            "href": "https://www.busyming.com/yjbgs.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "公告及通函",
+            "href": "https://www.busyming.com/gggh.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "企业管治",
+            "href": "https://www.busyming.com/qyzl.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "投资日历",
+            "href": "https://www.busyming.com/tzrl.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "社会责任",
+            "href": "https://www.busyming.com/shzr.html"
+          },
+          {
+            "text": "ESG报告",
+            "href": "https://www.busyming.com/shzr.html#c_grid-1756370584428"
+          },
+          {
+            "text": "公益行动",
+            "href": "https://www.busyming.com/shzr.html#c_static_001-1756364980477"
+          },
+          {
+            "text": "招商加盟",
+            "href": "https://www.busyming.com/zsjm.html"
+          },
+          {
+            "text": "加盟支持",
+            "href": "https://www.busyming.com/zsjm.html#c_static_001-1756361347424"
+          },
+          {
+            "text": "加盟咨询",
+            "href": "https://www.busyming.com/zsjm.html#c_static_001-17563715440581"
+          },
+          {
+            "text": "鸣鸣很忙商学院",
+            "href": "https://www.busyming.com/zsjm.html#c_grid-1758276596584"
+          },
+          {
+            "text": "联系我们",
+            "href": "https://www.busyming.com/contact.html"
+          },
+          {
+            "text": "人才招聘",
+            "href": "https://hnlshm4.zhiye.com/"
+          },
+          {
+            "text": "",
+            "href": "http://www.gxwanchao.com/"
+          },
+          {
+            "text": "",
+            "href": "http://en.gxwanchao.com/"
+          },
+          {
+            "text": "查看完整视频",
+            "href": "javascript: openDialog('1765853025333')"
+          },
+          {
+            "text": "",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "点击访问官网",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "点击访问官网",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "首页",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "Home",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "mmhm-pr@hnlshm.com",
+            "href": "mailto:mmhm-pr@hnlshm.com"
+          },
+          {
+            "text": "lihongxiang@hnlshm.com",
+            "href": "mailto:lihongxiang@hnlshm.com"
+          },
+          {
+            "text": "ir@busyming.com",
+            "href": "mailto:ir@busyming.com"
+          },
+          {
+            "text": "400-999-8082",
+            "href": "tel:400-999-8082"
+          },
+          {
+            "text": "400-070-2717",
+            "href": "tel:400-070-2717"
+          },
+          {
+            "text": "",
+            "href": "https://beian.miit.gov.cn/"
+          },
+          {
+            "text": "营业执照",
+            "href": "javascript:;"
+          },
+          {
+            "text": "SEO",
+            "href": "https://www.busyming.com/taglist.html"
+          },
+          {
+            "text": "",
+            "href": "javascript:;"
+          },
+          {
+            "text": "×",
+            "href": "javascript:;"
+          }
+        ],
+        "httpStatus": 200
+      }
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "screenshot": "screenshots/original-768-real.png",
+      "signals": {
+        "href": "https://www.busyming.com/",
+        "title": "湖南鸣鸣很忙商业连锁有限公司-中国成熟且稳步发展的食品饮料零售商",
+        "lang": "zh_CN",
+        "bodyTextChars": 653,
+        "scrollHeight": 3659,
+        "viewport": {
+          "width": 768,
+          "height": 900
+        },
+        "h1": [],
+        "headings": [
+          {
+            "tag": "h2",
+            "text": "Sorry，当前栏目暂无内容!"
+          },
+          {
+            "tag": "h2",
+            "text": "Sorry，The current column has no content!"
+          }
+        ],
+        "metaDescription": "湖南鸣鸣很忙商业连锁有限公司中国成熟且稳步发展的食品饮料零售商，旗下现有零食很忙、赵一鸣两大品牌。其中，零食很忙起步于2017年湖南长沙，赵一鸣零食起步于2019年江西宜春。",
+        "counts": {
+          "links": 48,
+          "images": 23,
+          "video": 2,
+          "canvas": 0,
+          "sections": 0,
+          "forms": 0,
+          "buttons": 0,
+          "inputs": 11,
+          "interactive": 59,
+          "scripts": 9,
+          "stylesheets": 6
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [
+          "https://www.busyming.com/npublic/libs/core/ceccjquery.min.js,require.min.js,lib.min.js,page.min.js?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/npublic/commonjs/common.min.js?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/npublic/commonjs/language/zh_CN.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/cmsAjax.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/pl_util.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/sensors/md.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/sensors/sensorsdataNew.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000&instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/upload/js/83b23a730dbe41ac8c80dbc3d1c0cde3.js?11?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/js/690dc2db517d44f6b5fea47d82505278.js?0403?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper"
+        ],
+        "stylesheets": [
+          "https://www.busyming.com/npublic/libs/css/ceccbootstrap.min.css,global.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/css/site.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/css/home_b88db9ef6b3aafbbaadee50f7252e75e.min.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/cd2b8404620346a4a47d1186e0864d58.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/302755ff14de432388789204ce263422.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/1cad080ed8da444fa51a97bd284c2029.css?0107?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper"
+        ],
+        "sections": [],
+        "fonts": [
+          "swiper-icons",
+          "alibabapuhuiti-3-55-regular",
+          "alibabapuhuiti-3-105-heavy",
+          "alibabapuhuiti-3-75-semibold",
+          "alibabapuhuiti-3-45-light",
+          "swiper-icons"
+        ],
+        "images": [
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e4f9cc3c-4866-427f-8c6b-1e3f3c2113bd.png",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 800,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e4f9cc3c-4866-427f-8c6b-1e3f3c2113bd.png",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 800,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image1.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/31dfb828-13e1-4e68-ac64-ee1a54ae9049.jpg",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/b1dce401-6a89-470a-b3ab-c446d662459b.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/20eeae06-052a-4891-9021-a101cd6edaa0.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/f4771c2c-4379-4644-af45-131b47fb1773.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/10962a57-1bf0-4f5e-b9ba-002bac7facf5.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d703657d-ef37-4c89-91f2-cf513c8017a9.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/411c3be2-ec1b-418c-98ad-15a9e82420dc.png",
+            "alt": "赵一鸣零食",
+            "width": 400,
+            "height": 366
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/ed45e4db-2352-49a0-ba8a-cd95f53d72dd.png",
+            "alt": "赵一鸣零食",
+            "width": 500,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/11a51a33-d4ce-4184-928e-6368c0dd01e2.png",
+            "alt": "零食很忙",
+            "width": 400,
+            "height": 366
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d0dedabe-2063-46e2-8f84-42f190d11cfd.png",
+            "alt": "零食很忙",
+            "width": 500,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/c527bc40-c728-41a3-995f-926b40667ca9.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/b57c261c-4828-40dd-98bc-98bd7346b5ab.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d56bd58f-bd22-4fd1-ab1f-aa55e1bad2c2.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/371308db-53dc-4daf-b1d0-fad356dc3eb4.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/371308db-53dc-4daf-b1d0-fad356dc3eb4.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/8d477565-baeb-45ff-8cfe-e1e480b04c5c.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/85a2ec54-3257-4438-9e29-87f51f01b3c0.png",
+            "alt": "官方公众号",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/93bacb69-a15d-415b-95f6-63f35820e9d9.png",
+            "alt": "官方微博",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/93bacb69-a15d-415b-95f6-63f35820e9d9.png",
+            "alt": "官方抖音",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://www.busyming.com/npublic/img/playVideo.png",
+            "alt": "",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e2acfa94-167b-461b-9329-fa713e70c671.jpg",
+            "alt": "视频标题",
+            "width": 1920,
+            "height": 960
+          }
+        ],
+        "videos": [
+          {
+            "src": "https://omo-oss-video110.thefastvideo.com/portal-saas/pg2025041214165531013/cms/vedio/840ddcf6-f22d-4865-8d09-4435efc17361.mp4",
+            "poster": "https://omo-oss-image1.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/31dfb828-13e1-4e68-ac64-ee1a54ae9049.jpg",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "src": "https://omo-oss-video110.thefastvideo.com/portal-saas/pg2025041214165531013/cms/vedio/840ddcf6-f22d-4865-8d09-4435efc17361.mp4",
+            "poster": "",
+            "width": 1920,
+            "height": 1080
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "首页",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "关于我们",
+            "href": "https://www.busyming.com/about.html"
+          },
+          {
+            "text": "企业介绍",
+            "href": "https://www.busyming.com/about.html#c_static_001-1756178365972"
+          },
+          {
+            "text": "企业文化",
+            "href": "https://www.busyming.com/about.html#wh"
+          },
+          {
+            "text": "品牌IP",
+            "href": "https://www.busyming.com/about.html#ppip"
+          },
+          {
+            "text": "发展历程",
+            "href": "https://www.busyming.com/about.html#fzlc"
+          },
+          {
+            "text": "企业优势",
+            "href": "https://www.busyming.com/about.html#c_static_001_P_63273-17572295555510"
+          },
+          {
+            "text": "门店展示",
+            "href": "https://www.busyming.com/mdzs.html"
+          },
+          {
+            "text": "集团资讯",
+            "href": "https://www.busyming.com/news.html"
+          },
+          {
+            "text": "品牌视频",
+            "href": "https://www.busyming.com/video/2049311683814764544.html"
+          },
+          {
+            "text": "新闻报道",
+            "href": "https://www.busyming.com/news.html"
+          },
+          {
+            "text": "投资者关系",
+            "href": "https://www.busyming.com/tzgx.html"
+          },
+          {
+            "text": "招股文件",
+            "href": "https://www.busyming.com/ztwj.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "业绩报告",
+            "href": "https://www.busyming.com/yjbgs.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "公告及通函",
+            "href": "https://www.busyming.com/gggh.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "企业管治",
+            "href": "https://www.busyming.com/qyzl.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "投资日历",
+            "href": "https://www.busyming.com/tzrl.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "社会责任",
+            "href": "https://www.busyming.com/shzr.html"
+          },
+          {
+            "text": "ESG报告",
+            "href": "https://www.busyming.com/shzr.html#c_grid-1756370584428"
+          },
+          {
+            "text": "公益行动",
+            "href": "https://www.busyming.com/shzr.html#c_static_001-1756364980477"
+          },
+          {
+            "text": "招商加盟",
+            "href": "https://www.busyming.com/zsjm.html"
+          },
+          {
+            "text": "加盟支持",
+            "href": "https://www.busyming.com/zsjm.html#c_static_001-1756361347424"
+          },
+          {
+            "text": "加盟咨询",
+            "href": "https://www.busyming.com/zsjm.html#c_static_001-17563715440581"
+          },
+          {
+            "text": "鸣鸣很忙商学院",
+            "href": "https://www.busyming.com/zsjm.html#c_grid-1758276596584"
+          },
+          {
+            "text": "联系我们",
+            "href": "https://www.busyming.com/contact.html"
+          },
+          {
+            "text": "人才招聘",
+            "href": "https://hnlshm4.zhiye.com/"
+          },
+          {
+            "text": "",
+            "href": "http://www.gxwanchao.com/"
+          },
+          {
+            "text": "",
+            "href": "http://en.gxwanchao.com/"
+          },
+          {
+            "text": "查看完整视频",
+            "href": "javascript: openDialog('1765853025333')"
+          },
+          {
+            "text": "",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "点击访问官网",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "点击访问官网",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "首页",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "Home",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "mmhm-pr@hnlshm.com",
+            "href": "mailto:mmhm-pr@hnlshm.com"
+          },
+          {
+            "text": "lihongxiang@hnlshm.com",
+            "href": "mailto:lihongxiang@hnlshm.com"
+          },
+          {
+            "text": "ir@busyming.com",
+            "href": "mailto:ir@busyming.com"
+          },
+          {
+            "text": "400-999-8082",
+            "href": "tel:400-999-8082"
+          },
+          {
+            "text": "400-070-2717",
+            "href": "tel:400-070-2717"
+          },
+          {
+            "text": "",
+            "href": "https://beian.miit.gov.cn/"
+          },
+          {
+            "text": "营业执照",
+            "href": "javascript:;"
+          },
+          {
+            "text": "SEO",
+            "href": "https://www.busyming.com/taglist.html"
+          },
+          {
+            "text": "",
+            "href": "javascript:;"
+          },
+          {
+            "text": "×",
+            "href": "javascript:;"
+          }
+        ],
+        "httpStatus": 200
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "screenshot": "screenshots/original-390-real.png",
+      "signals": {
+        "href": "https://www.busyming.com/",
+        "title": "湖南鸣鸣很忙商业连锁有限公司-中国成熟且稳步发展的食品饮料零售商",
+        "lang": "zh_CN",
+        "bodyTextChars": 653,
+        "scrollHeight": 3281,
+        "viewport": {
+          "width": 390,
+          "height": 900
+        },
+        "h1": [],
+        "headings": [
+          {
+            "tag": "h2",
+            "text": "Sorry，当前栏目暂无内容!"
+          },
+          {
+            "tag": "h2",
+            "text": "Sorry，The current column has no content!"
+          }
+        ],
+        "metaDescription": "湖南鸣鸣很忙商业连锁有限公司中国成熟且稳步发展的食品饮料零售商，旗下现有零食很忙、赵一鸣两大品牌。其中，零食很忙起步于2017年湖南长沙，赵一鸣零食起步于2019年江西宜春。",
+        "counts": {
+          "links": 48,
+          "images": 23,
+          "video": 2,
+          "canvas": 0,
+          "sections": 0,
+          "forms": 0,
+          "buttons": 0,
+          "inputs": 11,
+          "interactive": 59,
+          "scripts": 9,
+          "stylesheets": 6
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [
+          "https://www.busyming.com/npublic/libs/core/ceccjquery.min.js,require.min.js,lib.min.js,page.min.js?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/npublic/commonjs/common.min.js?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/npublic/commonjs/language/zh_CN.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/cmsAjax.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/pl_util.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/sensors/md.min.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/npublic/libs/widget/sensors/sensorsdataNew.js?instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000&instance=new2025041214165607342&viewType=p&siteType=oper&v=1785465791000",
+          "https://www.busyming.com/upload/js/83b23a730dbe41ac8c80dbc3d1c0cde3.js?11?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/js/690dc2db517d44f6b5fea47d82505278.js?0403?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper"
+        ],
+        "stylesheets": [
+          "https://www.busyming.com/npublic/libs/css/ceccbootstrap.min.css,global.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/css/site.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/css/home_b88db9ef6b3aafbbaadee50f7252e75e.min.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/cd2b8404620346a4a47d1186e0864d58.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/302755ff14de432388789204ce263422.css?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper",
+          "https://www.busyming.com/upload/css/1cad080ed8da444fa51a97bd284c2029.css?0107?instance=new2025041214165607342&viewType=p&v=1785465791000&siteType=oper"
+        ],
+        "sections": [],
+        "fonts": [
+          "swiper-icons",
+          "alibabapuhuiti-3-55-regular",
+          "alibabapuhuiti-3-105-heavy",
+          "alibabapuhuiti-3-75-semibold",
+          "alibabapuhuiti-3-45-light",
+          "swiper-icons"
+        ],
+        "images": [
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e4f9cc3c-4866-427f-8c6b-1e3f3c2113bd.png",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 800,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e4f9cc3c-4866-427f-8c6b-1e3f3c2113bd.png",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 800,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image1.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/31dfb828-13e1-4e68-ac64-ee1a54ae9049.jpg",
+            "alt": "湖南鸣鸣很忙商业连锁股份有限公司",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/b1dce401-6a89-470a-b3ab-c446d662459b.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/20eeae06-052a-4891-9021-a101cd6edaa0.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/f4771c2c-4379-4644-af45-131b47fb1773.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/10962a57-1bf0-4f5e-b9ba-002bac7facf5.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d703657d-ef37-4c89-91f2-cf513c8017a9.png",
+            "alt": "图片名称",
+            "width": 150,
+            "height": 150
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/411c3be2-ec1b-418c-98ad-15a9e82420dc.png",
+            "alt": "赵一鸣零食",
+            "width": 400,
+            "height": 366
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/ed45e4db-2352-49a0-ba8a-cd95f53d72dd.png",
+            "alt": "赵一鸣零食",
+            "width": 500,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/11a51a33-d4ce-4184-928e-6368c0dd01e2.png",
+            "alt": "零食很忙",
+            "width": 400,
+            "height": 366
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d0dedabe-2063-46e2-8f84-42f190d11cfd.png",
+            "alt": "零食很忙",
+            "width": 500,
+            "height": 120
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/c527bc40-c728-41a3-995f-926b40667ca9.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/b57c261c-4828-40dd-98bc-98bd7346b5ab.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/d56bd58f-bd22-4fd1-ab1f-aa55e1bad2c2.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/371308db-53dc-4daf-b1d0-fad356dc3eb4.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/371308db-53dc-4daf-b1d0-fad356dc3eb4.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/8d477565-baeb-45ff-8cfe-e1e480b04c5c.png",
+            "alt": "图片名称",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/85a2ec54-3257-4438-9e29-87f51f01b3c0.png",
+            "alt": "官方公众号",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/93bacb69-a15d-415b-95f6-63f35820e9d9.png",
+            "alt": "官方微博",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/93bacb69-a15d-415b-95f6-63f35820e9d9.png",
+            "alt": "官方抖音",
+            "width": 200,
+            "height": 200
+          },
+          {
+            "src": "https://www.busyming.com/npublic/img/playVideo.png",
+            "alt": "",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "src": "https://omo-oss-image.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/e2acfa94-167b-461b-9329-fa713e70c671.jpg",
+            "alt": "视频标题",
+            "width": 1920,
+            "height": 960
+          }
+        ],
+        "videos": [
+          {
+            "src": "https://omo-oss-video110.thefastvideo.com/portal-saas/pg2025041214165531013/cms/vedio/840ddcf6-f22d-4865-8d09-4435efc17361.mp4",
+            "poster": "https://omo-oss-image1.thefastimg.com/portal-saas/pg2025041214165531013/cms/image/31dfb828-13e1-4e68-ac64-ee1a54ae9049.jpg",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "src": "https://omo-oss-video110.thefastvideo.com/portal-saas/pg2025041214165531013/cms/vedio/840ddcf6-f22d-4865-8d09-4435efc17361.mp4",
+            "poster": "",
+            "width": 0,
+            "height": 0
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "首页",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "关于我们",
+            "href": "https://www.busyming.com/about.html"
+          },
+          {
+            "text": "企业介绍",
+            "href": "https://www.busyming.com/about.html#c_static_001-1756178365972"
+          },
+          {
+            "text": "企业文化",
+            "href": "https://www.busyming.com/about.html#wh"
+          },
+          {
+            "text": "品牌IP",
+            "href": "https://www.busyming.com/about.html#ppip"
+          },
+          {
+            "text": "发展历程",
+            "href": "https://www.busyming.com/about.html#fzlc"
+          },
+          {
+            "text": "企业优势",
+            "href": "https://www.busyming.com/about.html#c_static_001_P_63273-17572295555510"
+          },
+          {
+            "text": "门店展示",
+            "href": "https://www.busyming.com/mdzs.html"
+          },
+          {
+            "text": "集团资讯",
+            "href": "https://www.busyming.com/news.html"
+          },
+          {
+            "text": "品牌视频",
+            "href": "https://www.busyming.com/video/2049311683814764544.html"
+          },
+          {
+            "text": "新闻报道",
+            "href": "https://www.busyming.com/news.html"
+          },
+          {
+            "text": "投资者关系",
+            "href": "https://www.busyming.com/tzgx.html"
+          },
+          {
+            "text": "招股文件",
+            "href": "https://www.busyming.com/ztwj.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "业绩报告",
+            "href": "https://www.busyming.com/yjbgs.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "公告及通函",
+            "href": "https://www.busyming.com/gggh.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "企业管治",
+            "href": "https://www.busyming.com/qyzl.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "投资日历",
+            "href": "https://www.busyming.com/tzrl.html#c_magiccube_009-17562100958710"
+          },
+          {
+            "text": "社会责任",
+            "href": "https://www.busyming.com/shzr.html"
+          },
+          {
+            "text": "ESG报告",
+            "href": "https://www.busyming.com/shzr.html#c_grid-1756370584428"
+          },
+          {
+            "text": "公益行动",
+            "href": "https://www.busyming.com/shzr.html#c_static_001-1756364980477"
+          },
+          {
+            "text": "招商加盟",
+            "href": "https://www.busyming.com/zsjm.html"
+          },
+          {
+            "text": "加盟支持",
+            "href": "https://www.busyming.com/zsjm.html#c_static_001-1756361347424"
+          },
+          {
+            "text": "加盟咨询",
+            "href": "https://www.busyming.com/zsjm.html#c_static_001-17563715440581"
+          },
+          {
+            "text": "鸣鸣很忙商学院",
+            "href": "https://www.busyming.com/zsjm.html#c_grid-1758276596584"
+          },
+          {
+            "text": "联系我们",
+            "href": "https://www.busyming.com/contact.html"
+          },
+          {
+            "text": "人才招聘",
+            "href": "https://hnlshm4.zhiye.com/"
+          },
+          {
+            "text": "",
+            "href": "http://www.gxwanchao.com/"
+          },
+          {
+            "text": "",
+            "href": "http://en.gxwanchao.com/"
+          },
+          {
+            "text": "查看完整视频",
+            "href": "javascript: openDialog('1765853025333')"
+          },
+          {
+            "text": "",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "点击访问官网",
+            "href": "https://www.zymls.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "点击访问官网",
+            "href": "https://www.hnlshm.com/"
+          },
+          {
+            "text": "首页",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "Home",
+            "href": "https://www.busyming.com/"
+          },
+          {
+            "text": "mmhm-pr@hnlshm.com",
+            "href": "mailto:mmhm-pr@hnlshm.com"
+          },
+          {
+            "text": "lihongxiang@hnlshm.com",
+            "href": "mailto:lihongxiang@hnlshm.com"
+          },
+          {
+            "text": "ir@busyming.com",
+            "href": "mailto:ir@busyming.com"
+          },
+          {
+            "text": "400-999-8082",
+            "href": "tel:400-999-8082"
+          },
+          {
+            "text": "400-070-2717",
+            "href": "tel:400-070-2717"
+          },
+          {
+            "text": "",
+            "href": "https://beian.miit.gov.cn/"
+          },
+          {
+            "text": "营业执照",
+            "href": "javascript:;"
+          },
+          {
+            "text": "SEO",
+            "href": "https://www.busyming.com/taglist.html"
+          },
+          {
+            "text": "",
+            "href": "javascript:;"
+          },
+          {
+            "text": "×",
+            "href": "javascript:;"
+          }
+        ],
+        "httpStatus": 200
+      }
+    }
+  ]
+}

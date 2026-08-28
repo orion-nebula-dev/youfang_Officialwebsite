@@ -1,0 +1,17 @@
+{
+  "name": "guyoufang-health-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "sync:site": "node scripts/sync-site.mjs",
+    "check:assets": "node scripts/verify-assets.mjs",
+    "dev": "npm test && node scripts/serve-local.mjs",
+    "build": "npm test && node scripts/build-site.mjs",
+    "start": "node scripts/serve-local.mjs",
+    "test": "npm run sync:site && npm run check:assets"
+  }
+}

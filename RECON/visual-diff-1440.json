@@ -1,0 +1,26 @@
+{
+  "original": {
+    "width": 1440,
+    "height": 2837
+  },
+  "clone": {
+    "width": 1440,
+    "height": 7913
+  },
+  "comparedCanvas": {
+    "width": 1440,
+    "height": 7913
+  },
+  "threshold": 0.08,
+  "changedPixels": 4164957,
+  "totalPixels": 11394720,
+  "diffPixelRatio": 0.3655163970681158,
+  "meanAbsDiff": 0.15652022697408788,
+  "rmse": 0.26364674373220204,
+  "visualScore": 1,
+  "files": {
+    "original": "/Users/wwh/Documents/AItools/项目文件夹/本数科技/暂存区/复刻官网/代码/RECON/screenshots/original-1440-real.png",
+    "clone": "/Users/wwh/Documents/AItools/项目文件夹/本数科技/暂存区/复刻官网/代码/RECON/screenshots/clone-1440.png",
+    "diff": "/Users/wwh/Documents/AItools/项目文件夹/本数科技/暂存区/复刻官网/代码/RECON/screenshots/visual-diff-1440.png"
+  }
+}

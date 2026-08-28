@@ -1,0 +1,205 @@
+{
+  "label": "original",
+  "url": "https://www.busyming.com/",
+  "capturedAt": "2026-08-10T10:13:57.956Z",
+  "console": {
+    "errors": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 403 ()",
+        "viewport": 1440
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 403 ()",
+        "viewport": 768
+      },
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 403 ()",
+        "viewport": 390
+      }
+    ],
+    "warnings": [],
+    "pageErrors": []
+  },
+  "captures": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "screenshots/original-1440.png",
+      "signals": {
+        "href": "https://www.busyming.com/",
+        "title": "异常访问",
+        "lang": "en",
+        "bodyTextChars": 132,
+        "scrollHeight": 900,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "h1": [
+          "403 Forbidden"
+        ],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "403 Forbidden"
+          }
+        ],
+        "metaDescription": "",
+        "counts": {
+          "links": 0,
+          "images": 0,
+          "video": 0,
+          "canvas": 0,
+          "sections": 0,
+          "forms": 0,
+          "buttons": 0,
+          "inputs": 0,
+          "interactive": 0,
+          "scripts": 0,
+          "stylesheets": 0
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [],
+        "stylesheets": [],
+        "sections": [],
+        "cssVariables": [],
+        "fonts": [],
+        "images": [],
+        "canvases": []
+      }
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "screenshot": "screenshots/original-768.png",
+      "signals": {
+        "href": "https://www.busyming.com/",
+        "title": "异常访问",
+        "lang": "en",
+        "bodyTextChars": 132,
+        "scrollHeight": 900,
+        "viewport": {
+          "width": 768,
+          "height": 900
+        },
+        "h1": [
+          "403 Forbidden"
+        ],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "403 Forbidden"
+          }
+        ],
+        "metaDescription": "",
+        "counts": {
+          "links": 0,
+          "images": 0,
+          "video": 0,
+          "canvas": 0,
+          "sections": 0,
+          "forms": 0,
+          "buttons": 0,
+          "inputs": 0,
+          "interactive": 0,
+          "scripts": 0,
+          "stylesheets": 0
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [],
+        "stylesheets": [],
+        "sections": [],
+        "cssVariables": [],
+        "fonts": [],
+        "images": [],
+        "canvases": []
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "screenshot": "screenshots/original-390.png",
+      "signals": {
+        "href": "https://www.busyming.com/",
+        "title": "异常访问",
+        "lang": "en",
+        "bodyTextChars": 132,
+        "scrollHeight": 900,
+        "viewport": {
+          "width": 390,
+          "height": 900
+        },
+        "h1": [
+          "403 Forbidden"
+        ],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "403 Forbidden"
+          }
+        ],
+        "metaDescription": "",
+        "counts": {
+          "links": 0,
+          "images": 0,
+          "video": 0,
+          "canvas": 0,
+          "sections": 0,
+          "forms": 0,
+          "buttons": 0,
+          "inputs": 0,
+          "interactive": 0,
+          "scripts": 0,
+          "stylesheets": 0
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [],
+        "stylesheets": [],
+        "sections": [],
+        "cssVariables": [],
+        "fonts": [],
+        "images": [],
+        "canvases": []
+      }
+    }
+  ]
+}

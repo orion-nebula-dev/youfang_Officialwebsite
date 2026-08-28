@@ -1,0 +1,435 @@
+// 站点脚本：导航/页脚注入、品牌区块渲染和页面交互。
+// 路径根从本脚本自身的 URL 推导，不依赖部署目录名，站点可部署在任意子路径或域名根。
+const scriptUrl = new URL(document.currentScript.getAttribute('src'), document.baseURI);
+const siteRoot = scriptUrl.href.replace(/\?.*$/, '').replace(/js\/site\.js$/, '');
+const assetRoot = siteRoot.replace(/[^/]+\/$/, '');
+const page = document.body.dataset.page || '';
+
+function siteLink(file) { return `${siteRoot}${file}`; }
+function assetLink(file) { return `${assetRoot}素材/${file}`; }
+// 素材注册表解析：ID → 完整链接；未知 ID 打警告并回退空串，避免裂图难排查
+function asset(id) {
+  const record = SITE_DATA.assets[id];
+  const file = typeof record === 'string' ? record : record?.src;
+  if (!file) { console.warn(`[assets] 未注册的素材 ID: ${id}`); return ''; }
+  return assetLink(file);
+}
+function brandBySlug(slug) { return SITE_DATA.brands.find((brand) => brand.slug === slug); }
+
+function renderHeader() {
+  const holder = document.querySelector('#site-header');
+  if (!holder) return;
+  holder.innerHTML = `
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand-lockup" href="${siteLink('index.html')}" aria-label="有方大健康首页">
+          <img class="brand-lockup-logo" src="${asset('logo-group-wide')}" alt="有方大健康">
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" aria-label="主导航">
+          ${SITE_DATA.nav.map(([label, href, key]) => `<a class="${page === key ? 'active' : ''}" href="${siteLink(href)}">${label}</a>`).join('')}
+        </nav>
+      </div>
+    </header>
+  `;
+}
+
+function renderFooter() {
+  const holder = document.querySelector('#site-footer');
+  if (!holder) return;
+  const disclosure = SITE_DATA.disclosure
+    .map(([label, href]) => `<a href="${siteLink(href)}">${label}</a>`)
+    .join('<span class="sep">·</span>');
+  holder.innerHTML = `
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <p class="footer-title">OFFICIAL CONTACT</p>
+          <div class="footer-contact-grid">
+            <div class="footer-contact-item"><small>官方咨询电话</small><a href="${SITE_DATA.phoneHref}">${SITE_DATA.phone}</a></div>
+            <div class="footer-contact-item"><small>品牌合作</small><strong>欢迎与有方大健康联系</strong></div>
+            <div class="footer-contact-item"><small>业务阶段</small><strong>招商 · 建店 · 运营</strong></div>
+          </div>
+          <p class="footer-address">官方咨询电话：${SITE_DATA.phone}。</p>
+          <p class="footer-disclosure">信息公开：${disclosure}</p>
+        </div>
+        <div>
+          <p class="footer-title">小程序入口 · MINI PROGRAM</p>
+          <div class="footer-qr">
+            ${SITE_DATA.programs.map((program) => `<a class="qr-item" href="${siteLink('contact.html')}#xiaochengxu"><img src="${asset(program.image)}" alt="${program.name}小程序码"><span>${program.name}</span></a>`).join('')}
+          </div>
+        </div>
+      </div>
+      <div class="container copyright"><span>© <span data-year></span> 有方大健康</span><span class="footer-secondary"><a href="${siteLink('privacy.html')}">隐私说明</a></span></div>
+    </footer>
+  `;
+}
+
+// 品牌区块统一从 SITE_DATA 渲染，消除各页面的重复卡片维护：
+//   data-brands-grid="home"   首页大卡（长文案 + 营销标签）
+//   data-brands-grid="join"   招商页小卡（短文案）
+//   data-brands-grid="matrix" 品牌矩阵小卡（中文案，链接到同目录详情页）
+//   data-brands-strip         关于页品牌名称条
+//   data-brands-gallery       关于页品牌画廊
+//   data-brand-options        模拟经营品牌下拉（自动加“还不确定”首项）
+// 品牌详情页链接前缀用 data-brand-prefix 覆盖（默认 brands/）。
+function renderBrandSections() {
+  document.querySelectorAll('[data-brands-grid]').forEach((grid) => {
+    const variant = grid.dataset.brandsGrid;
+    const prefix = grid.dataset.brandPrefix ?? 'brands/';
+    const variants = {
+      home: { cls: 'brand-card', tag: 'tagHome', copy: 'copyHome', action: '查看品牌方向' },
+      join: { cls: 'brand-card brand-card--small', tag: 'category', copy: 'copyShort', action: '了解品牌' },
+      matrix: { cls: 'brand-card brand-card--small', tag: 'category', copy: 'copyCard', action: '查看品牌' },
+    };
+    const config = variants[variant];
+    if (!config) return;
+    grid.innerHTML = SITE_DATA.brands.map((brand) => `
+      <article class="${config.cls}">
+        <img class="brand-photo" src="${asset(brand.image)}" alt="${brand.name}品牌门店效果图">
+        <div class="brand-card-body">
+          <span class="brand-logo-chip"><img src="${asset(brand.logo)}" alt="${brand.name}品牌 logo"></span>
+          <span class="brand-tag">${brand[config.tag]}</span>
+          <h3 class="brand-name-large">${brand.name}</h3>
+          <p class="brand-copy">${brand[config.copy]}</p>
+          <a class="btn btn--${brand.accent}" href="${prefix}${brand.slug}.html">${config.action}</a>
+        </div>
+      </article>
+    `).join('');
+  });
+
+  document.querySelectorAll('[data-brands-strip]').forEach((strip) => {
+    strip.innerHTML = SITE_DATA.brands.map((brand) => `<span>${brand.name}</span>`).join('');
+  });
+
+  document.querySelectorAll('[data-brands-gallery]').forEach((gallery) => {
+    gallery.innerHTML = SITE_DATA.brands.map((brand) => `
+      <article class="gallery-card">
+        <div class="gallery-card-media"><img src="${asset(brand.image)}" alt="${brand.name}"><span class="gallery-brand-label">${brand.name}</span></div>
+        <div class="gallery-card-body"><img class="gallery-logo" src="${asset(brand.logo)}" alt=""><h3>${brand.name}</h3><p>${brand.category} · ${brand.tagline}</p></div>
+      </article>
+    `).join('');
+  });
+
+  document.querySelectorAll('[data-brand-options]').forEach((select) => {
+    const options = ['<option value="">还不确定</option>']
+      .concat(SITE_DATA.brands.map((brand) => `<option value="${brand.slug}">${brand.name}</option>`));
+    select.innerHTML = options.join('');
+  });
+}
+
+// 结构化素材引用：页面用 data-asset-img / data-asset-bg 写素材 ID，
+// 这里统一解析为 素材/ 链接；换图只改 js/data.js 的 assets 注册表。
+function applyAssets() {
+  document.querySelectorAll('[data-asset-img]').forEach((node) => { node.src = asset(node.dataset.assetImg); });
+  document.querySelectorAll('[data-asset-bg]').forEach((node) => { node.style.backgroundImage = `url('${asset(node.dataset.assetBg)}')`; });
+}
+
+// 小程序入口卡统一从 SITE_DATA.programs 渲染（含二维码、产品 logo、名称与说明），
+// 页面放 <div class="program-grid" data-programs-grid data-programs-link="..."></div>；
+// data-programs-link 缺省为 联系我们#xiaochengxu，本页锚点可传 "#xiaochengxu"。
+function renderProgramGrids() {
+  document.querySelectorAll('[data-programs-grid]').forEach((grid) => {
+    const rawLink = grid.dataset.programsLink;
+    const link = rawLink ? (rawLink.startsWith('#') ? rawLink : siteLink(rawLink)) : `${siteLink('contact.html')}#xiaochengxu`;
+    grid.innerHTML = SITE_DATA.programs.map((program, index) => `
+      <a class="program-card" href="${link}">
+        <img data-asset-img="${program.image}" alt="${program.name}小程序码">
+        <div>
+          <p class="eyebrow">MINI PROGRAM 0${index + 1}</p>
+          <h3 class="program-name">${program.logo ? `<img class="program-logo" data-asset-img="${program.logo}" alt="${program.name}">` : program.name}</h3>
+          <p>${program.desc}</p><small>${program.small}</small>
+        </div>
+      </a>
+    `).join('');
+  });
+}
+
+// 门店实拍二级页（mdzs/<slug>.html）：页面放骨架 + data-store-gallery="slug"，
+// 名称/定位/官方文案与照片清单统一读 SITE_DATA.storeGallery。
+function renderStoreGallery() {
+  const holder = document.querySelector('[data-store-gallery]');
+  if (!holder) return;
+  const slug = holder.dataset.storeGallery;
+  const data = SITE_DATA.storeGallery?.[slug];
+  if (!data) { console.warn(`[storeGallery] 未收录的门店实拍: ${slug}`); return; }
+  document.querySelectorAll('[data-store-name]').forEach((node) => { node.textContent = data.name; });
+  document.querySelectorAll('[data-store-kicker]').forEach((node) => { node.textContent = data.kicker; });
+  document.querySelectorAll('[data-store-copy]').forEach((node) => { node.textContent = data.copy; });
+  document.title = `${data.name} · 门店实拍｜有方大健康`;
+  holder.innerHTML = data.photos.map((photo) => `
+    <figure class="gallery-card">
+      <img src="${asset(photo.id)}" alt="${data.name}门店实拍：${photo.caption}">
+      <figcaption class="gallery-card-body"><p>${photo.caption}</p></figcaption>
+    </figure>
+  `).join('');
+}
+
+// 首页配置渲染（HOME_CONFIG 定义在 js/config/home.config.js）：
+// index.html 骨架带同文静态回退（无 JS 时主标题可读），本函数用配置覆盖内容，
+// 并按 sections 顺序重排区块；journey 步骤复用 SITE_DATA.stages，避免双份维护。
+function renderHomeSections() {
+  const home = SITE_DATA.home;
+  if (!home) return;
+  const setText = (selector, text) => { if (text == null) return; const node = document.querySelector(selector); if (node) node.textContent = text; };
+  const hero = home.hero || {};
+  setText('[data-home-hero-title]', hero.title);
+  setText('[data-home-hero-summary]', hero.summary);
+  const heroBg = document.querySelector('[data-home-hero-bg]');
+  if (heroBg && hero.bgAssetId) heroBg.setAttribute('data-asset-bg', hero.bgAssetId);
+  const heroActions = document.querySelector('[data-home-hero-actions]');
+  if (heroActions && hero.primaryAction && hero.secondaryAction) {
+    heroActions.innerHTML = `<a class="btn btn--orange" href="${siteLink(hero.primaryAction.href)}">${hero.primaryAction.label}</a><a class="btn btn--light" href="${siteLink(hero.secondaryAction.href)}">${hero.secondaryAction.label}</a>`;
+  }
+  const scale = home.scale || {};
+  setText('[data-home-eyebrow="scale"]', scale.eyebrow);
+  setText('[data-home-title="scale"]', scale.title);
+  const scaleGrid = document.querySelector('[data-home-scale]');
+  if (scaleGrid && scale.items) {
+    scaleGrid.innerHTML = scale.items.map((item) => `
+      <div class="scale-item"><div class="scale-value"><span data-count="${item.value}">${item.format ? item.value.toLocaleString('zh-CN') : item.value}</span><small>${item.unit}</small></div><div class="scale-label">${item.label}${item.sub ? `<small>${item.sub}</small>` : ''}</div></div>
+    `).join('');
+  }
+  const capabilities = home.capabilities || {};
+  setText('[data-home-eyebrow="capabilities"]', capabilities.eyebrow);
+  setText('[data-home-title="capabilities"]', capabilities.title);
+  const segmentGrid = document.querySelector('[data-home-segments]');
+  if (segmentGrid && capabilities.segments) {
+    segmentGrid.innerHTML = capabilities.segments.map((card) => `<article class="info-card"><div class="card-number">${card.no}</div><h3>${card.title}</h3><p>${card.copy}</p></article>`).join('');
+  }
+  setText('[data-home-eyebrow="ecosystem"]', capabilities.ecosystemEyebrow);
+  setText('[data-home-title="ecosystem"]', capabilities.ecosystemTitle);
+  const ecosystemGrid = document.querySelector('[data-home-ecosystem]');
+  if (ecosystemGrid && capabilities.ecosystem) {
+    ecosystemGrid.innerHTML = capabilities.ecosystem.map((card) => `<article class="info-card"><div class="card-number">${card.no}</div><h3>${card.title}</h3><p>${card.copy}</p></article>`).join('');
+  }
+  const journey = home.journey || {};
+  setText('[data-home-eyebrow="journey"]', journey.eyebrow);
+  setText('[data-home-title="journey"]', journey.title);
+  setText('[data-home-summary="journey"]', journey.summary);
+  // 门店发展三阶段通用卡片：SITE_DATA.stages 单一数据源，首页与 data-stage-flow 容器共用
+  const stageCardHTML = (stage, i) => `<article class="stage-card"><div class="stage-card-head"><span class="stage-number">0${i + 1}</span><span class="stage-kicker">${stage.kicker || `阶段${'一二三'[i] || ''}`}</span></div><h3>${stage.name}</h3><p>${stage.desc}</p>${Array.isArray(stage.points) && stage.points.length ? `<ul class="stage-points">${stage.points.map((point) => `<li>${point}</li>`).join('')}</ul>` : ''}</article>`;
+  const journeyGrid = document.querySelector('[data-home-journey]');
+  if (journeyGrid) {
+    journeyGrid.innerHTML = SITE_DATA.stages.map(stageCardHTML).join('');
+  }
+  document.querySelectorAll('[data-stage-flow]').forEach((flow) => {
+    flow.innerHTML = SITE_DATA.stages.map(stageCardHTML).join('');
+  });
+  const mission = home.mission || {};
+  setText('[data-home-eyebrow="mission"]', mission.eyebrow);
+  setText('[data-home-title="mission"]', mission.title);
+  const missionGrid = document.querySelector('[data-home-mission]');
+  if (missionGrid && mission.items) {
+    missionGrid.innerHTML = mission.items.map((card) => `<article class="info-card"><div class="card-number">${card.no}</div><h3>${card.title}</h3><p>${card.copy}</p></article>`).join('');
+  }
+  const cta = home.cta || {};
+  setText('[data-home-eyebrow="cta"]', cta.eyebrow);
+  setText('[data-home-title="cta"]', cta.title);
+  setText('[data-home-cta-copy]', cta.copy);
+  const ctaActions = document.querySelector('[data-home-cta-actions]');
+  if (ctaActions && cta.primary && cta.secondary) {
+    const href = (action) => (action.href.startsWith('tel:') ? action.href : siteLink(action.href));
+    ctaActions.innerHTML = `<a class="btn btn--orange" href="${href(cta.primary)}">${cta.primary.label}</a><a class="btn btn--ghost" href="${href(cta.secondary)}">${cta.secondary.label}</a>`;
+  }
+  const main = document.querySelector('main');
+  if (main && Array.isArray(home.sections)) {
+    home.sections.forEach(({ id, visible }) => {
+      const section = main.querySelector(`[data-home-section="${id}"]`);
+      if (!section) return;
+      if (visible === false) { section.remove(); return; }
+      main.appendChild(section);
+    });
+    main.querySelectorAll('[data-home-section]').forEach((section) => {
+      if (!home.sections.some(({ id }) => id === section.dataset.homeSection)) section.remove();
+    });
+  }
+}
+
+function setupNavigation() {
+  const header = document.querySelector('.site-header');
+  const menu = document.querySelector('.site-nav');
+  const toggle = document.querySelector('.menu-toggle');
+  if (!header || !menu || !toggle) return;
+  const close = () => {
+    menu.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    document.body.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', close));
+  const onScroll = () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 10);
+    document.querySelector('.back-top')?.classList.toggle('show', window.scrollY > 500);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+function setupAccordions() {
+  document.querySelectorAll('[data-accordion] .faq-question').forEach((button) => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.faq-item');
+      const list = button.closest('[data-accordion]');
+      list.querySelectorAll('.faq-item').forEach((other) => { if (other !== item) other.classList.remove('open'); });
+      item.classList.toggle('open');
+    });
+  });
+}
+
+function setupTabs() {
+  document.querySelectorAll('[data-tabs]').forEach((tabs) => {
+    const buttons = tabs.querySelectorAll('[data-tab]');
+    const panels = tabs.querySelectorAll('[data-panel]');
+    buttons.forEach((button) => button.addEventListener('click', () => {
+      const target = button.dataset.tab;
+      buttons.forEach((item) => item.classList.toggle('active', item === button));
+      panels.forEach((panel) => panel.classList.toggle('active', panel.dataset.panel === target));
+    }));
+  });
+}
+
+function setupCountUp() {
+  const nodes = document.querySelectorAll('[data-count]');
+  if (!nodes.length) return;
+  const run = (node) => {
+    const target = Number(node.dataset.count || 0);
+    if (!Number.isFinite(target)) return;
+    const duration = 700;
+    const start = performance.now();
+    const tick = (now) => {
+      const progress = Math.min(1, (now - start) / duration);
+      node.textContent = Math.round(target * (1 - Math.pow(1 - progress, 3))).toLocaleString('zh-CN');
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if (!('IntersectionObserver' in window)) { nodes.forEach(run); return; }
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.filter((entry) => entry.isIntersecting).forEach((entry) => { run(entry.target); obs.unobserve(entry.target); });
+  }, { threshold: .4 });
+  nodes.forEach((node) => observer.observe(node));
+}
+
+function setupModal() {
+  const modal = document.querySelector('[data-modal]');
+  if (!modal) return;
+  const close = () => modal.classList.remove('open');
+  document.querySelectorAll('[data-video-open]').forEach((button) => button.addEventListener('click', () => modal.classList.add('open')));
+  modal.querySelectorAll('[data-video-close]').forEach((button) => button.addEventListener('click', close));
+  modal.addEventListener('click', (event) => { if (event.target === modal) close(); });
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
+}
+
+function setupForms() {
+  document.querySelectorAll('[data-contact-form]').forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const status = form.querySelector('.form-status');
+      if (status) status.textContent = '信息已提交，感谢你的咨询。';
+      form.reset();
+    });
+  });
+}
+
+// 招商咨询表单消费 ?brand= 参数：品牌详情页 / 模拟经营带参跳转后自动填入品牌方向，
+// 与「网站信息架构与留资路径」中“模拟结果后咨询只需补联系方式”的口径闭环。
+function setupConsultPreFill() {
+  const input = document.querySelector('[data-consult-brand]');
+  if (!input) return;
+  const slug = new URLSearchParams(window.location.search).get('brand');
+  const brand = slug && brandBySlug(slug);
+  if (brand) {
+    input.value = brand.name;
+    const status = input.closest('form')?.querySelector('.form-status');
+    if (status) status.textContent = `已为你带入「${brand.name}」方向，补充联系方式即可提交。`;
+  }
+}
+
+function setupSimulator() {
+  const root = document.querySelector('[data-simulator]');
+  if (!root) return;
+  const fields = Object.fromEntries([...root.querySelectorAll('[data-sim-field]')].map((field) => [field.dataset.simField, field]));
+  const title = root.querySelector('[data-sim-title]');
+  const summary = root.querySelector('[data-sim-summary]');
+  const brand = root.querySelector('[data-sim-brand]');
+  const next = root.querySelector('[data-sim-next]');
+  const points = root.querySelector('[data-sim-points]');
+  const status = root.querySelector('[data-sim-status]');
+  const consult = root.querySelector('[data-sim-consult]');
+  const plans = SITE_DATA.simPlans;
+  const phaseNext = SITE_DATA.simPhases;
+  const render = () => {
+    const plan = plans[fields.scenario?.value] || plans.community;
+    const selectedBrand = fields.brand?.value;
+    const selectedBrandName = selectedBrand && brandBySlug(selectedBrand)?.name;
+    const preferred = selectedBrandName || plan.brands.join(' / ');
+    const nextStep = phaseNext[fields.phase?.value] || phaseNext.learn;
+    if (title) title.textContent = selectedBrandName ? `${selectedBrandName} · ${plan.title}` : plan.title;
+    if (summary) summary.textContent = plan.summary;
+    if (brand) brand.textContent = preferred;
+    if (next) next.textContent = nextStep;
+    if (points) points.innerHTML = plan.points.map((point) => `<li>${point}</li>`).join('');
+    if (consult) consult.href = `${siteLink('zsjm.html')}?brand=${selectedBrand || ''}#consult`;
+  };
+  const queryBrand = new URLSearchParams(window.location.search).get('brand');
+  if (queryBrand && fields.brand && brandBySlug(queryBrand)) fields.brand.value = queryBrand;
+  root.addEventListener('change', render);
+  root.addEventListener('submit', (event) => {
+    event.preventDefault();
+    render();
+    if (status) status.textContent = '模拟方案已生成，可以继续预约官方咨询。';
+  });
+  render();
+}
+
+// 品牌门店形态（当前仅奈晚推拿有店型数据）：填充 [data-brand-forms] 骨架
+function renderBrandForms(brand) {
+  const holder = document.querySelector('[data-brand-forms]');
+  if (!holder || !brand || !brand.storeForms) return;
+  const grid = holder.querySelector('[data-brand-forms-grid]');
+  const title = holder.querySelector('[data-brand-forms-title]');
+  if (!grid) return;
+  if (title) title.textContent = `${brand.name}的门店形态`;
+  grid.innerHTML = brand.storeForms.map((form) => `
+    <figure class="brand-form-item">
+      <img src="${asset(form.logo)}" alt="${brand.name}${form.label}logo">
+      <figcaption>${form.label}</figcaption>
+    </figure>
+  `).join('');
+  holder.hidden = false;
+}
+
+function setupBackTop() {
+  const button = document.querySelector('.back-top');
+  if (button) button.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+
+renderHeader();
+renderFooter();
+renderBrandSections();
+renderProgramGrids();
+renderStoreGallery();
+renderHomeSections();
+applyAssets();
+// favicon：集团方形图标（有方图标）
+const favicon = document.createElement('link');
+favicon.rel = 'icon';
+favicon.href = asset('logo-group-icon');
+document.head.appendChild(favicon);
+document.querySelectorAll('[data-year]').forEach((node) => { node.textContent = new Date().getFullYear(); });
+setupNavigation();
+setupAccordions();
+setupTabs();
+setupCountUp();
+setupModal();
+setupForms();
+setupConsultPreFill();
+setupSimulator();
+setupBackTop();

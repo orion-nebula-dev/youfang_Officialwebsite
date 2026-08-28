@@ -1,0 +1,607 @@
+{
+  "label": "clone",
+  "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+  "capturedAt": "2026-08-10T10:56:17.814Z",
+  "maxPages": 25,
+  "maxDepth": 2,
+  "allowSubdomains": false,
+  "routes": [
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "from": "",
+      "depth": 0,
+      "status": 200,
+      "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+      "lang": "zh-CN",
+      "metaDescription": "有方大健康围绕招商、建店与运营，为大健康门店经营者提供品牌了解、项目沟通、门店管理与持续经营支持。",
+      "h1": [
+        "专注大健康消费领域的产业运营与投资孵化"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "专注大健康消费领域的产业运营与投资孵化"
+        },
+        {
+          "tag": "h2",
+          "text": "让健康有方，成为生活习惯"
+        },
+        {
+          "tag": "h2",
+          "text": "选择适合你的品牌与门店方向"
+        },
+        {
+          "tag": "h3",
+          "text": "谷小推"
+        },
+        {
+          "tag": "h3",
+          "text": "艾小晚"
+        },
+        {
+          "tag": "h3",
+          "text": "足康树"
+        },
+        {
+          "tag": "h3",
+          "text": "恒青树"
+        },
+        {
+          "tag": "h2",
+          "text": "把门店经营情况，放在一个清晰的视图里。"
+        },
+        {
+          "tag": "h2",
+          "text": "从了解项目，到正式开业"
+        },
+        {
+          "tag": "h3",
+          "text": "了解项目"
+        },
+        {
+          "tag": "h3",
+          "text": "项目评估"
+        },
+        {
+          "tag": "h3",
+          "text": "门店落地"
+        },
+        {
+          "tag": "h3",
+          "text": "持续经营"
+        },
+        {
+          "tag": "h2",
+          "text": "把好体验，落到每一间门店"
+        },
+        {
+          "tag": "h2",
+          "text": "先把常见问题说清楚"
+        }
+      ],
+      "counts": {
+        "links": 24,
+        "images": 11,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 7
+      },
+      "linkCount": 24,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-index.html-f41807a4.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/about.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "depth": 1,
+      "status": 200,
+      "title": "关于有方｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "关于有方大健康：围绕大健康消费场景，连接品牌、门店与数字化能力。",
+      "h1": [
+        "关于有方"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "关于有方"
+        },
+        {
+          "tag": "h2",
+          "text": "让健康服务更容易被理解，也更容易被经营。"
+        },
+        {
+          "tag": "h2",
+          "text": "从一个好主张，走到一间好门店"
+        },
+        {
+          "tag": "h3",
+          "text": "以消费者为中心"
+        },
+        {
+          "tag": "h3",
+          "text": "以门店为落点"
+        },
+        {
+          "tag": "h3",
+          "text": "以协同为方法"
+        },
+        {
+          "tag": "h2",
+          "text": "多样的品牌方向，共同的健康主张"
+        },
+        {
+          "tag": "h3",
+          "text": "谷小推"
+        },
+        {
+          "tag": "h3",
+          "text": "艾小晚"
+        },
+        {
+          "tag": "h3",
+          "text": "足康树"
+        },
+        {
+          "tag": "h3",
+          "text": "恒青树"
+        },
+        {
+          "tag": "h3",
+          "text": "乐光里"
+        },
+        {
+          "tag": "h3",
+          "text": "奈晚推拿"
+        },
+        {
+          "tag": "h2",
+          "text": "把事情做成，需要一条清晰的路"
+        },
+        {
+          "tag": "h3",
+          "text": "品牌与项目"
+        },
+        {
+          "tag": "h3",
+          "text": "门店与交付"
+        },
+        {
+          "tag": "h3",
+          "text": "经营与协同"
+        }
+      ],
+      "counts": {
+        "links": 12,
+        "images": 9,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 2
+      },
+      "linkCount": 12,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-about.html-d778edcc.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "depth": 1,
+      "status": 200,
+      "title": "门店展示｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "有方大健康门店展示：来自集团原始装修效果方案的品牌与空间视觉。",
+      "h1": [
+        "门店展示"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "门店展示"
+        },
+        {
+          "tag": "h2",
+          "text": "把品牌主张落到空间里"
+        },
+        {
+          "tag": "h3",
+          "text": "乐光里 · 杭州大悦城店"
+        },
+        {
+          "tag": "h3",
+          "text": "谷小推 · 湘潭华隆步步高店"
+        },
+        {
+          "tag": "h3",
+          "text": "艾小晚 · 杭州塘萍路旗舰店"
+        },
+        {
+          "tag": "h3",
+          "text": "恒青树 · 杭州联乐名苑店"
+        },
+        {
+          "tag": "h3",
+          "text": "足康树 · 汉中吾悦广场店"
+        },
+        {
+          "tag": "h3",
+          "text": "奈晚推拿 · 东方推拿"
+        },
+        {
+          "tag": "h2",
+          "text": "效果图不是终点，能交付的体验才是。"
+        }
+      ],
+      "counts": {
+        "links": 13,
+        "images": 9,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 2
+      },
+      "linkCount": 13,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-mdzs.html-6065cc3c.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "depth": 1,
+      "status": 200,
+      "title": "集团资讯｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "有方大健康集团资讯：品牌、门店、数字化和社会责任相关动态。",
+      "h1": [
+        "集团资讯"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "集团资讯"
+        },
+        {
+          "tag": "h2",
+          "text": "记录每一次有方的进展"
+        },
+        {
+          "tag": "h3",
+          "text": "从品牌方向，到可经营的门店模型"
+        },
+        {
+          "tag": "h3",
+          "text": "让门店经营情况，进入清晰的视图"
+        },
+        {
+          "tag": "h3",
+          "text": "把品牌主张落到每一间门店"
+        },
+        {
+          "tag": "h3",
+          "text": "让健康服务成为生活习惯"
+        }
+      ],
+      "counts": {
+        "links": 16,
+        "images": 6,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 2
+      },
+      "linkCount": 16,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-news.html-3f6fcaff.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/tzgx.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "depth": 1,
+      "status": 200,
+      "title": "能力与产品｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "有方大健康能力与产品：招商、建店、运营及数字化协同。",
+      "h1": [
+        "能力与产品"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "能力与产品"
+        },
+        {
+          "tag": "h2",
+          "text": "让每个阶段，都有对应的支持"
+        },
+        {
+          "tag": "h3",
+          "text": "项目咨询"
+        },
+        {
+          "tag": "h3",
+          "text": "品牌匹配"
+        },
+        {
+          "tag": "h3",
+          "text": "经营评估"
+        },
+        {
+          "tag": "h3",
+          "text": "选址评估"
+        },
+        {
+          "tag": "h3",
+          "text": "空间规划"
+        },
+        {
+          "tag": "h3",
+          "text": "开业筹备"
+        },
+        {
+          "tag": "h3",
+          "text": "经营概览"
+        },
+        {
+          "tag": "h3",
+          "text": "收付款记录"
+        },
+        {
+          "tag": "h3",
+          "text": "持续协同"
+        },
+        {
+          "tag": "h3",
+          "text": "谷有方小程序"
+        },
+        {
+          "tag": "h2",
+          "text": "从前台入口，到总部协同"
+        }
+      ],
+      "counts": {
+        "links": 12,
+        "images": 4,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 6
+      },
+      "linkCount": 12,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-tzgx.html-e0d1ab5e.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/shzr.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "depth": 1,
+      "status": 200,
+      "title": "社会责任｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "有方大健康社会责任：让健康服务成为生活习惯。",
+      "h1": [
+        "社会责任"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "社会责任"
+        },
+        {
+          "tag": "h2",
+          "text": "让健康有方，成为生活习惯"
+        },
+        {
+          "tag": "h2",
+          "text": "从门店到社区的三件事"
+        },
+        {
+          "tag": "h3",
+          "text": "服务日常健康"
+        },
+        {
+          "tag": "h3",
+          "text": "支持经营者成长"
+        },
+        {
+          "tag": "h3",
+          "text": "建设长期关系"
+        },
+        {
+          "tag": "h2",
+          "text": "公益行动"
+        }
+      ],
+      "counts": {
+        "links": 13,
+        "images": 4,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 2
+      },
+      "linkCount": 13,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-shzr.html-6c8463e3.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "depth": 1,
+      "status": 200,
+      "title": "招商加盟｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "有方大健康招商加盟：了解品牌、建店支持和运营协同。",
+      "h1": [
+        "招商加盟"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "招商加盟"
+        },
+        {
+          "tag": "h2",
+          "text": "诚邀城市合伙人，共建健康生活服务门店"
+        },
+        {
+          "tag": "h2",
+          "text": "先了解品牌，再判断适配度"
+        },
+        {
+          "tag": "h3",
+          "text": "谷小推"
+        },
+        {
+          "tag": "h3",
+          "text": "艾小晚"
+        },
+        {
+          "tag": "h3",
+          "text": "足康树"
+        },
+        {
+          "tag": "h3",
+          "text": "乐光里"
+        },
+        {
+          "tag": "h2",
+          "text": "三阶段支持，陪你把店开起来"
+        },
+        {
+          "tag": "h3",
+          "text": "招商期"
+        },
+        {
+          "tag": "h3",
+          "text": "建店期"
+        },
+        {
+          "tag": "h3",
+          "text": "开业期"
+        },
+        {
+          "tag": "h3",
+          "text": "运营期"
+        },
+        {
+          "tag": "h2",
+          "text": "留下你的项目方向"
+        },
+        {
+          "tag": "h3",
+          "text": "进入谷有方小程序"
+        }
+      ],
+      "counts": {
+        "links": 17,
+        "images": 8,
+        "canvas": 0,
+        "forms": 1,
+        "buttons": 3
+      },
+      "linkCount": 17,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-zsjm.html-a1c64cf1.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/contact.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+      "depth": 1,
+      "status": 200,
+      "title": "联系我们｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "有方大健康官方联系入口。",
+      "h1": [
+        "联系我们"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "联系我们"
+        },
+        {
+          "tag": "h2",
+          "text": "找到官方入口，开始一次清晰的沟通"
+        },
+        {
+          "tag": "h3",
+          "text": "谷有方小程序"
+        },
+        {
+          "tag": "h2",
+          "text": "预约官方咨询"
+        }
+      ],
+      "counts": {
+        "links": 12,
+        "images": 3,
+        "canvas": 0,
+        "forms": 1,
+        "buttons": 3
+      },
+      "linkCount": 12,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-contact.html-73c0f395.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news_detail/brand-and-model.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news.html",
+      "depth": 2,
+      "status": 200,
+      "title": "从品牌方向，到可经营的门店模型｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "",
+      "h1": [
+        "从品牌方向，到可经营的门店模型"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "从品牌方向，到可经营的门店模型"
+        },
+        {
+          "tag": "h2",
+          "text": "一个品牌，需要在真实空间里被体验。"
+        }
+      ],
+      "counts": {
+        "links": 12,
+        "images": 3,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 2
+      },
+      "linkCount": 12,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-news_detail-brand-and-model.html-f619df1f.png",
+      "consoleErrors": []
+    },
+    {
+      "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news_detail/digital-platform.html",
+      "from": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news.html",
+      "depth": 2,
+      "status": 200,
+      "title": "让门店经营情况，进入清晰的视图｜有方大健康",
+      "lang": "zh-CN",
+      "metaDescription": "",
+      "h1": [
+        "让门店经营情况，进入清晰的视图"
+      ],
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "让门店经营情况，进入清晰的视图"
+        },
+        {
+          "tag": "h2",
+          "text": "按门店生命周期，组织经营入口。"
+        }
+      ],
+      "counts": {
+        "links": 12,
+        "images": 3,
+        "canvas": 0,
+        "forms": 0,
+        "buttons": 2
+      },
+      "linkCount": 12,
+      "screenshot": "screenshots/127.0.0.1-E4-BB-A3-E7-A0-81-news_detail-digital-platform.html-8046336b.png",
+      "consoleErrors": []
+    }
+  ],
+  "skipped": []
+}

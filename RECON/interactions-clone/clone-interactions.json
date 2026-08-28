@@ -1,0 +1,1751 @@
+{
+  "label": "clone",
+  "url": "http://127.0.0.1:8123/代码/index.html",
+  "capturedAt": "2026-08-10T10:57:01.098Z",
+  "initial": {
+    "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+    "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+    "activeElement": "body",
+    "scrollY": 0,
+    "bodyTextChars": 1755,
+    "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+    "counts": {
+      "dialogs": 0,
+      "popovers": 0,
+      "canvases": 0,
+      "videos": 0,
+      "buttons": 7,
+      "forms": 0
+    },
+    "htmlHash": "-1129891830",
+    "htmlLength": 10496
+  },
+  "discovered": {
+    "interactive": [
+      {
+        "selector": "html > body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "text": "方 有方大健康 YO-FANG HEALTH",
+        "ariaLabel": "有方大健康首页",
+        "safeClick": true,
+        "rect": {
+          "x": 72,
+          "y": 18,
+          "width": 153,
+          "height": 45
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "text": "首页",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 599,
+          "y": 0,
+          "width": 65,
+          "height": 80
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(2)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/about.html",
+        "text": "关于有方",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 667,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(3)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+        "text": "门店展示",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 766,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(4)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news.html",
+        "text": "集团资讯",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 864,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(5)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/tzgx.html",
+        "text": "能力与产品",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 963,
+          "y": 0,
+          "width": 110,
+          "height": 80
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(6)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/shzr.html",
+        "text": "社会责任",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1076,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(7)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "text": "招商加盟",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1175,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(8)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/contact.html",
+        "text": "联系我们",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1273,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "text": "了解加盟",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 72,
+          "y": 696,
+          "width": 110,
+          "height": 46
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(2)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#capability",
+        "text": "查看数字化能力",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 196,
+          "y": 696,
+          "width": 155,
+          "height": 46
+        }
+      },
+      {
+        "selector": "html > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#intro",
+        "text": "SCROLL",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 712,
+          "y": 671,
+          "width": 17,
+          "height": 117
+        }
+      },
+      {
+        "selector": "section:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > article:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html#brand-list",
+        "text": "查看品牌方向",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 314,
+          "y": 2399,
+          "width": 140,
+          "height": 46
+        }
+      },
+      {
+        "selector": "section:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > article:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html#brand-list",
+        "text": "查看品牌方向",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 986,
+          "y": 2399,
+          "width": 140,
+          "height": 46
+        }
+      },
+      {
+        "selector": "section:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > article:nth-of-type(3) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html#brand-list",
+        "text": "查看品牌方向",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 314,
+          "y": 3117,
+          "width": 140,
+          "height": 46
+        }
+      },
+      {
+        "selector": "section:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2) > article:nth-of-type(4) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html#brand-list",
+        "text": "查看品牌方向",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 986,
+          "y": 3117,
+          "width": 140,
+          "height": 46
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(3) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "text": "查看全部品牌素材",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 635,
+          "y": 3240,
+          "width": 170,
+          "height": 46
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#xiaochengxu",
+        "text": "进入谷有方小程序",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 778,
+          "y": 4051,
+          "width": 170,
+          "height": 46
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(4) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/tzgx.html",
+        "text": "查看能力说明",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 962,
+          "y": 4051,
+          "width": 140,
+          "height": 46
+        }
+      },
+      {
+        "selector": "body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(6) > div:nth-of-type(1) > div:nth-of-type(2) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+        "text": "乐光里 杭州大悦城店 · 空间效果图",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 72,
+          "y": 5288,
+          "width": 777,
+          "height": 1142
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(6) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+        "text": "谷小推 湘潭华隆步步高店 · 效果方案",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 871,
+          "y": 5288,
+          "width": 497,
+          "height": 560
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(6) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(2)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+        "text": "艾小晚 杭州塘萍路旗舰店 · 效果方案",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 871,
+          "y": 5870,
+          "width": 497,
+          "height": 560
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(7) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > button:nth-of-type(1)",
+        "tag": "button",
+        "type": "button",
+        "role": "",
+        "href": "",
+        "text": "加盟需要什么条件？",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 270,
+          "y": 6881,
+          "width": 900,
+          "height": 86
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(7) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > button:nth-of-type(1)",
+        "tag": "button",
+        "type": "button",
+        "role": "",
+        "href": "",
+        "text": "如何选择适合自己的品牌？",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 270,
+          "y": 7023,
+          "width": 900,
+          "height": 86
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(7) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > button:nth-of-type(1)",
+        "tag": "button",
+        "type": "button",
+        "role": "",
+        "href": "",
+        "text": "总部是否提供选址、设计、装修和培训支持？",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 270,
+          "y": 7110,
+          "width": 900,
+          "height": 86
+        }
+      },
+      {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(7) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(4) > button:nth-of-type(1)",
+        "tag": "button",
+        "type": "button",
+        "role": "",
+        "href": "",
+        "text": "如何进入谷有方小程序？",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 270,
+          "y": 7197,
+          "width": 900,
+          "height": 86
+        }
+      },
+      {
+        "selector": "footer:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(3) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#xiaochengxu",
+        "text": "进入谷有方小程序",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 72,
+          "y": 7676,
+          "width": 136,
+          "height": 24
+        }
+      },
+      {
+        "selector": "div:nth-of-type(2) > footer:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#xiaochengxu",
+        "text": "谷有方小程序",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1094,
+          "y": 7579,
+          "width": 126,
+          "height": 152
+        }
+      }
+    ],
+    "canvases": []
+  },
+  "actions": [
+    {
+      "type": "scroll",
+      "target": "middle",
+      "ratio": 0.5,
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 3507,
+        "bodyTextChars": 1757,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-553032030",
+        "htmlLength": 10513
+      },
+      "changed": true,
+      "screenshot": "screenshots/01-scroll-middle-b04a45f075.png"
+    },
+    {
+      "type": "scroll",
+      "target": "bottom",
+      "ratio": 1,
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 7013,
+        "bodyTextChars": 1757,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-553032030",
+        "htmlLength": 10513
+      },
+      "changed": true,
+      "screenshot": "screenshots/02-scroll-bottom-7297e0cbea.png"
+    },
+    {
+      "type": "hover",
+      "target": "方 有方大健康 YO-FANG HEALTH",
+      "selector": "html > body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+      "meta": {
+        "selector": "html > body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "text": "方 有方大健康 YO-FANG HEALTH",
+        "ariaLabel": "有方大健康首页",
+        "safeClick": true,
+        "rect": {
+          "x": 72,
+          "y": 18,
+          "width": 153,
+          "height": 45
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/03-hover--YO-FANG-HEALTH-94d7ca608d.png"
+    },
+    {
+      "type": "hover",
+      "target": "首页",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(1)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "text": "首页",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 599,
+          "y": 0,
+          "width": 65,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/04-hover-2532741979.png"
+    },
+    {
+      "type": "hover",
+      "target": "关于有方",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(2)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(2)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/about.html",
+        "text": "关于有方",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 667,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/05-hover-a02d6730c7.png"
+    },
+    {
+      "type": "hover",
+      "target": "门店展示",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(3)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(3)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+        "text": "门店展示",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 766,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/06-hover-833e03499a.png"
+    },
+    {
+      "type": "hover",
+      "target": "集团资讯",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(4)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(4)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news.html",
+        "text": "集团资讯",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 864,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/07-hover-492d946560.png"
+    },
+    {
+      "type": "hover",
+      "target": "能力与产品",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(5)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(5)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/tzgx.html",
+        "text": "能力与产品",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 963,
+          "y": 0,
+          "width": 110,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/08-hover-73e622e71f.png"
+    },
+    {
+      "type": "hover",
+      "target": "社会责任",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(6)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(6)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/shzr.html",
+        "text": "社会责任",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1076,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/09-hover-15d32cdb2c.png"
+    },
+    {
+      "type": "hover",
+      "target": "招商加盟",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(7)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(7)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "text": "招商加盟",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1175,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/10-hover-76590d3558.png"
+    },
+    {
+      "type": "click",
+      "target": "方 有方大健康 YO-FANG HEALTH",
+      "selector": "html > body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+      "meta": {
+        "selector": "html > body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "text": "方 有方大健康 YO-FANG HEALTH",
+        "ariaLabel": "有方大健康首页",
+        "safeClick": true,
+        "rect": {
+          "x": 72,
+          "y": 18,
+          "width": 153,
+          "height": 45
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/11-click--YO-FANG-HEALTH-1db80cf8ba.png"
+    },
+    {
+      "type": "click",
+      "target": "首页",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(1)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "text": "首页",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 599,
+          "y": 0,
+          "width": 65,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "changed": false,
+      "screenshot": "screenshots/12-click-f9cd67cbdf.png"
+    },
+    {
+      "type": "click",
+      "target": "关于有方",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(2)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(2)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/about.html",
+        "text": "关于有方",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 667,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/about.html",
+        "title": "关于有方｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 948,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 ABOUT US 关于有方 首页 / 关于有方 WHO WE ARE 让健康服务更容易被理解，也更容易被经营。 有方大健康面向大健康消费领域，聚焦品牌与门店的产业运营、投资孵化和经营协同。 我们以加盟经营者的实际路径为起点，把项目沟通、品牌选择、门店建设、开业筹备和运营支持组织成清晰的阶段，让每一步都有入口、信息和协作对象。 OUR WAY 从一个好主张，走到一间好门店 尊重经营者的判断，也尊重每一个真实的消费场景。 01 以消费者为中心 让服务体验、空间表达和经营流程都回到消费者真正能感知的价值。 02 以门店为落点 品牌不是一张海报，而是一间店里可被看见、体验和持续交付的服务。 03 以协同为方法 用明确的阶段、资料和数字化入口，减少经营者在关键节点上的信息不对称。 BRAND IP 多样的品牌方向，共同的健康主张 谷小推 新中式 SPA · 服务空间与体验表达 艾小晚 艾灸推拿 · 家门口的健康服务 足康树 修脚足疗 · 轻松、熟悉的社区体验 恒青树 社区生",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 2,
+          "forms": 0
+        },
+        "htmlHash": "-381951370",
+        "htmlLength": 5856
+      },
+      "changed": true,
+      "screenshot": "screenshots/13-click-06855e96e2.png"
+    },
+    {
+      "type": "click",
+      "target": "门店展示",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(3)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(3)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+        "text": "门店展示",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 766,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/mdzs.html",
+        "title": "门店展示｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 756,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 STORE SHOWCASE 门店展示 首页 / 门店展示 SPACE & EXPERIENCE 把品牌主张落到空间里 以下画面选自集团原始门店装修效果图，用于展示空间方向；实际门店、城市和交付内容以项目确认为准。 乐光里 · 杭州大悦城店 头疗洗护空间方案：暖色、自然材质和松弛的到店体验。 谷小推 · 湘潭华隆步步高店 新中式 SPA 空间方案：让服务被看见，让体验更容易理解。 艾小晚 · 杭州塘萍路旗舰店 艾灸推拿空间方案：用清晰的动线承接门店服务。 恒青树 · 杭州联乐名苑店 社区生活服务空间：温和、熟悉、贴近日常。 足康树 · 汉中吾悦广场店 修脚足疗空间：用醒目的品牌识别和轻松的服务氛围建立记忆点。 奈晚推拿 · 东方推拿 以细致服务、安静空间和东方气质，形成更具辨识度的门店方向。 FROM IDEA TO STORE 效果图不是终点，能交付的体验才是。 从品牌定位到平面布局，再到门店现场，空间方案需要与城市、店型、预算和服务流程一起被确认。官网首期保留",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 2,
+          "forms": 0
+        },
+        "htmlHash": "175784640",
+        "htmlLength": 4806
+      },
+      "changed": true,
+      "screenshot": "screenshots/14-click-d6b4724150.png"
+    },
+    {
+      "type": "click",
+      "target": "集团资讯",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(4)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(4)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news.html",
+        "text": "集团资讯",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 864,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/news.html",
+        "title": "集团资讯｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 590,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 GROUP NEWS 集团资讯 首页 / 集团资讯 LATEST STORIES 记录每一次有方的进展 当前为官网内容初稿与材料预览页，正式新闻和发布时间待集团确认。 品牌与模型 · 材料预览 从品牌方向，到可经营的门店模型 以品牌定位、门店空间和服务流程为线索，把大健康消费场景讲清楚。 → 数字化能力 · 材料预览 让门店经营情况，进入清晰的视图 谷有方小程序围绕门店资料、运营数据和收付款入口展开协同。 → 门店空间 · 效果方案 把品牌主张落到每一间门店 从空间方案到开业筹备，门店是品牌与消费者发生关系的地方。 → 社会责任 · 内容初稿 让健康服务成为生活习惯 持续关注家庭、社区与长者生活中的真实健康需求。 → OFFICIAL CONTACT 招商咨询 官方顾问入口待确认 品牌合作 欢迎与有方大健康联系 小程序入口 进入谷有方小程序 业务阶段 招商 · 建店 · 运营 总部地址、官方 400 电话及对外邮箱以最终确认信息为准。官网首期提供小程序入口和官方咨",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 2,
+          "forms": 0
+        },
+        "htmlHash": "523563670",
+        "htmlLength": 4294
+      },
+      "changed": true,
+      "screenshot": "screenshots/15-click-d56e1a0a5d.png"
+    },
+    {
+      "type": "click",
+      "target": "能力与产品",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(5)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(5)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/tzgx.html",
+        "text": "能力与产品",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 963,
+          "y": 0,
+          "width": 110,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/tzgx.html",
+        "title": "能力与产品｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 611,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 CAPABILITY & PRODUCTS 能力与产品 首页 / 能力与产品 CAPABILITY MAP 让每个阶段，都有对应的支持 根据现有小程序和业务材料整理的展示版能力地图；是否已上线、试点中或规划中，以正式产品状态为准。 招商期 建店期 运营期 数字化入口 01 项目咨询 了解品牌与合作方式，提交加盟意向，进入官方项目沟通。 02 品牌匹配 围绕经营者、城市、店型和服务方向，形成品牌选择参考。 03 经营评估 围绕经营场景与门店条件，梳理后续选址和建店问题。 PRODUCT MAP 从前台入口，到总部协同 现有材料中还包括有方 FOS、灵枢/揽八方、果创空间、本果供应链、方小匠和方小址等业务能力。官网首期只展示能力方向，不把规划中能力写成现成服务。 OFFICIAL CONTACT 招商咨询 官方顾问入口待确认 品牌合作 欢迎与有方大健康联系 小程序入口 进入谷有方小程序 业务阶段 招商 · 建店 · 运营 总部地址、官方 400 电话及对外邮箱以最终确",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 6,
+          "forms": 0
+        },
+        "htmlHash": "-1935221992",
+        "htmlLength": 5643
+      },
+      "changed": true,
+      "screenshot": "screenshots/16-click-b602b1438a.png"
+    },
+    {
+      "type": "click",
+      "target": "社会责任",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(6)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(6)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/shzr.html",
+        "text": "社会责任",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1076,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/shzr.html",
+        "title": "社会责任｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 674,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 SOCIAL RESPONSIBILITY 社会责任 首页 / 社会责任 OUR COMMITMENT 让健康有方，成为生活习惯 大健康不只是一个行业，也是一种与家庭、社区和日常生活有关的长期责任。 有方大健康将健康服务、社区场景和门店经营连接起来，希望让更多人以自然、舒适和可持续的方式，获得适合自己的健康服务。 联系官方团队 RESPONSIBILITY MAP 从门店到社区的三件事 01 服务日常健康 通过多样的门店和服务方向，让健康管理进入更容易抵达的生活场景。 02 支持经营者成长 用清晰的项目、建店和运营支持，帮助经营者把服务做得更稳定。 03 建设长期关系 尊重社区、家庭和消费者的真实需求，持续改进品牌与门店体验。 PUBLIC WELFARE 公益行动 公益项目、合作伙伴和公开信息将在取得授权并完成确认后逐步补充。当前页面只保留内容位置，不虚构活动、金额和评价。 OFFICIAL CONTACT 招商咨询 官方顾问入口待确认 品牌合作 欢迎与有方大健",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 2,
+          "forms": 0
+        },
+        "htmlHash": "-2008692435",
+        "htmlLength": 4317
+      },
+      "changed": true,
+      "screenshot": "screenshots/17-click-835af446ef.png"
+    },
+    {
+      "type": "click",
+      "target": "招商加盟",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(7)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(7)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "text": "招商加盟",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1175,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "title": "招商加盟｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 913,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 JOIN US 招商加盟 首页 / 招商加盟 BECOME A PARTNER 诚邀城市合伙人，共建健康生活服务门店 如果你正在寻找一个适合长期经营的大健康门店方向，可以先从品牌、城市、店型和自身能力四个方面了解项目。 品牌与经营者匹配 城市和店型评估 选址、设计、装修与开业筹备协同 开业后的数字化经营入口与持续服务 预约官方咨询 BRAND DIRECTIONS 先了解品牌，再判断适配度 以下品牌名称和排序来自当前集团素材初稿，正式清单、定位和开放城市待品牌侧确认。 新中式 SPA 谷小推 关注服务体验和空间表达。 咨询该方向 艾灸推拿 艾小晚 关注家门口的健康服务。 咨询该方向 修脚足疗 足康树 关注家庭和社区的日常放松。 咨询该方向 头疗洗护 乐光里 关注舒适空间与服务交付。 咨询该方向 JOINING SUPPORT 三阶段支持，陪你把店开起来 招商期 项目咨询、品牌匹配、城市与店型评估。 建店期 选址评估、空间规划、装修协同与物料准备。 开业期 培训、资",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 3,
+          "forms": 1
+        },
+        "htmlHash": "81130577",
+        "htmlLength": 6428
+      },
+      "changed": true,
+      "screenshot": "screenshots/18-click-4e8990bb15.png"
+    },
+    {
+      "type": "click",
+      "target": "联系我们",
+      "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(8)",
+      "meta": {
+        "selector": "body:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > div:nth-of-type(1) > nav:nth-of-type(1) > a:nth-of-type(8)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/contact.html",
+        "text": "联系我们",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 1273,
+          "y": 0,
+          "width": 95,
+          "height": 80
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/contact.html",
+        "title": "联系我们｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 553,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 CONTACT US 联系我们 首页 / 联系我们 OFFICIAL CHANNELS 找到官方入口，开始一次清晰的沟通 总部地址、400 电话、邮箱和工作时间将在业务确认后更新。当前保留官方小程序和前端咨询表单入口。 码 小程序 扫描谷有方小程序码，查看加盟与门店入口 咨 官方咨询 招商顾问联系方式待确认 址 总部地址 以集团最终公开信息为准 谷有方小程序 进入小程序，了解品牌、门店、付款记录和数字化经营入口。 SEND A MESSAGE 预约官方咨询 演示表单只在本地显示提交结果，正式接口待集团配置。 称呼 联系电话 想了解的内容 提交咨询意向 OFFICIAL CONTACT 招商咨询 官方顾问入口待确认 品牌合作 欢迎与有方大健康联系 小程序入口 进入谷有方小程序 业务阶段 招商 · 建店 · 运营 总部地址、官方 400 电话及对外邮箱以最终确认信息为准。官网首期提供小程序入口和官方咨询预留位。 MINI PROGRAM 谷有方小程序 数字化入口 © ",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 3,
+          "forms": 1
+        },
+        "htmlHash": "-1540283775",
+        "htmlLength": 4419
+      },
+      "changed": true,
+      "screenshot": "screenshots/19-click-1bbfc0280b.png"
+    },
+    {
+      "type": "click",
+      "target": "了解加盟",
+      "selector": "main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+      "meta": {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "text": "了解加盟",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 72,
+          "y": 696,
+          "width": 110,
+          "height": 46
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/zsjm.html",
+        "title": "招商加盟｜有方大健康",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 913,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 JOIN US 招商加盟 首页 / 招商加盟 BECOME A PARTNER 诚邀城市合伙人，共建健康生活服务门店 如果你正在寻找一个适合长期经营的大健康门店方向，可以先从品牌、城市、店型和自身能力四个方面了解项目。 品牌与经营者匹配 城市和店型评估 选址、设计、装修与开业筹备协同 开业后的数字化经营入口与持续服务 预约官方咨询 BRAND DIRECTIONS 先了解品牌，再判断适配度 以下品牌名称和排序来自当前集团素材初稿，正式清单、定位和开放城市待品牌侧确认。 新中式 SPA 谷小推 关注服务体验和空间表达。 咨询该方向 艾灸推拿 艾小晚 关注家门口的健康服务。 咨询该方向 修脚足疗 足康树 关注家庭和社区的日常放松。 咨询该方向 头疗洗护 乐光里 关注舒适空间与服务交付。 咨询该方向 JOINING SUPPORT 三阶段支持，陪你把店开起来 招商期 项目咨询、品牌匹配、城市与店型评估。 建店期 选址评估、空间规划、装修协同与物料准备。 开业期 培训、资",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 3,
+          "forms": 1
+        },
+        "htmlHash": "81130577",
+        "htmlLength": 6428
+      },
+      "changed": true,
+      "screenshot": "screenshots/20-click-ec72db29b4.png"
+    },
+    {
+      "type": "click",
+      "target": "查看数字化能力",
+      "selector": "main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(2)",
+      "meta": {
+        "selector": "main:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) > a:nth-of-type(2)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#capability",
+        "text": "查看数字化能力",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 196,
+          "y": 696,
+          "width": 155,
+          "height": 46
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#capability",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 2636,
+        "bodyTextChars": 1757,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-553032030",
+        "htmlLength": 10513
+      },
+      "changed": true,
+      "screenshot": "screenshots/21-click-c1c57d6a6b.png"
+    },
+    {
+      "type": "click",
+      "target": "SCROLL",
+      "selector": "html > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > a:nth-of-type(1)",
+      "meta": {
+        "selector": "html > body:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > a:nth-of-type(1)",
+        "tag": "a",
+        "type": "",
+        "role": "",
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#intro",
+        "text": "SCROLL",
+        "ariaLabel": "",
+        "safeClick": true,
+        "rect": {
+          "x": 712,
+          "y": 671,
+          "width": 17,
+          "height": 117
+        }
+      },
+      "before": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 0,
+        "bodyTextChars": 1755,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-1129891830",
+        "htmlLength": 10496
+      },
+      "after": {
+        "url": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html#intro",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "activeElement": "body",
+        "scrollY": 812,
+        "bodyTextChars": 1757,
+        "bodyTextStart": "方 有方大健康 YO-FANG HEALTH 首页 关于有方 门店展示 集团资讯 能力与产品 社会责任 招商加盟 联系我们 YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的 产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招 招商期 01了解项目 店 建店期 02落地开业 营 运营期 03持续经营 数 数字化入口 01清晰视图 方 服务方式 一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。 BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA 谷小推 以舒适、专业的服务体验为核心，面",
+        "counts": {
+          "dialogs": 0,
+          "popovers": 0,
+          "canvases": 0,
+          "videos": 0,
+          "buttons": 7,
+          "forms": 0
+        },
+        "htmlHash": "-553032030",
+        "htmlLength": 10513
+      },
+      "changed": true,
+      "screenshot": "screenshots/22-click-SCROLL-be78173a95.png"
+    }
+  ],
+  "network": [],
+  "consoleErrors": [],
+  "findings": [
+    "28 visible interactive candidates discovered",
+    "0 visible canvas targets discovered",
+    "12/22 actions changed DOM, URL, scroll, or visible overlay counts"
+  ]
+}

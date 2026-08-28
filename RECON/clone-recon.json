@@ -1,0 +1,1908 @@
+{
+  "label": "clone",
+  "url": "http://127.0.0.1:8123/代码/index.html",
+  "capturedAt": "2026-08-10T10:55:31.549Z",
+  "console": {
+    "errors": [],
+    "warnings": [],
+    "pageErrors": []
+  },
+  "captures": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "screenshots/clone-1440.png",
+      "signals": {
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "lang": "zh-CN",
+        "bodyTextChars": 1755,
+        "scrollHeight": 7913,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "h1": [
+          "专注大健康消费领域的产业运营与投资孵化"
+        ],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "专注大健康消费领域的产业运营与投资孵化"
+          },
+          {
+            "tag": "h2",
+            "text": "让健康有方，成为生活习惯"
+          },
+          {
+            "tag": "h2",
+            "text": "选择适合你的品牌与门店方向"
+          },
+          {
+            "tag": "h3",
+            "text": "谷小推"
+          },
+          {
+            "tag": "h3",
+            "text": "艾小晚"
+          },
+          {
+            "tag": "h3",
+            "text": "足康树"
+          },
+          {
+            "tag": "h3",
+            "text": "恒青树"
+          },
+          {
+            "tag": "h2",
+            "text": "把门店经营情况，放在一个清晰的视图里。"
+          },
+          {
+            "tag": "h2",
+            "text": "从了解项目，到正式开业"
+          },
+          {
+            "tag": "h3",
+            "text": "了解项目"
+          },
+          {
+            "tag": "h3",
+            "text": "项目评估"
+          },
+          {
+            "tag": "h3",
+            "text": "门店落地"
+          },
+          {
+            "tag": "h3",
+            "text": "持续经营"
+          },
+          {
+            "tag": "h2",
+            "text": "把好体验，落到每一间门店"
+          },
+          {
+            "tag": "h2",
+            "text": "先把常见问题说清楚"
+          }
+        ],
+        "metaDescription": "有方大健康围绕招商、建店与运营，为大健康门店经营者提供品牌了解、项目沟通、门店管理与持续经营支持。",
+        "counts": {
+          "links": 24,
+          "images": 11,
+          "video": 0,
+          "canvas": 0,
+          "sections": 19,
+          "forms": 0,
+          "buttons": 7,
+          "inputs": 0,
+          "interactive": 31,
+          "scripts": 1,
+          "stylesheets": 1
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [
+          "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/js/site.js"
+        ],
+        "stylesheets": [
+          "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/style.css"
+        ],
+        "sections": [
+          {
+            "tag": "header",
+            "id": "top",
+            "className": "site-header",
+            "text": "方 有方大健康YO-FANG HEALTH 首页关于有方门店展示集团资讯能力与产品社会责任招商加盟联系我们",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 80
+            },
+            "style": {
+              "display": "block",
+              "position": "fixed",
+              "backgroundColor": "rgba(255, 255, 255, 0.97)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "nav",
+            "id": "",
+            "className": "site-nav",
+            "text": "首页关于有方门店展示集团资讯能力与产品社会责任招商加盟联系我们",
+            "rect": {
+              "x": 599,
+              "y": 0,
+              "width": 769,
+              "height": 80
+            },
+            "style": {
+              "display": "flex",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "main",
+            "id": "",
+            "className": "",
+            "text": "YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招招商期01了解项目 ",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 7396
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "className": "home-hero",
+            "text": "YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL",
+            "rect": {
+              "x": 0,
+              "y": 80,
+              "width": 1440,
+              "height": 734
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(54, 40, 29)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "intro",
+            "className": "section intro",
+            "text": "ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招招商期01了解项目 店建店期02落地开业 营运营期03持续经营 数数字化入口01清晰视图 方服务方式一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。",
+            "rect": {
+              "x": 0,
+              "y": 814,
+              "width": 1440,
+              "height": 664
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "brands",
+            "className": "section section--soft",
+            "text": "BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA谷小推以舒适、专业的服务体验为核心，面向社区与商圈场景，帮助经营者理解门店定位和建店路径。查看品牌方向 家门口的智慧艾灸调理小馆艾小晚以温和、清晰的消费场景，连接门店体验、服务交付和运营支持，让健康服务更容易被理解。查看品牌方向 一家人想去的足疗修脚店足康树聚焦日常足部护理与放松体验，适合用清晰的门店空间和服务流程建立熟悉感。查看",
+            "rect": {
+              "x": 0,
+              "y": 1478,
+              "width": 1440,
+              "height": 1920
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "新中式 SPA谷小推以舒适、专业的服务体验为核心，面向社区与商圈场景，帮助经营者理解门店定位和建店路径。查看品牌方向",
+            "rect": {
+              "x": 72,
+              "y": 1817,
+              "width": 624,
+              "height": 670
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "家门口的智慧艾灸调理小馆艾小晚以温和、清晰的消费场景，连接门店体验、服务交付和运营支持，让健康服务更容易被理解。查看品牌方向",
+            "rect": {
+              "x": 744,
+              "y": 1817,
+              "width": 624,
+              "height": 670
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "一家人想去的足疗修脚店足康树聚焦日常足部护理与放松体验，适合用清晰的门店空间和服务流程建立熟悉感。查看品牌方向",
+            "rect": {
+              "x": 72,
+              "y": 2535,
+              "width": 624,
+              "height": 670
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "新银龄社区生活俱乐部恒青树围绕社区长者和家庭健康服务，提供从空间表达，到服务协同和运营入口的完整视角。查看品牌方向",
+            "rect": {
+              "x": 744,
+              "y": 2535,
+              "width": 624,
+              "height": 670
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "capability",
+            "className": "section",
+            "text": "收款开户、门店资料和经营入口，按阶段清晰展开。 DIGITAL CAPABILITY 把门店经营情况，放在一个清晰的视图里。 谷有方小程序围绕加盟商的实际经营场景，提供门店经营概览、我的门店、门店状态、收款记录、付款记录和相关资料管理入口。 招商期：了解品牌、提交意向，完成项目沟通与经营评估建店期：跟踪选址、资料、付款和开业筹备关键进展运营期：查看授权门店经营信息，持续获得经营协同 进入谷有方小程序查看能力说明",
+            "rect": {
+              "x": 0,
+              "y": 3398,
+              "width": 1440,
+              "height": 880
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "process",
+            "className": "section section--soft",
+            "text": "JOINING PROCESS从了解项目，到正式开业官网先展示概念流程，具体节点、费用、时长、城市政策和合同规则以业务确认版本为准。 了解项目了解品牌、门店方向与合作方式，确认下一步咨询入口。项目评估围绕品牌、城市、店型与经营者情况，完成项目沟通。门店落地推进选址评估、设计装修、设备物料与开业筹备。持续经营开业后通过官方入口获得经营协同和阶段性支持。",
+            "rect": {
+              "x": 0,
+              "y": 4278,
+              "width": 1440,
+              "height": 671
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "了解项目了解品牌、门店方向与合作方式，确认下一步咨询入口。",
+            "rect": {
+              "x": 72,
+              "y": 4617,
+              "width": 311,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "项目评估围绕品牌、城市、店型与经营者情况，完成项目沟通。",
+            "rect": {
+              "x": 401,
+              "y": 4617,
+              "width": 311,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "门店落地推进选址评估、设计装修、设备物料与开业筹备。",
+            "rect": {
+              "x": 729,
+              "y": 4617,
+              "width": 311,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "持续经营开业后通过官方入口获得经营协同和阶段性支持。",
+            "rect": {
+              "x": 1058,
+              "y": 4617,
+              "width": 311,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "stores",
+            "className": "section",
+            "text": "STORE EXPERIENCE把好体验，落到每一间门店门店效果图来自集团原始装修方案，用于展示空间方向，不代表最终门店交付承诺。 乐光里杭州大悦城店 · 空间效果图谷小推湘潭华隆步步高店 · 效果方案艾小晚杭州塘萍路旗舰店 · 效果方案",
+            "rect": {
+              "x": 0,
+              "y": 4949,
+              "width": 1440,
+              "height": 1593
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "className": "section section--soft",
+            "text": "FAQ先把常见问题说清楚具体政策和费用将在正式资料确认后补充。 加盟需要什么条件？官网首期展示项目了解和咨询入口，具体加盟条件、合作主体和材料要求待业务确认。如何选择适合自己的品牌？可先从服务方向、城市场景、门店空间和经营者能力四个维度了解品牌，再进入官方咨询流程。总部是否提供选址、设计、装修和培训支持？当前材料将选址评估、空间规划、装修协同、培训与开业筹备列为官网能力方向，具体交付内容和责任边界待确认。如何进入谷有方小程序？可扫描页脚小程序码进入；正式上线前请以集团发布的二",
+            "rect": {
+              "x": 0,
+              "y": 6542,
+              "width": 1440,
+              "height": 854
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "footer",
+            "id": "",
+            "className": "site-footer",
+            "text": "OFFICIAL CONTACT 招商咨询官方顾问入口待确认 品牌合作欢迎与有方大健康联系 小程序入口进入谷有方小程序 业务阶段招商 · 建店 · 运营 总部地址、官方 400 电话及对外邮箱以最终确认信息为准。官网首期提供小程序入口和官方咨询预留位。 MINI PROGRAM 谷有方小程序 数字化入口 © 2026 有方大健康 · 官网复刻版。内容与招商政策以正式确认材料为准。",
+            "rect": {
+              "x": 0,
+              "y": 7396,
+              "width": 1440,
+              "height": 517
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 214, 0)",
+              "color": "rgb(46, 39, 11)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          }
+        ],
+        "cssVariables": [
+          [
+            "--ink",
+            "#272727"
+          ],
+          [
+            "--muted",
+            "#777"
+          ],
+          [
+            "--subtle",
+            "#a2a2a2"
+          ],
+          [
+            "--line",
+            "#e8e8e8"
+          ],
+          [
+            "--paper",
+            "#fff"
+          ],
+          [
+            "--surface",
+            "#f5f5f3"
+          ],
+          [
+            "--surface-warm",
+            "#faf8f2"
+          ],
+          [
+            "--red",
+            "#c91522"
+          ],
+          [
+            "--red-soft",
+            "#e7332d"
+          ],
+          [
+            "--orange",
+            "#f47c18"
+          ],
+          [
+            "--gold",
+            "#ffd600"
+          ],
+          [
+            "--green",
+            "#3f7755"
+          ],
+          [
+            "--blue",
+            "#2d75c8"
+          ],
+          [
+            "--container",
+            "min(90vw, 1440px)"
+          ],
+          [
+            "--shadow",
+            "0 20px 60px rgba(35, 25, 10, .08)"
+          ],
+          [
+            "--radius",
+            "28px"
+          ]
+        ],
+        "fonts": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-gu-xiaotui.jpg",
+            "alt": "谷小推新中式 SPA 门店效果图",
+            "width": 1600,
+            "height": 1186
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-ai-xiaowan.jpg",
+            "alt": "艾小晚艾灸推拿门店效果图",
+            "width": 1600,
+            "height": 1113
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-zu-kang-shu.jpg",
+            "alt": "足康树修脚门店效果图",
+            "width": 1600,
+            "height": 862
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-heng-qing-shu.jpg",
+            "alt": "恒青树社区生活服务门店效果图",
+            "width": 1600,
+            "height": 1445
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/digital-opening.png",
+            "alt": "谷有方小程序收款开户界面",
+            "width": 332,
+            "height": 720
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-le-guangli-source.png",
+            "alt": "乐光里门店效果图",
+            "width": 1200,
+            "height": 708
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-gu-xiaotui-source.png",
+            "alt": "谷小推门店效果图",
+            "width": 1200,
+            "height": 675
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-ai-xiaowan-source.png",
+            "alt": "艾小晚门店效果图",
+            "width": 1200,
+            "height": 751
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/qr-xiaochengxu.jpg",
+            "alt": "谷有方小程序码",
+            "width": 1600,
+            "height": 1600
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/digital-opening.png",
+            "alt": "谷有方收款开户界面",
+            "width": 332,
+            "height": 720
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/hero-group.jpg",
+            "alt": "有方大健康品牌影像预览",
+            "width": 1600,
+            "height": 900
+          }
+        ],
+        "canvases": []
+      }
+    },
+    {
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "screenshot": "screenshots/clone-768.png",
+      "signals": {
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "lang": "zh-CN",
+        "bodyTextChars": 1740,
+        "scrollHeight": 9749,
+        "viewport": {
+          "width": 768,
+          "height": 900
+        },
+        "h1": [
+          "专注大健康消费领域的产业运营与投资孵化"
+        ],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "专注大健康消费领域的产业运营与投资孵化"
+          },
+          {
+            "tag": "h2",
+            "text": "让健康有方，成为生活习惯"
+          },
+          {
+            "tag": "h2",
+            "text": "选择适合你的品牌与门店方向"
+          },
+          {
+            "tag": "h3",
+            "text": "谷小推"
+          },
+          {
+            "tag": "h3",
+            "text": "艾小晚"
+          },
+          {
+            "tag": "h3",
+            "text": "足康树"
+          },
+          {
+            "tag": "h3",
+            "text": "恒青树"
+          },
+          {
+            "tag": "h2",
+            "text": "把门店经营情况，放在一个清晰的视图里。"
+          },
+          {
+            "tag": "h2",
+            "text": "从了解项目，到正式开业"
+          },
+          {
+            "tag": "h3",
+            "text": "了解项目"
+          },
+          {
+            "tag": "h3",
+            "text": "项目评估"
+          },
+          {
+            "tag": "h3",
+            "text": "门店落地"
+          },
+          {
+            "tag": "h3",
+            "text": "持续经营"
+          },
+          {
+            "tag": "h2",
+            "text": "把好体验，落到每一间门店"
+          },
+          {
+            "tag": "h2",
+            "text": "先把常见问题说清楚"
+          }
+        ],
+        "metaDescription": "有方大健康围绕招商、建店与运营，为大健康门店经营者提供品牌了解、项目沟通、门店管理与持续经营支持。",
+        "counts": {
+          "links": 24,
+          "images": 11,
+          "video": 0,
+          "canvas": 0,
+          "sections": 19,
+          "forms": 0,
+          "buttons": 7,
+          "inputs": 0,
+          "interactive": 31,
+          "scripts": 1,
+          "stylesheets": 1
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [
+          "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/js/site.js"
+        ],
+        "stylesheets": [
+          "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/style.css"
+        ],
+        "sections": [
+          {
+            "tag": "header",
+            "id": "top",
+            "className": "site-header",
+            "text": "方 有方大健康YO-FANG HEALTH 首页关于有方门店展示集团资讯能力与产品社会责任招商加盟联系我们",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 768,
+              "height": 64
+            },
+            "style": {
+              "display": "block",
+              "position": "fixed",
+              "backgroundColor": "rgba(255, 255, 255, 0.97)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "nav",
+            "id": "",
+            "className": "site-nav",
+            "text": "首页关于有方门店展示集团资讯能力与产品社会责任招商加盟联系我们",
+            "rect": {
+              "x": 768,
+              "y": 64,
+              "width": 768,
+              "height": 836
+            },
+            "style": {
+              "display": "block",
+              "position": "fixed",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "main",
+            "id": "",
+            "className": "",
+            "text": "YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招招商期01了解项目 ",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 768,
+              "height": 8971
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "className": "home-hero",
+            "text": "YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL",
+            "rect": {
+              "x": 0,
+              "y": 64,
+              "width": 768,
+              "height": 660
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(54, 40, 29)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "intro",
+            "className": "section intro",
+            "text": "ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招招商期01了解项目 店建店期02落地开业 营运营期03持续经营 数数字化入口01清晰视图 方服务方式一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。",
+            "rect": {
+              "x": 0,
+              "y": 724,
+              "width": 768,
+              "height": 872
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "brands",
+            "className": "section section--soft",
+            "text": "BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA谷小推以舒适、专业的服务体验为核心，面向社区与商圈场景，帮助经营者理解门店定位和建店路径。查看品牌方向 家门口的智慧艾灸调理小馆艾小晚以温和、清晰的消费场景，连接门店体验、服务交付和运营支持，让健康服务更容易被理解。查看品牌方向 一家人想去的足疗修脚店足康树聚焦日常足部护理与放松体验，适合用清晰的门店空间和服务流程建立熟悉感。查看",
+            "rect": {
+              "x": 0,
+              "y": 1596,
+              "width": 768,
+              "height": 2883
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "新中式 SPA谷小推以舒适、专业的服务体验为核心，面向社区与商圈场景，帮助经营者理解门店定位和建店路径。查看品牌方向",
+            "rect": {
+              "x": 38,
+              "y": 1857,
+              "width": 691,
+              "height": 580
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "家门口的智慧艾灸调理小馆艾小晚以温和、清晰的消费场景，连接门店体验、服务交付和运营支持，让健康服务更容易被理解。查看品牌方向",
+            "rect": {
+              "x": 38,
+              "y": 2485,
+              "width": 691,
+              "height": 580
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "一家人想去的足疗修脚店足康树聚焦日常足部护理与放松体验，适合用清晰的门店空间和服务流程建立熟悉感。查看品牌方向",
+            "rect": {
+              "x": 38,
+              "y": 3113,
+              "width": 691,
+              "height": 580
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "新银龄社区生活俱乐部恒青树围绕社区长者和家庭健康服务，提供从空间表达，到服务协同和运营入口的完整视角。查看品牌方向",
+            "rect": {
+              "x": 38,
+              "y": 3741,
+              "width": 691,
+              "height": 580
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "capability",
+            "className": "section",
+            "text": "收款开户、门店资料和经营入口，按阶段清晰展开。 DIGITAL CAPABILITY 把门店经营情况，放在一个清晰的视图里。 谷有方小程序围绕加盟商的实际经营场景，提供门店经营概览、我的门店、门店状态、收款记录、付款记录和相关资料管理入口。 招商期：了解品牌、提交意向，完成项目沟通与经营评估建店期：跟踪选址、资料、付款和开业筹备关键进展运营期：查看授权门店经营信息，持续获得经营协同 进入谷有方小程序查看能力说明",
+            "rect": {
+              "x": 0,
+              "y": 4480,
+              "width": 768,
+              "height": 1299
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "process",
+            "className": "section section--soft",
+            "text": "JOINING PROCESS从了解项目，到正式开业官网先展示概念流程，具体节点、费用、时长、城市政策和合同规则以业务确认版本为准。 了解项目了解品牌、门店方向与合作方式，确认下一步咨询入口。项目评估围绕品牌、城市、店型与经营者情况，完成项目沟通。门店落地推进选址评估、设计装修、设备物料与开业筹备。持续经营开业后通过官方入口获得经营协同和阶段性支持。",
+            "rect": {
+              "x": 0,
+              "y": 5779,
+              "width": 768,
+              "height": 796
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "了解项目了解品牌、门店方向与合作方式，确认下一步咨询入口。",
+            "rect": {
+              "x": 38,
+              "y": 6039,
+              "width": 337,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "项目评估围绕品牌、城市、店型与经营者情况，完成项目沟通。",
+            "rect": {
+              "x": 393,
+              "y": 6039,
+              "width": 337,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "门店落地推进选址评估、设计装修、设备物料与开业筹备。",
+            "rect": {
+              "x": 38,
+              "y": 6277,
+              "width": 337,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "持续经营开业后通过官方入口获得经营协同和阶段性支持。",
+            "rect": {
+              "x": 393,
+              "y": 6277,
+              "width": 337,
+              "height": 220
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "stores",
+            "className": "section",
+            "text": "STORE EXPERIENCE把好体验，落到每一间门店门店效果图来自集团原始装修方案，用于展示空间方向，不代表最终门店交付承诺。 乐光里杭州大悦城店 · 空间效果图谷小推湘潭华隆步步高店 · 效果方案艾小晚杭州塘萍路旗舰店 · 效果方案",
+            "rect": {
+              "x": 0,
+              "y": 6575,
+              "width": 768,
+              "height": 1655
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "className": "section section--soft",
+            "text": "FAQ先把常见问题说清楚具体政策和费用将在正式资料确认后补充。 加盟需要什么条件？官网首期展示项目了解和咨询入口，具体加盟条件、合作主体和材料要求待业务确认。如何选择适合自己的品牌？可先从服务方向、城市场景、门店空间和经营者能力四个维度了解品牌，再进入官方咨询流程。总部是否提供选址、设计、装修和培训支持？当前材料将选址评估、空间规划、装修协同、培训与开业筹备列为官网能力方向，具体交付内容和责任边界待确认。如何进入谷有方小程序？可扫描页脚小程序码进入；正式上线前请以集团发布的二",
+            "rect": {
+              "x": 0,
+              "y": 8230,
+              "width": 768,
+              "height": 742
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "footer",
+            "id": "",
+            "className": "site-footer",
+            "text": "OFFICIAL CONTACT 招商咨询官方顾问入口待确认 品牌合作欢迎与有方大健康联系 小程序入口进入谷有方小程序 业务阶段招商 · 建店 · 运营 总部地址、官方 400 电话及对外邮箱以最终确认信息为准。官网首期提供小程序入口和官方咨询预留位。 MINI PROGRAM 谷有方小程序 数字化入口 © 2026 有方大健康 · 官网复刻版。内容与招商政策以正式确认材料为准。",
+            "rect": {
+              "x": 0,
+              "y": 8971,
+              "width": 768,
+              "height": 777
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 214, 0)",
+              "color": "rgb(46, 39, 11)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          }
+        ],
+        "cssVariables": [
+          [
+            "--ink",
+            "#272727"
+          ],
+          [
+            "--muted",
+            "#777"
+          ],
+          [
+            "--subtle",
+            "#a2a2a2"
+          ],
+          [
+            "--line",
+            "#e8e8e8"
+          ],
+          [
+            "--paper",
+            "#fff"
+          ],
+          [
+            "--surface",
+            "#f5f5f3"
+          ],
+          [
+            "--surface-warm",
+            "#faf8f2"
+          ],
+          [
+            "--red",
+            "#c91522"
+          ],
+          [
+            "--red-soft",
+            "#e7332d"
+          ],
+          [
+            "--orange",
+            "#f47c18"
+          ],
+          [
+            "--gold",
+            "#ffd600"
+          ],
+          [
+            "--green",
+            "#3f7755"
+          ],
+          [
+            "--blue",
+            "#2d75c8"
+          ],
+          [
+            "--container",
+            "min(90vw, 1440px)"
+          ],
+          [
+            "--shadow",
+            "0 20px 60px rgba(35, 25, 10, .08)"
+          ],
+          [
+            "--radius",
+            "28px"
+          ]
+        ],
+        "fonts": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-gu-xiaotui.jpg",
+            "alt": "谷小推新中式 SPA 门店效果图",
+            "width": 1600,
+            "height": 1186
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-ai-xiaowan.jpg",
+            "alt": "艾小晚艾灸推拿门店效果图",
+            "width": 1600,
+            "height": 1113
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-zu-kang-shu.jpg",
+            "alt": "足康树修脚门店效果图",
+            "width": 1600,
+            "height": 862
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-heng-qing-shu.jpg",
+            "alt": "恒青树社区生活服务门店效果图",
+            "width": 1600,
+            "height": 1445
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/digital-opening.png",
+            "alt": "谷有方小程序收款开户界面",
+            "width": 332,
+            "height": 720
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-le-guangli-source.png",
+            "alt": "乐光里门店效果图",
+            "width": 1200,
+            "height": 708
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-gu-xiaotui-source.png",
+            "alt": "谷小推门店效果图",
+            "width": 1200,
+            "height": 675
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-ai-xiaowan-source.png",
+            "alt": "艾小晚门店效果图",
+            "width": 1200,
+            "height": 751
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/qr-xiaochengxu.jpg",
+            "alt": "谷有方小程序码",
+            "width": 1600,
+            "height": 1600
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/digital-opening.png",
+            "alt": "谷有方收款开户界面",
+            "width": 332,
+            "height": 720
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/hero-group.jpg",
+            "alt": "有方大健康品牌影像预览",
+            "width": 1600,
+            "height": 900
+          }
+        ],
+        "canvases": []
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 900
+      },
+      "screenshot": "screenshots/clone-390.png",
+      "signals": {
+        "href": "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/index.html",
+        "title": "有方大健康｜让加盟、建店与经营，每一步都有清晰的支持",
+        "lang": "zh-CN",
+        "bodyTextChars": 1740,
+        "scrollHeight": 10353,
+        "viewport": {
+          "width": 390,
+          "height": 900
+        },
+        "h1": [
+          "专注大健康消费领域的产业运营与投资孵化"
+        ],
+        "headings": [
+          {
+            "tag": "h1",
+            "text": "专注大健康消费领域的产业运营与投资孵化"
+          },
+          {
+            "tag": "h2",
+            "text": "让健康有方，成为生活习惯"
+          },
+          {
+            "tag": "h2",
+            "text": "选择适合你的品牌与门店方向"
+          },
+          {
+            "tag": "h3",
+            "text": "谷小推"
+          },
+          {
+            "tag": "h3",
+            "text": "艾小晚"
+          },
+          {
+            "tag": "h3",
+            "text": "足康树"
+          },
+          {
+            "tag": "h3",
+            "text": "恒青树"
+          },
+          {
+            "tag": "h2",
+            "text": "把门店经营情况，放在一个清晰的视图里。"
+          },
+          {
+            "tag": "h2",
+            "text": "从了解项目，到正式开业"
+          },
+          {
+            "tag": "h3",
+            "text": "了解项目"
+          },
+          {
+            "tag": "h3",
+            "text": "项目评估"
+          },
+          {
+            "tag": "h3",
+            "text": "门店落地"
+          },
+          {
+            "tag": "h3",
+            "text": "持续经营"
+          },
+          {
+            "tag": "h2",
+            "text": "把好体验，落到每一间门店"
+          },
+          {
+            "tag": "h2",
+            "text": "先把常见问题说清楚"
+          }
+        ],
+        "metaDescription": "有方大健康围绕招商、建店与运营，为大健康门店经营者提供品牌了解、项目沟通、门店管理与持续经营支持。",
+        "counts": {
+          "links": 24,
+          "images": 11,
+          "video": 0,
+          "canvas": 0,
+          "sections": 19,
+          "forms": 0,
+          "buttons": 7,
+          "inputs": 0,
+          "interactive": 31,
+          "scripts": 1,
+          "stylesheets": 1
+        },
+        "frameworks": {
+          "react": false,
+          "next": false,
+          "vue": false,
+          "nuxt": false,
+          "svelte": false,
+          "astro": false,
+          "three": false,
+          "gsap": false,
+          "lenis": false
+        },
+        "scripts": [
+          "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/js/site.js"
+        ],
+        "stylesheets": [
+          "http://127.0.0.1:8123/%E4%BB%A3%E7%A0%81/style.css"
+        ],
+        "sections": [
+          {
+            "tag": "header",
+            "id": "top",
+            "className": "site-header",
+            "text": "方 有方大健康YO-FANG HEALTH 首页关于有方门店展示集团资讯能力与产品社会责任招商加盟联系我们",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 64
+            },
+            "style": {
+              "display": "block",
+              "position": "fixed",
+              "backgroundColor": "rgba(255, 255, 255, 0.97)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "nav",
+            "id": "",
+            "className": "site-nav",
+            "text": "首页关于有方门店展示集团资讯能力与产品社会责任招商加盟联系我们",
+            "rect": {
+              "x": 390,
+              "y": 64,
+              "width": 390,
+              "height": 836
+            },
+            "style": {
+              "display": "block",
+              "position": "fixed",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "main",
+            "id": "",
+            "className": "",
+            "text": "YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招招商期01了解项目 ",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 9459
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "className": "home-hero",
+            "text": "YO-FANG HEALTH · HEALTH CONSUMPTION 专注大健康消费领域的产业运营与投资孵化 让加盟、建店与经营，每一步都有清晰的支持。以品牌、门店与数字化能力，陪伴经营者把一个想法落成一间好店。 了解加盟 查看数字化能力 SCROLL",
+            "rect": {
+              "x": 0,
+              "y": 64,
+              "width": 390,
+              "height": 668
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(54, 40, 29)",
+              "color": "rgb(255, 255, 255)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "intro",
+            "className": "section intro",
+            "text": "ABOUT YO-FANG 让健康有方，成为生活习惯 有方大健康面向大健康消费场景，围绕品牌孵化、门店建设、经营协同与数字化能力，为意向经营者和加盟商提供从项目了解，到建店、开业和持续经营的清晰支持。 招招商期01了解项目 店建店期02落地开业 营运营期03持续经营 数数字化入口01清晰视图 方服务方式一体长期协同 页面信息来自当前官网材料初稿；费用、收益、开放城市、周期及承诺性服务以正式确认材料为准。",
+            "rect": {
+              "x": 0,
+              "y": 732,
+              "width": 390,
+              "height": 982
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "brands",
+            "className": "section section--soft",
+            "text": "BRAND PORTFOLIO 选择适合你的品牌与门店方向 从理疗、推拿、修脚到社区生活服务，先了解品牌，再判断适合自己的经营方向。 新中式 SPA谷小推以舒适、专业的服务体验为核心，面向社区与商圈场景，帮助经营者理解门店定位和建店路径。查看品牌方向 家门口的智慧艾灸调理小馆艾小晚以温和、清晰的消费场景，连接门店体验、服务交付和运营支持，让健康服务更容易被理解。查看品牌方向 一家人想去的足疗修脚店足康树聚焦日常足部护理与放松体验，适合用清晰的门店空间和服务流程建立熟悉感。查看",
+            "rect": {
+              "x": 0,
+              "y": 1714,
+              "width": 390,
+              "height": 2712
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "新中式 SPA谷小推以舒适、专业的服务体验为核心，面向社区与商圈场景，帮助经营者理解门店定位和建店路径。查看品牌方向",
+            "rect": {
+              "x": 20,
+              "y": 2034,
+              "width": 351,
+              "height": 540
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "家门口的智慧艾灸调理小馆艾小晚以温和、清晰的消费场景，连接门店体验、服务交付和运营支持，让健康服务更容易被理解。查看品牌方向",
+            "rect": {
+              "x": 20,
+              "y": 2598,
+              "width": 351,
+              "height": 540
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "一家人想去的足疗修脚店足康树聚焦日常足部护理与放松体验，适合用清晰的门店空间和服务流程建立熟悉感。查看品牌方向",
+            "rect": {
+              "x": 20,
+              "y": 3162,
+              "width": 351,
+              "height": 540
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "brand-card",
+            "text": "新银龄社区生活俱乐部恒青树围绕社区长者和家庭健康服务，提供从空间表达，到服务协同和运营入口的完整视角。查看品牌方向",
+            "rect": {
+              "x": 20,
+              "y": 3726,
+              "width": 351,
+              "height": 540
+            },
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "backgroundColor": "rgb(243, 243, 241)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "capability",
+            "className": "section",
+            "text": "收款开户、门店资料和经营入口，按阶段清晰展开。 DIGITAL CAPABILITY 把门店经营情况，放在一个清晰的视图里。 谷有方小程序围绕加盟商的实际经营场景，提供门店经营概览、我的门店、门店状态、收款记录、付款记录和相关资料管理入口。 招商期：了解品牌、提交意向，完成项目沟通与经营评估建店期：跟踪选址、资料、付款和开业筹备关键进展运营期：查看授权门店经营信息，持续获得经营协同 进入谷有方小程序查看能力说明",
+            "rect": {
+              "x": 0,
+              "y": 4425,
+              "width": 390,
+              "height": 1470
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "process",
+            "className": "section section--soft",
+            "text": "JOINING PROCESS从了解项目，到正式开业官网先展示概念流程，具体节点、费用、时长、城市政策和合同规则以业务确认版本为准。 了解项目了解品牌、门店方向与合作方式，确认下一步咨询入口。项目评估围绕品牌、城市、店型与经营者情况，完成项目沟通。门店落地推进选址评估、设计装修、设备物料与开业筹备。持续经营开业后通过官方入口获得经营协同和阶段性支持。",
+            "rect": {
+              "x": 0,
+              "y": 5895,
+              "width": 390,
+              "height": 1265
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "了解项目了解品牌、门店方向与合作方式，确认下一步咨询入口。",
+            "rect": {
+              "x": 20,
+              "y": 6180,
+              "width": 351,
+              "height": 212
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "项目评估围绕品牌、城市、店型与经营者情况，完成项目沟通。",
+            "rect": {
+              "x": 20,
+              "y": 6410,
+              "width": 351,
+              "height": 212
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "门店落地推进选址评估、设计装修、设备物料与开业筹备。",
+            "rect": {
+              "x": 20,
+              "y": 6640,
+              "width": 351,
+              "height": 212
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "article",
+            "id": "",
+            "className": "process-item",
+            "text": "持续经营开业后通过官方入口获得经营协同和阶段性支持。",
+            "rect": {
+              "x": 20,
+              "y": 6870,
+              "width": 351,
+              "height": 212
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 255, 255)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "stores",
+            "className": "section",
+            "text": "STORE EXPERIENCE把好体验，落到每一间门店门店效果图来自集团原始装修方案，用于展示空间方向，不代表最终门店交付承诺。 乐光里杭州大悦城店 · 空间效果图谷小推湘潭华隆步步高店 · 效果方案艾小晚杭州塘萍路旗舰店 · 效果方案",
+            "rect": {
+              "x": 0,
+              "y": 7160,
+              "width": 390,
+              "height": 1523
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgba(0, 0, 0, 0)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "section",
+            "id": "",
+            "className": "section section--soft",
+            "text": "FAQ先把常见问题说清楚具体政策和费用将在正式资料确认后补充。 加盟需要什么条件？官网首期展示项目了解和咨询入口，具体加盟条件、合作主体和材料要求待业务确认。如何选择适合自己的品牌？可先从服务方向、城市场景、门店空间和经营者能力四个维度了解品牌，再进入官方咨询流程。总部是否提供选址、设计、装修和培训支持？当前材料将选址评估、空间规划、装修协同、培训与开业筹备列为官网能力方向，具体交付内容和责任边界待确认。如何进入谷有方小程序？可扫描页脚小程序码进入；正式上线前请以集团发布的二",
+            "rect": {
+              "x": 0,
+              "y": 8683,
+              "width": 390,
+              "height": 776
+            },
+            "style": {
+              "display": "block",
+              "position": "static",
+              "backgroundColor": "rgb(250, 248, 242)",
+              "color": "rgb(39, 39, 39)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          },
+          {
+            "tag": "footer",
+            "id": "",
+            "className": "site-footer",
+            "text": "OFFICIAL CONTACT 招商咨询官方顾问入口待确认 品牌合作欢迎与有方大健康联系 小程序入口进入谷有方小程序 业务阶段招商 · 建店 · 运营 总部地址、官方 400 电话及对外邮箱以最终确认信息为准。官网首期提供小程序入口和官方咨询预留位。 MINI PROGRAM 谷有方小程序 数字化入口 © 2026 有方大健康 · 官网复刻版。内容与招商政策以正式确认材料为准。",
+            "rect": {
+              "x": 0,
+              "y": 9459,
+              "width": 390,
+              "height": 894
+            },
+            "style": {
+              "display": "block",
+              "position": "relative",
+              "backgroundColor": "rgb(255, 214, 0)",
+              "color": "rgb(46, 39, 11)",
+              "fontFamily": "\"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Arial, sans-serif",
+              "fontSize": "16px"
+            }
+          }
+        ],
+        "cssVariables": [
+          [
+            "--ink",
+            "#272727"
+          ],
+          [
+            "--muted",
+            "#777"
+          ],
+          [
+            "--subtle",
+            "#a2a2a2"
+          ],
+          [
+            "--line",
+            "#e8e8e8"
+          ],
+          [
+            "--paper",
+            "#fff"
+          ],
+          [
+            "--surface",
+            "#f5f5f3"
+          ],
+          [
+            "--surface-warm",
+            "#faf8f2"
+          ],
+          [
+            "--red",
+            "#c91522"
+          ],
+          [
+            "--red-soft",
+            "#e7332d"
+          ],
+          [
+            "--orange",
+            "#f47c18"
+          ],
+          [
+            "--gold",
+            "#ffd600"
+          ],
+          [
+            "--green",
+            "#3f7755"
+          ],
+          [
+            "--blue",
+            "#2d75c8"
+          ],
+          [
+            "--container",
+            "min(90vw, 1440px)"
+          ],
+          [
+            "--shadow",
+            "0 20px 60px rgba(35, 25, 10, .08)"
+          ],
+          [
+            "--radius",
+            "28px"
+          ]
+        ],
+        "fonts": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-gu-xiaotui.jpg",
+            "alt": "谷小推新中式 SPA 门店效果图",
+            "width": 1600,
+            "height": 1186
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-ai-xiaowan.jpg",
+            "alt": "艾小晚艾灸推拿门店效果图",
+            "width": 1600,
+            "height": 1113
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-zu-kang-shu.jpg",
+            "alt": "足康树修脚门店效果图",
+            "width": 1600,
+            "height": 862
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/brand-heng-qing-shu.jpg",
+            "alt": "恒青树社区生活服务门店效果图",
+            "width": 1600,
+            "height": 1445
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/digital-opening.png",
+            "alt": "谷有方小程序收款开户界面",
+            "width": 332,
+            "height": 720
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-le-guangli-source.png",
+            "alt": "乐光里门店效果图",
+            "width": 1200,
+            "height": 708
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-gu-xiaotui-source.png",
+            "alt": "谷小推门店效果图",
+            "width": 1200,
+            "height": 675
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/store-ai-xiaowan-source.png",
+            "alt": "艾小晚门店效果图",
+            "width": 1200,
+            "height": 751
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/qr-xiaochengxu.jpg",
+            "alt": "谷有方小程序码",
+            "width": 1600,
+            "height": 1600
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/digital-opening.png",
+            "alt": "谷有方收款开户界面",
+            "width": 332,
+            "height": 720
+          },
+          {
+            "src": "http://127.0.0.1:8123/%E7%B4%A0%E6%9D%90/hero-group.jpg",
+            "alt": "有方大健康品牌影像预览",
+            "width": 1600,
+            "height": 900
+          }
+        ],
+        "canvases": []
+      }
+    }
+  ]
+}
