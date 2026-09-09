@@ -68,6 +68,24 @@ function renderBrandDetail() {
     `).join('');
     if (typeof setupAccordions === 'function') setupAccordions();
   }
+  // 品牌视频（SITE_DATA.videos 注册表，brands[].video 为 key）：无视频时区块保持隐藏
+  const videoSection = document.querySelector('[data-brand-video]');
+  if (videoSection && brand.video) {
+    const record = SITE_DATA.videos?.[brand.video];
+    const body = document.querySelector('[data-brand-video-body]');
+    if (record && body) {
+      const srcUrl = `${brandAssetRoot}素材/${record.src}`;
+      const posterUrl = record.poster ? `${brandAssetRoot}素材/${record.poster}` : '';
+      body.innerHTML = `
+        <figure class="video-block${record.vertical ? ' video-block--vertical' : ''}">
+          <video controls preload="none" poster="${posterUrl}" playsinline aria-label="${record.alt || record.title}">
+            <source src="${srcUrl}" type="video/mp4">
+          </video>
+          <figcaption class="media-caption">${record.title}</figcaption>
+        </figure>`;
+      videoSection.hidden = false;
+    }
+  }
   detailRoot.hidden = false;
   renderBrandForms(brand);
 }

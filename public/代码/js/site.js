@@ -19,6 +19,14 @@ function asset(id) {
   return assetLink(file);
 }
 function brandBySlug(slug) { return SITE_DATA.brands.find((brand) => brand.slug === slug); }
+// 素材注册表 alt：无障碍文案与注册表单一来源一致
+function assetAlt(id) { return SITE_DATA.assets[id]?.alt || ''; }
+// 视频注册表解析：key → { src, poster, title, alt }，路径经 assetLink 指向 素材/ 目录
+function videoData(key) {
+  const record = SITE_DATA.videos?.[key];
+  if (!record) { console.warn(`[videos] 未注册的视频 ID: ${key}`); return null; }
+  return { ...record, srcUrl: assetLink(record.src), posterUrl: record.poster ? assetLink(record.poster) : '' };
+}
 
 function renderHeader() {
   const holder = document.querySelector('#site-header');
@@ -92,7 +100,7 @@ function renderBrandSections() {
     if (!config) return;
     grid.innerHTML = SITE_DATA.brands.map((brand) => `
       <article class="${config.cls}">
-        <img class="brand-photo" src="${asset(brand.image)}" alt="${brand.name}品牌门店效果图">
+        <img class="brand-photo" src="${asset(brand.image)}" alt="${assetAlt(brand.image) || `${brand.name}品牌门店形象`}">
         <div class="brand-card-body">
           <span class="brand-logo-chip"><img src="${asset(brand.logo)}" alt="${brand.name}品牌 logo"></span>
           <span class="brand-tag">${brand[config.tag]}</span>
@@ -111,7 +119,7 @@ function renderBrandSections() {
   document.querySelectorAll('[data-brands-gallery]').forEach((gallery) => {
     gallery.innerHTML = SITE_DATA.brands.map((brand) => `
       <article class="gallery-card">
-        <div class="gallery-card-media"><img src="${asset(brand.image)}" alt="${brand.name}"><span class="gallery-brand-label">${brand.name}</span></div>
+        <div class="gallery-card-media"><img src="${asset(brand.image)}" alt="${assetAlt(brand.image) || brand.name}"><span class="gallery-brand-label">${brand.name}</span></div>
         <div class="gallery-card-body"><img class="gallery-logo" src="${asset(brand.logo)}" alt=""><h3>${brand.name}</h3><p>${brand.category} · ${brand.tagline}</p></div>
       </article>
     `).join('');
@@ -152,7 +160,8 @@ function renderProgramGrids() {
 }
 
 // 门店实拍二级页（mdzs/<slug>.html）：页面放骨架 + data-store-gallery="slug"，
-// 名称/定位/官方文案与照片清单统一读 SITE_DATA.storeGallery。
+// 名称/定位/官方文案与照片清单统一读 SITE_DATA.storeGallery；
+// 配置 vr 时追加「720° 全景看店」区块（外链 VR + 截帧预览）。
 function renderStoreGallery() {
   const holder = document.querySelector('[data-store-gallery]');
   if (!holder) return;
@@ -169,6 +178,48 @@ function renderStoreGallery() {
       <figcaption class="gallery-card-body"><p>${photo.caption}</p></figcaption>
     </figure>
   `).join('');
+  if (data.vr) renderStoreVR(data.vr, data.name);
+}
+
+// 720° 全景看店：外链 VR 主题页 + 三张截帧预览（点击新窗口打开全景）
+function renderStoreVR(vr, storeName) {
+  const holder = document.querySelector('[data-store-vr]');
+  if (!holder) return;
+  const shots = (vr.shots || []).map((shot) => `
+    <a class="vr-card" href="${vr.url}" target="_blank" rel="noopener">
+      <img src="${asset(shot.id || shot)}" alt="${storeName}720°全景预览">
+      <span class="vr-card-badge">720°</span>
+    </a>`).join('');
+  holder.innerHTML = `
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">VIRTUAL TOUR</p>
+        <h2 class="section-title">720° 全景看店</h2>
+        <p class="section-summary">拖动即可环视整间门店，先在线上把空间看清楚，再到店里体验。</p>
+      </div>
+      <div class="vr-grid">${shots}</div>
+      <div class="hero-actions" style="justify-content:center;margin-top:32px">
+        <a class="btn btn--orange" href="${vr.url}" target="_blank" rel="noopener">进入「${vr.label}」</a>
+      </div>
+    </div>`;
+  holder.hidden = false;
+}
+
+// 品牌视频块：页面放 <div data-video-block="key"></div>，由视频注册表渲染
+// （poster 海报帧 + controls，preload="none" 不预加载流量）。
+function renderVideoBlocks() {
+  document.querySelectorAll('[data-video-block]').forEach((node) => {
+    const video = videoData(node.dataset.videoBlock);
+    if (!video) return;
+    const vertical = !!video.vertical;
+    node.innerHTML = `
+      <figure class="video-block${vertical ? ' video-block--vertical' : ''}">
+        <video controls preload="none" poster="${video.posterUrl}" playsinline aria-label="${video.alt || video.title}">
+          <source src="${video.srcUrl}" type="video/mp4">
+        </video>
+        <figcaption class="media-caption">${video.title}</figcaption>
+      </figure>`;
+  });
 }
 
 // 首页配置渲染（HOME_CONFIG 定义在 js/config/home.config.js）：
@@ -420,6 +471,7 @@ renderFooter();
 renderBrandSections();
 renderProgramGrids();
 renderStoreGallery();
+renderVideoBlocks();
 renderHomeSections();
 applyAssets();
 // favicon：集团方形图标（有方图标）

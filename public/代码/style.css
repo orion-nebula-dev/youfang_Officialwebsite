@@ -486,3 +486,26 @@ main { padding-top: 80px; overflow: hidden; }
   .site-footer { padding-top: 112px; }
   .footer-secondary { float: none; display: block; margin-top: 8px; }
 }
+
+/* 品牌视频块（2026-09）：16:9 播放器 + 海报帧；竖版视频限高居中 */
+.video-block { margin: 0; }
+.video-block video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; background: #14100c; box-shadow: 0 24px 48px rgba(26, 21, 16, .18); }
+.video-block .media-caption { position: static; margin-top: 14px; padding: 0; background: none; color: var(--ink-soft, #5c5347); font-size: 14px; backdrop-filter: none; text-align: center; }
+.video-block--vertical { max-width: 420px; margin: 0 auto; }
+.video-block--vertical video { aspect-ratio: 9 / 16; max-height: 600px; width: auto; max-width: 100%; margin: 0 auto; }
+
+/* 720° 全景看店（mdzs 二级页） */
+.vr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.vr-card { position: relative; display: block; border-radius: 16px; overflow: hidden; aspect-ratio: 16 / 10; background: #14100c; }
+.vr-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.vr-card:hover img { transform: scale(1.04); }
+.vr-card-badge { position: absolute; top: 12px; right: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(26, 21, 16, .68); color: #fff; font-size: 12px; letter-spacing: .06em; backdrop-filter: blur(6px); }
+
+/* 官方公众号二维码（contact 页） */
+.wechat-qr { max-width: 340px; margin: 0 auto; }
+.wechat-qr img { width: 100%; height: auto; display: block; border-radius: 16px; }
+
+@media (max-width: 860px) {
+  .vr-grid { grid-template-columns: 1fr; }
+  .video-block--vertical { max-width: 300px; }
+}

@@ -13,7 +13,7 @@ const hasExternalAssets = await access(externalAssets).then(() => true).catch(()
 const sourceAssets = hasExternalAssets ? externalAssets : publicAssets;
 
 const runtimeCodeDirectories = ['brands', 'js', 'mdzs', 'news_detail', 'video'];
-const runtimeAssetDirectories = ['logo', 'photo', 'qr', 'screen', 'visual'];
+const runtimeAssetDirectories = ['logo', 'photo', 'qr', 'screen', 'visual', 'video'];
 
 await rm(publicCode, { recursive: true, force: true });
 await mkdir(publicCode, { recursive: true });
