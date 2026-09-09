@@ -171,7 +171,7 @@ const SITE_DATA = {
   },
   // 品牌视频注册表（2026-09 新增）：key → 本地 mp4 + 海报帧，
   // 品牌详情页通过 brands[].video 引用 key，about/tzgx 通过 data-video-block 引用 key。
-  // 源片：官网素材0906（压缩为 H.264 1080p，faststart）。
+  // 源片：官网素材0906（发布版压缩为 H.264 720p/30fps，faststart；原始 1080p 另行归档）。
   videos: {
     'promo': { src: 'video/promo-3min.mp4', poster: 'video/promo-3min-poster.jpg', title: '有方大健康集团宣传片', alt: '有方大健康集团宣传片视频' },
     'lingshu': { src: 'video/lingshu-2.0.mp4', poster: 'video/lingshu-2.0-poster.jpg', title: '有方灵枢视频 2.0', alt: '有方灵枢数字化平台视频' },
