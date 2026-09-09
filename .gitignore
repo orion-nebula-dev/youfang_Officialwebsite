@@ -2,5 +2,3 @@ dist/
 node_modules/
 .DS_Store
 RECON/**/screenshots/
-public/素材/video/lingshu-2.0.mp4
-public/素材/video/promo-3min.mp4
