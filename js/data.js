@@ -6,6 +6,9 @@
 // 人工维护清单（含尺寸与适用场景标注）：素材/素材清单.md。
 const localAsset = (src, sourcePath, alt, note = '') => ({ src, sourcePath, alt, note });
 
+// 全站品牌展示顺序：所有品牌卡、名称条、画廊、下拉选项和相关入口共用这一顺序。
+const BRAND_ORDER = ['naiwan', 'guxiaotui', 'zukangshu', 'hengqingshu', 'leguangli', 'aixiaowan', 'shisixun'];
+
 const SITE_DATA = {
   // 首页配置（P1 拆分）：内容维护入口在 js/config/home.config.js，此处只聚合。
   home: typeof HOME_CONFIG !== 'undefined' ? HOME_CONFIG : undefined,
@@ -331,7 +334,7 @@ const SITE_DATA = {
       { q: '总部如何支持高端会员运营？', a: '总部会提供会员分层、节气主题活动、项目组合、预约服务和客户维护建议，帮助门店围绕体验、到店频次与长期关系开展精细化运营。' },
       ],
     },
-  ],
+  ].sort((a, b) => BRAND_ORDER.indexOf(a.slug) - BRAND_ORDER.indexOf(b.slug)),
   // 模拟经营方案：品牌推荐口径与 mnjy.html「四种经营思路」保持一致
   simPlans: {
     community: { title: '社区日常服务方案', summary: '先从熟悉的社区生活场景出发，把服务流程、岗位训练和客户反馈做成日常经营动作。', brands: ['艾小晚', '足康树'], points: ['先理解社区客群和服务触达方式', '优先梳理岗位配合与日常服务流程', '开业后持续记录客户反馈和复购问题'] },
@@ -346,7 +349,13 @@ const SITE_DATA = {
     guxiaotui: {
       name: '谷小推', kicker: '新中式 SPA', back: 'mdzs.html',
       copy: '谷小推，将推拿、SPA和新中式轻养生方式融合一体，通过空间体验设计、中医药文化融入、大健康产品打造和标准化的服务设计，让城市年轻人有了养生体验与社交空间相结合的休闲新选择。谷小推始于山西太原，围绕年轻上班族的工作与生活圈开设直营门店，并逐渐开展加盟连锁，成为小红书里的“网红门店”之一，引得争相模仿。',
-      vr: { url: 'https://vr.justeasy.cn/view/1763l6v888k2n188-1775805609.html', label: '谷小推 720° 全景看店', shots: [{ id: 'vr-guxiaotui-1' }, { id: 'vr-guxiaotui-2' }, { id: 'vr-guxiaotui-3' }] },
+      vr: {
+        url: 'https://vr.justeasy.cn/view/1763l6v888k2n188-1775805609.html',
+        title: '谷小推 100 平店型',
+        summary: '对应官方「谷小推100平店型」VR 页面，拖动即可查看大厅、前台与新中式 SPA 空间。',
+        preview: { id: 'vr-guxiaotui-1' },
+        shots: [{ id: 'vr-guxiaotui-1' }, { id: 'vr-guxiaotui-2' }, { id: 'vr-guxiaotui-3' }],
+      },
       photos: [
         { id: 'store-guxiaotui-real', caption: '新中式 SPA 门头与入口现场' },
         { id: 'store-guxiaotui-real-4', caption: '门店产品陈列区' },
@@ -405,7 +414,13 @@ const SITE_DATA = {
     naiwan: {
       name: '奈晚推拿', kicker: '年轻人的推拿小馆', back: 'mdzs.html',
       copy: '奈晚推拿，为用户提供技术专业、环境整洁、安全贴心、高性价比的服务，让推拿理疗成为当代年轻人的养生新潮流。主打“一季一方，草木热敷”的品项设计理念，针对当代年轻人的亚健康问题，提供一年四季不同的养生解决方案。奈晚推拿始于重庆，围绕城市核心商圈和年轻人集中的大社区开展连锁服务，目前已经是全国领先的连锁推拿养生服务品牌。',
-      vr: { url: 'https://vr.justeasy.cn/view/199075x156j08y54-1758796692.html', label: '奈晚推拿 720° 全景看店', shots: [{ id: 'vr-naiwan-1' }, { id: 'vr-naiwan-2' }, { id: 'vr-naiwan-3' }] },
+      vr: {
+        url: 'https://vr.justeasy.cn/view/199075x156j08y54-1758796692.html',
+        title: '奈晚推拿 80 平米 10 床形象店',
+        summary: '对应官方「奈晚推拿-品牌优质形象店（80平米10床）」VR 页面，在线查看门头、前台与护理空间。',
+        preview: { id: 'vr-naiwan-1' },
+        shots: [{ id: 'vr-naiwan-1' }, { id: 'vr-naiwan-2' }, { id: 'vr-naiwan-3' }],
+      },
       photos: [
         { id: 'store-naiwan-real-3', caption: '「奈晚推拿」门头招牌现场' },
         { id: 'store-naiwan-real-4', caption: '店内走廊' },

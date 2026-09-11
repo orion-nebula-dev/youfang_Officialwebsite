@@ -62,6 +62,9 @@ const homeVisionCards = await page.locator('#mission .info-card').count();
 const homeScaleItems = await page.locator('#scale .scale-item').count();
 const homeScaleCounted = await page.locator('#scale [data-count]').first().evaluate((n) => n.dataset.count === '5');
 const homePlatformLogos = await page.locator('#lingshu .platform-name img').evaluateAll((imgs) => imgs.length === 3 && imgs.every((img) => img.naturalWidth > 0));
+const homeAppShowcase = await page.locator('#lingshu .app-showcase-grid > figure').evaluateAll((cards) => cards.length === 3
+  && cards.every((card) => card.querySelector('img')?.naturalWidth > 0));
+const homeBrandOrder = await page.locator('[data-brands-grid="home"] .brand-name-large').allTextContents();
 const homeHeroTitle = await page.locator('.hero-title').innerText();
 await page.goto(`${origin}/代码/tzgx.html`, { waitUntil: 'networkidle' });
 await page.click('[data-tab="platform"]');
@@ -118,19 +121,28 @@ const storeGalleryChecks = [];
 const galleryExpect = { guxiaotui: 6, hengqingshu: 6, naiwan: 6, aixiaowan: 5, zukangshu: 5, leguangli: 6, shisixun: 6 };
 for (const [slug, photoCount] of Object.entries(galleryExpect)) {
   await page.goto(`${origin}/代码/mdzs/${slug}.html`, { waitUntil: 'networkidle' });
-  const cards = await page.locator('[data-store-gallery] figure.gallery-card').count();
+  const cards = await page.locator('[data-store-gallery] .gallery-card--interactive').count();
   const imgsOk = await page.locator('[data-store-gallery] img').evaluateAll((imgs, expected) => imgs.length === expected && imgs.every((img) => img.naturalWidth > 0), photoCount);
   const heroName = (await page.locator('h1.hero-title').innerText()).trim();
   storeGalleryChecks.push(cards === photoCount && imgsOk && heroName.length > 1);
 }
 const storeGalleriesOk = storeGalleryChecks.every(Boolean);
-// 720° 全景看店：奈晚/谷小推二级页有 VR 区（3 张截帧 + 外链），其余品牌隐藏
+// 720° 全景看店：奈晚/谷小推二级页各有一个真实 VR 入口，其余品牌隐藏
 await page.goto(`${origin}/代码/mdzs/naiwan.html`, { waitUntil: 'networkidle' });
-const naiwanVrCards = await page.locator('[data-store-vr] .vr-card').count();
-const naiwanVrImgs = await page.locator('[data-store-vr] .vr-card img').evaluateAll((imgs) => imgs.length === 3 && imgs.every((img) => img.naturalWidth > 0));
+const naiwanVrCards = await page.locator('[data-store-vr] .vr-feature').count();
+const naiwanVrImgs = await page.locator('[data-store-vr] .vr-feature img').evaluateAll((imgs) => imgs.length === 1 && imgs.every((img) => img.naturalWidth > 0));
 const naiwanVrLink = await page.locator('[data-store-vr] a[href*="vr.justeasy.cn"]').count();
 await page.goto(`${origin}/代码/mdzs/guxiaotui.html`, { waitUntil: 'networkidle' });
-const guxiaotuiVrCards = await page.locator('[data-store-vr] .vr-card').count();
+const guxiaotuiVrCards = await page.locator('[data-store-vr] .vr-feature').count();
+const guxiaotuiVrLink = await page.locator('[data-store-vr] a[href*="vr.justeasy.cn"]').count();
+const guxiaotuiLightbox = await page.locator('[data-gallery-item]').first().click().then(async () => {
+  const open = await page.locator('.gallery-lightbox.open').count() === 1;
+  const caption = await page.locator('[data-gallery-lightbox-caption]').textContent();
+  await page.keyboard.press('ArrowRight');
+  const nextCaption = await page.locator('[data-gallery-lightbox-caption]').textContent();
+  await page.keyboard.press('Escape');
+  return open && !!caption && !!nextCaption && caption !== nextCaption && await page.locator('.gallery-lightbox.open').count() === 0;
+});
 await page.goto(`${origin}/代码/mdzs/aixiaowan.html`, { waitUntil: 'networkidle' });
 const aixiaowanVrHidden = await page.locator('[data-store-vr]').evaluate((node) => node.hidden);
 await page.goto(`${origin}/代码/contact.html`, { waitUntil: 'networkidle' });
@@ -162,13 +174,13 @@ const publicCopyClean = publicCopyChecks.every(Boolean);
 await page.close();
 await browser.close();
 
-const interactions = { mobileMenuOpen, mobileMenuClosed, faqOpen, brandFaqOk, tabOpen, platformScreens, formStatus, modalOpen, homeHeroButtons, homeSectionOrder, homeInternalClean, publicCopyClean, homeBrandCards, homeLogoChips, homeLogoLoaded, homeVisionCards, homeScaleItems, homeScaleCounted, homePlatformLogos, homeHeroTitle: homeHeroTitle.replace(/\n/g, ''), headerLogo, faviconOk, heroLockupLoaded, naiwanForms, naiwanFormsVisible, otherFormsHidden, detailScreenLoaded, matrixScreens, galleryLogos, joinBrandCards, preFilledBrand, footerDisclosureLinks, simBrandOptions, programCards, programLogos, footerQrs, wechatQrLoaded, homePlatformQrs, storeCardLinks, disclaimerRemoved, storeGalleriesOk, naiwanVrCards, naiwanVrImgs, naiwanVrLink, guxiaotuiVrCards, aixiaowanVrHidden, brandVideoOk, aboutVideoOk, lingshuVideoOk };
+const interactions = { mobileMenuOpen, mobileMenuClosed, faqOpen, brandFaqOk, tabOpen, platformScreens, formStatus, modalOpen, homeHeroButtons, homeSectionOrder, homeInternalClean, publicCopyClean, homeBrandCards, homeLogoChips, homeLogoLoaded, homeVisionCards, homeScaleItems, homeScaleCounted, homePlatformLogos, homeAppShowcase, homeBrandOrder, homeHeroTitle: homeHeroTitle.replace(/\n/g, ''), headerLogo, faviconOk, heroLockupLoaded, naiwanForms, naiwanFormsVisible, otherFormsHidden, detailScreenLoaded, matrixScreens, galleryLogos, joinBrandCards, preFilledBrand, footerDisclosureLinks, simBrandOptions, programCards, programLogos, footerQrs, wechatQrLoaded, homePlatformQrs, storeCardLinks, disclaimerRemoved, storeGalleriesOk, naiwanVrCards, naiwanVrImgs, naiwanVrLink, guxiaotuiVrCards, guxiaotuiVrLink, guxiaotuiLightbox, aixiaowanVrHidden, brandVideoOk, aboutVideoOk, lingshuVideoOk };
 console.log(JSON.stringify({ checked, failures, interactions }, null, 2));
 const ok = failures.length === 0 && mobileMenuOpen && mobileMenuClosed && faqOpen && brandFaqOk && tabOpen && platformScreens && modalOpen && homeHeroButtons === 2 && homeSectionOrder === 'scale,brands,stores,capabilities,lingshu,process,mission,cta' && homeInternalClean && publicCopyClean
-  && homeBrandCards === 7 && homeLogoChips === 7 && homeLogoLoaded && homeVisionCards === 4 && homeScaleItems === 4 && homeScaleCounted && homePlatformLogos && homeHeroTitle.includes('产业运营与投资孵化') && headerLogo && faviconOk && heroLockupLoaded && naiwanForms && naiwanFormsVisible && otherFormsHidden && detailScreenLoaded && matrixScreens && galleryLogos === 7
+  && homeBrandCards === 7 && homeLogoChips === 7 && homeLogoLoaded && homeVisionCards === 4 && homeScaleItems === 4 && homeScaleCounted && homePlatformLogos && homeAppShowcase && homeBrandOrder.join('|') === '奈晚推拿|谷小推|足康树|恒青树|乐光里|艾小晚|廿肆巡' && homeHeroTitle.includes('产业运营与投资孵化') && headerLogo && faviconOk && heroLockupLoaded && naiwanForms && naiwanFormsVisible && otherFormsHidden && detailScreenLoaded && matrixScreens && galleryLogos === 7
   && joinBrandCards === 7 && preFilledBrand === '谷小推' && footerDisclosureLinks === 5 && simBrandOptions === 8
   && programCards === 3 && programLogos && footerQrs && wechatQrLoaded && homePlatformQrs
   && storeCardLinks === 7 && disclaimerRemoved && storeGalleriesOk
-  && naiwanVrCards === 3 && naiwanVrImgs && naiwanVrLink > 0 && guxiaotuiVrCards === 3 && aixiaowanVrHidden
+  && naiwanVrCards === 1 && naiwanVrImgs && naiwanVrLink > 0 && guxiaotuiVrCards === 1 && guxiaotuiVrLink > 0 && guxiaotuiLightbox && aixiaowanVrHidden
   && brandVideoOk && aboutVideoOk && lingshuVideoOk;
 process.exit(ok ? 0 : 1);

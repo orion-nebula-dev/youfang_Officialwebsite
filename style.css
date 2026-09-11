@@ -80,9 +80,11 @@ main { padding-top: 80px; overflow: hidden; }
 .section--tight { padding: 78px 0; }
 .section--soft { background: var(--surface-warm); }
 .section-head { max-width: 760px; margin: 0 auto 54px; text-align: center; }
+.section-head--wide { max-width: 1120px; }
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--red); font-size: 13px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 .eyebrow::before { content: ""; width: 28px; height: 2px; background: currentColor; }
 .section-title { margin: 18px 0 14px; font-size: clamp(32px, 4vw, 58px); line-height: 1.12; letter-spacing: -.04em; font-weight: 800; }
+.section-title--nowrap { white-space: nowrap; font-size: clamp(16px, 3.8vw, 54px); letter-spacing: -.055em; }
 .section-summary { margin: 0; color: var(--muted); font-size: 17px; line-height: 1.9; }
 .fine-print { color: var(--subtle); font-size: 12px; line-height: 1.8; }
 
@@ -122,18 +124,20 @@ main { padding-top: 80px; overflow: hidden; }
 .brand-card { position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 670px; padding: 0 0 42px; border-radius: 30px; background: #f3f3f1; box-shadow: 0 9px 25px rgba(36, 27, 14, .05); transition: transform .35s ease, box-shadow .35s ease; }
 .brand-card:hover { transform: translateY(-8px); box-shadow: var(--shadow); }
 .brand-photo { width: 100%; height: 320px; object-fit: cover; object-position: center; }
-.brand-card:nth-child(2) .brand-photo { object-position: center 42%; }
-.brand-card:nth-child(3) .brand-photo { object-position: center 55%; }
-.brand-card:nth-child(4) .brand-photo { object-position: center 45%; }
+.brand-card--aixiaowan .brand-photo { object-position: center 42%; }
+.brand-card--zukangshu .brand-photo { object-position: center 55%; }
+.brand-card--hengqingshu .brand-photo { object-position: center 45%; }
 .brand-card-body { display: flex; flex: 1; flex-direction: column; padding: 28px 38px 0; text-align: center; }
 .brand-tag { align-self: center; display: inline-flex; padding: 7px 14px; border-radius: 999px; background: #fff; color: var(--green); font-size: 12px; font-weight: 800; }
-.brand-name-large { margin: 18px 0 10px; font-size: clamp(28px, 3vw, 46px); letter-spacing: -.05em; line-height: 1.05; font-weight: 900; }
-.brand-card:nth-child(2) .brand-name-large { color: var(--orange); }
-.brand-card:nth-child(3) .brand-name-large { color: #bc2027; }
-.brand-card:nth-child(4) .brand-name-large { color: var(--green); }
-.brand-card:nth-child(5) .brand-name-large { color: #a15b2f; }
-.brand-card:nth-child(6) .brand-name-large { color: #8c4a3c; }
-.brand-card:nth-child(7) .brand-name-large { color: var(--blue); }
+.brand-name-row { display: inline-flex; align-items: center; justify-content: center; gap: 12px; margin: 18px auto 10px; }
+.brand-name-large { margin: 0; font-size: clamp(28px, 3vw, 46px); letter-spacing: -.05em; line-height: 1.05; font-weight: 900; }
+.brand-card--guxiaotui .brand-name-large { color: var(--orange); }
+.brand-card--aixiaowan .brand-name-large { color: #bc2027; }
+.brand-card--zukangshu .brand-name-large { color: #9c6b00; }
+.brand-card--hengqingshu .brand-name-large { color: var(--green); }
+.brand-card--leguangli .brand-name-large { color: #a15b2f; }
+.brand-card--naiwan .brand-name-large { color: #8c4a3c; }
+.brand-card--shisixun .brand-name-large { color: var(--blue); }
 .brand-copy { margin: 0 auto; max-width: 450px; color: #555; font-size: 15px; line-height: 1.9; }
 .brand-card .btn { align-self: center; margin-top: auto; }
 .brand-card--small { min-height: 430px; }
@@ -159,6 +163,17 @@ main { padding-top: 80px; overflow: hidden; }
 .screen-pair .media-card--screen img { min-height: 430px; max-height: 580px; }
 .screen-pair .media-caption { left: 24px; right: 24px; bottom: 24px; padding: 12px 14px; font-size: 13px; }
 @media (max-width: 768px) { .screen-pair { grid-template-columns: 1fr; } }
+/* 灵枢三款 App 入口：谷有方、有小方、方小匠各自占一个展示位。 */
+.app-showcase-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 920px; margin: 0 auto; }
+.app-showcase-grid figure { margin: 0; }
+.app-showcase-grid .media-card--screen { max-width: none; padding: 12px; }
+.app-showcase-grid .media-card--screen img { min-height: 430px; max-height: 580px; }
+.app-showcase-grid .media-caption { left: 22px; right: 22px; bottom: 22px; padding: 12px 14px; font-size: 13px; }
+.app-preview--qr { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 454px; padding: 34px 24px 72px; background: linear-gradient(145deg, #fff, #f5f1e8); }
+.app-preview--qr img { width: auto; height: auto; min-height: 0; object-fit: contain; }
+.app-preview--qr .app-preview-logo { width: min(82%, 220px); margin-bottom: 28px; }
+.app-preview--qr .app-preview-qr { width: 172px; height: 172px; padding: 9px; border-radius: 16px; background: #fff; box-shadow: 0 12px 28px rgba(36,27,14,.12); }
+@media (max-width: 768px) { .app-showcase-grid { grid-template-columns: 1fr; max-width: 520px; } }
 /* 数字化入口三个纵向块（能力页）之间的间距与小程序码卡片形态 */
 .tab-panel .split + .split { margin-top: 52px; }
 .media-card--qr { max-width: 400px; justify-self: center; display: grid; justify-items: center; padding: 26px 26px 20px; background: #fff; }
@@ -175,7 +190,7 @@ main { padding-top: 80px; overflow: hidden; }
 .process-item:nth-child(4n)::after { display: none; }
 
 .showcase-grid { display: grid; grid-template-columns: 1.22fr .78fr; gap: 22px; }
-.showcase-item { position: relative; overflow: hidden; min-height: 270px; border-radius: 22px; background: #ddd; }
+.showcase-item { position: relative; overflow: hidden; min-height: 270px; border: 1px solid #d9d8d3; border-radius: 22px; background: #ddd; box-shadow: 0 0 0 1px rgba(255,255,255,.55) inset; }
 .showcase-item:first-child { min-height: 560px; }
 .showcase-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
 .showcase-item:hover img { transform: scale(1.04); }
@@ -260,11 +275,38 @@ main { padding-top: 80px; overflow: hidden; }
 .gallery-card-media { position: relative; overflow: hidden; }
 .gallery-card img { width: 100%; height: 250px; object-fit: cover; }
 .gallery-brand-label { position: absolute; left: 16px; bottom: 15px; padding: 7px 12px; border-radius: 999px; background: rgba(35, 28, 20, .76); color: #fff; font-size: 13px; font-weight: 800; letter-spacing: .04em; backdrop-filter: blur(8px); }
-.gallery-card-body { padding: 21px 22px 25px; }
+.gallery-card-body { display: block; padding: 21px 22px 25px; }
+.gallery-brand-name { display: flex; align-items: center; gap: 9px; min-height: 32px; }
 .gallery-card h3 { margin: 0 0 7px; font-size: 20px; }
 .gallery-card p { margin: 0; color: var(--muted); line-height: 1.7; font-size: 14px; }
+.gallery-card--interactive { display: block; cursor: zoom-in; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.gallery-card--interactive:hover { transform: translateY(-4px); border-color: rgba(201,21,34,.35); box-shadow: var(--shadow); }
+.gallery-card-caption { display: block; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .brand-name-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px; margin-top: 25px; }
 .brand-name-strip span { padding: 7px 13px; border: 1px solid var(--line); border-radius: 999px; background: #fff; color: #555; font-size: 13px; font-weight: 800; }
+
+/* 门店照片灯箱：底部显示当前照片文案，左右按钮与键盘方向键共用同一套索引。 */
+.lightbox-open { overflow: hidden; }
+.gallery-lightbox { position: fixed; z-index: 120; inset: 0; display: none; align-items: center; justify-content: center; padding: 52px clamp(52px, 8vw, 120px); background: rgba(20, 16, 12, .88); }
+.gallery-lightbox.open { display: flex; }
+.gallery-lightbox-card { display: flex; flex-direction: column; width: min(1100px, 100%); max-height: 100%; margin: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.18); border-radius: 20px; background: #171310; box-shadow: 0 24px 80px rgba(0,0,0,.4); }
+.gallery-lightbox-card img { display: block; width: 100%; max-height: calc(100vh - 170px); object-fit: contain; background: #0e0c0a; }
+.gallery-lightbox-card figcaption { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 17px 22px 19px; color: rgba(255,255,255,.86); font-size: 15px; line-height: 1.6; }
+.gallery-lightbox-card figcaption small { flex: 0 0 auto; color: rgba(255,255,255,.55); font-size: 12px; }
+.gallery-lightbox-close, .gallery-lightbox-nav { position: absolute; z-index: 1; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.14); color: #fff; transition: background .2s ease, transform .2s ease; }
+.gallery-lightbox-close:hover, .gallery-lightbox-nav:hover { background: var(--red); transform: scale(1.06); }
+.gallery-lightbox-close { top: 18px; right: 22px; width: 42px; height: 42px; font-size: 30px; line-height: 1; }
+.gallery-lightbox-nav { top: 50%; width: 48px; height: 48px; font-size: 38px; line-height: 1; transform: translateY(-50%); }
+.gallery-lightbox-nav:hover { transform: translateY(-50%) scale(1.06); }
+.gallery-lightbox-prev { left: 18px; }
+.gallery-lightbox-next { right: 18px; }
+@media (max-width: 640px) {
+  .gallery-lightbox { padding: 52px 12px 20px; }
+  .gallery-lightbox-nav { width: 38px; height: 38px; font-size: 30px; }
+  .gallery-lightbox-prev { left: 8px; }
+  .gallery-lightbox-next { right: 8px; }
+  .gallery-lightbox-card figcaption { align-items: flex-start; flex-direction: column; gap: 4px; padding: 13px 16px 15px; }
+}
 
 .news-list { display: grid; gap: 20px; }
 .news-item { display: grid; grid-template-columns: 260px minmax(0, 1fr) 90px; align-items: center; gap: 26px; padding: 18px; border-bottom: 1px solid var(--line); transition: background .25s ease, transform .25s ease; }
@@ -375,7 +417,7 @@ main { padding-top: 80px; overflow: hidden; }
 .footer-disclosure .sep { margin: 0 8px; opacity: .45; }
 
 /* 品牌 logo（正圆徽章、圆外透明）：方形槽直接放，宽场景与品牌名文字组合 */
-.brand-logo-chip { display: inline-block; width: 40px; height: 40px; margin: 0 0 10px; }
+.brand-logo-chip { display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; width: 52px; height: 52px; margin: 0; }
 .brand-logo-chip img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 3px 8px rgba(60,40,0,.16)); }
 .brand-logo-badge { width: 58px; height: 58px; object-fit: contain; margin: 0 0 16px; filter: drop-shadow(0 4px 12px rgba(60,40,0,.22)); }
 /* header 集团横版 logo */
@@ -388,7 +430,7 @@ main { padding-top: 80px; overflow: hidden; }
 .brand-form-item img { display: block; margin: 0 auto; height: 92px; width: auto; object-fit: contain; }
 .brand-form-item figcaption { margin-top: 12px; color: var(--muted); font-size: 13px; font-weight: 700; }
 @media (max-width: 640px) { .brand-forms-grid { grid-template-columns: 1fr; } }
-.gallery-card img.gallery-logo { width: 26px; height: 26px; object-fit: contain; margin-right: 7px; vertical-align: -6px; filter: drop-shadow(0 2px 5px rgba(60,40,0,.14)); }
+.gallery-card img.gallery-logo { flex: 0 0 auto; width: 32px; height: 32px; object-fit: contain; filter: drop-shadow(0 2px 5px rgba(60,40,0,.14)); }
 /* 小程序卡名称位：产品横版 logo 锁定版式（SVG 矢量，含文字），无 logo 时回退纯文字 */
 .program-card img.program-logo { height: 30px; width: auto; padding: 0; border-radius: 0; object-fit: contain; margin: 0; vertical-align: middle; background: none; box-shadow: none; }
 .footer-qr { display: flex; justify-content: flex-end; gap: 22px; }
@@ -500,6 +542,21 @@ main { padding-top: 80px; overflow: hidden; }
 .vr-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
 .vr-card:hover img { transform: scale(1.04); }
 .vr-card-badge { position: absolute; top: 12px; right: 12px; padding: 5px 10px; border-radius: 999px; background: rgba(26, 21, 16, .68); color: #fff; font-size: 12px; letter-spacing: .06em; backdrop-filter: blur(6px); }
+.vr-feature { display: block; overflow: hidden; border: 1px solid #d9d3c8; border-radius: 24px; background: #fff; box-shadow: 0 12px 30px rgba(36,27,14,.06); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.vr-feature:hover { transform: translateY(-4px); border-color: rgba(201,21,34,.35); box-shadow: var(--shadow); }
+.vr-feature-media { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 7; background: #241c15; }
+.vr-feature-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.vr-feature:hover .vr-feature-media img { transform: scale(1.03); }
+.vr-feature-media .vr-card-badge { top: 18px; right: 18px; }
+.vr-feature-play { position: absolute; right: 24px; bottom: 22px; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--orange); color: #fff; font-size: 23px; box-shadow: 0 8px 18px rgba(0,0,0,.22); }
+.vr-feature-copy { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 28px 26px; }
+.vr-feature-copy strong { display: block; color: var(--ink); font-size: 22px; }
+.vr-feature-copy small { display: block; margin-top: 7px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+@media (max-width: 640px) {
+  .vr-feature-media { aspect-ratio: 4 / 3; }
+  .vr-feature-copy { align-items: flex-start; flex-direction: column; padding: 20px; }
+  .vr-feature-copy .btn { width: 100%; }
+}
 
 /* 官方公众号二维码（contact 页） */
 .wechat-qr { max-width: 340px; margin: 0 auto; }

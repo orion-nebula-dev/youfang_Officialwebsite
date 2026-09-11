@@ -99,12 +99,11 @@ function renderBrandSections() {
     const config = variants[variant];
     if (!config) return;
     grid.innerHTML = SITE_DATA.brands.map((brand) => `
-      <article class="${config.cls}">
+      <article class="${config.cls} brand-card--${brand.slug}">
         <img class="brand-photo" src="${asset(brand.image)}" alt="${assetAlt(brand.image) || `${brand.name}品牌门店形象`}">
         <div class="brand-card-body">
-          <span class="brand-logo-chip"><img src="${asset(brand.logo)}" alt="${brand.name}品牌 logo"></span>
           <span class="brand-tag">${brand[config.tag]}</span>
-          <h3 class="brand-name-large">${brand.name}</h3>
+          <div class="brand-name-row"><span class="brand-logo-chip"><img src="${asset(brand.logo)}" alt="${brand.name}品牌 logo"></span><h3 class="brand-name-large">${brand.name}</h3></div>
           <p class="brand-copy">${brand[config.copy]}</p>
           <a class="btn btn--${brand.accent}" href="${prefix}${brand.slug}.html">${config.action}</a>
         </div>
@@ -120,7 +119,7 @@ function renderBrandSections() {
     gallery.innerHTML = SITE_DATA.brands.map((brand) => `
       <article class="gallery-card">
         <div class="gallery-card-media"><img src="${asset(brand.image)}" alt="${assetAlt(brand.image) || brand.name}"><span class="gallery-brand-label">${brand.name}</span></div>
-        <div class="gallery-card-body"><img class="gallery-logo" src="${asset(brand.logo)}" alt=""><h3>${brand.name}</h3><p>${brand.category} · ${brand.tagline}</p></div>
+        <div class="gallery-card-body"><div class="gallery-brand-name"><img class="gallery-logo" src="${asset(brand.logo)}" alt=""><h3>${brand.name}</h3></div><p>${brand.category} · ${brand.tagline}</p></div>
       </article>
     `).join('');
   });
@@ -172,37 +171,87 @@ function renderStoreGallery() {
   document.querySelectorAll('[data-store-kicker]').forEach((node) => { node.textContent = data.kicker; });
   document.querySelectorAll('[data-store-copy]').forEach((node) => { node.textContent = data.copy; });
   document.title = `${data.name} · 门店实拍｜有方大健康`;
-  holder.innerHTML = data.photos.map((photo) => `
-    <figure class="gallery-card">
-      <img src="${asset(photo.id)}" alt="${data.name}门店实拍：${photo.caption}">
-      <figcaption class="gallery-card-body"><p>${photo.caption}</p></figcaption>
-    </figure>
+  holder.innerHTML = data.photos.map((photo, index) => `
+    <a class="gallery-card gallery-card--interactive" href="${asset(photo.id)}" data-gallery-item data-gallery-index="${index}" data-gallery-src="${asset(photo.id)}" data-gallery-caption="${photo.caption}" aria-label="放大查看${data.name}：${photo.caption}">
+      <span class="gallery-card-media"><img src="${asset(photo.id)}" alt="${data.name}门店实拍：${photo.caption}"></span>
+      <span class="gallery-card-body"><span class="gallery-card-caption">${photo.caption}</span></span>
+    </a>
   `).join('');
   if (data.vr) renderStoreVR(data.vr, data.name);
 }
 
-// 720° 全景看店：外链 VR 主题页 + 三张截帧预览（点击新窗口打开全景）
+// 720° 全景看店：每个品牌只对应一个真实 VR 链接，使用一张主预览卡，避免把同一全景误渲染成三个入口。
 function renderStoreVR(vr, storeName) {
   const holder = document.querySelector('[data-store-vr]');
   if (!holder) return;
-  const shots = (vr.shots || []).map((shot) => `
-    <a class="vr-card" href="${vr.url}" target="_blank" rel="noopener">
-      <img src="${asset(shot.id || shot)}" alt="${storeName}720°全景预览">
-      <span class="vr-card-badge">720°</span>
-    </a>`).join('');
+  const preview = vr.preview || vr.shots?.[0];
+  const previewId = preview?.id || preview;
+  const title = vr.title || `${storeName} 720° 全景看店`;
+  const summary = vr.summary || '打开官方 VR 页面，拖动视角查看门店空间与动线。';
   holder.innerHTML = `
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">VIRTUAL TOUR</p>
         <h2 class="section-title">720° 全景看店</h2>
-        <p class="section-summary">拖动即可环视整间门店，先在线上把空间看清楚，再到店里体验。</p>
+        <p class="section-summary">${summary}</p>
       </div>
-      <div class="vr-grid">${shots}</div>
-      <div class="hero-actions" style="justify-content:center;margin-top:32px">
-        <a class="btn btn--orange" href="${vr.url}" target="_blank" rel="noopener">进入「${vr.label}」</a>
-      </div>
+      <a class="vr-feature" href="${vr.url}" target="_blank" rel="noopener">
+        <span class="vr-feature-media"><img src="${asset(previewId)}" alt="${title}预览"><span class="vr-card-badge">720°</span><span class="vr-feature-play" aria-hidden="true">↗</span></span>
+        <span class="vr-feature-copy"><span><strong>${title}</strong><small>点击进入官方全景页面，支持拖动、场景切换与全屏浏览</small></span><span class="btn btn--orange">进入全景</span></span>
+      </a>
     </div>`;
   holder.hidden = false;
+}
+
+// 门店实拍灯箱：点击图片放大；支持关闭、上一张/下一张和键盘左右切换。
+function setupGalleryLightbox() {
+  const items = [...document.querySelectorAll('[data-gallery-item]')];
+  if (!items.length) return;
+  const modal = document.createElement('div');
+  modal.className = 'gallery-lightbox';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-label', '门店照片预览');
+  modal.innerHTML = `
+    <button class="gallery-lightbox-close" type="button" data-gallery-close aria-label="关闭照片预览">×</button>
+    <button class="gallery-lightbox-nav gallery-lightbox-prev" type="button" data-gallery-prev aria-label="上一张照片">‹</button>
+    <figure class="gallery-lightbox-card">
+      <img data-gallery-lightbox-image alt="">
+      <figcaption><span data-gallery-lightbox-caption></span><small data-gallery-lightbox-count></small></figcaption>
+    </figure>
+    <button class="gallery-lightbox-nav gallery-lightbox-next" type="button" data-gallery-next aria-label="下一张照片">›</button>`;
+  document.body.appendChild(modal);
+  const image = modal.querySelector('[data-gallery-lightbox-image]');
+  const caption = modal.querySelector('[data-gallery-lightbox-caption]');
+  const count = modal.querySelector('[data-gallery-lightbox-count]');
+  let current = 0;
+  const show = (index) => {
+    current = (index + items.length) % items.length;
+    const item = items[current];
+    image.src = item.dataset.gallerySrc;
+    image.alt = item.getAttribute('aria-label') || '';
+    caption.textContent = item.dataset.galleryCaption || '';
+    count.textContent = `${current + 1} / ${items.length}`;
+    modal.classList.add('open');
+    document.body.classList.add('lightbox-open');
+    modal.querySelector('[data-gallery-close]').focus();
+  };
+  const close = () => {
+    modal.classList.remove('open');
+    document.body.classList.remove('lightbox-open');
+    items[current]?.focus();
+  };
+  items.forEach((item, index) => item.addEventListener('click', (event) => { event.preventDefault(); show(index); }));
+  modal.querySelector('[data-gallery-close]').addEventListener('click', close);
+  modal.querySelector('[data-gallery-prev]').addEventListener('click', () => show(current - 1));
+  modal.querySelector('[data-gallery-next]').addEventListener('click', () => show(current + 1));
+  modal.addEventListener('click', (event) => { if (event.target === modal) close(); });
+  document.addEventListener('keydown', (event) => {
+    if (!modal.classList.contains('open')) return;
+    if (event.key === 'Escape') close();
+    if (event.key === 'ArrowLeft') show(current - 1);
+    if (event.key === 'ArrowRight') show(current + 1);
+  });
 }
 
 // 品牌视频块：页面放 <div data-video-block="key"></div>，由视频注册表渲染
@@ -474,6 +523,7 @@ renderStoreGallery();
 renderVideoBlocks();
 renderHomeSections();
 applyAssets();
+setupGalleryLightbox();
 // favicon：集团方形图标（有方图标）
 const favicon = document.createElement('link');
 favicon.rel = 'icon';
