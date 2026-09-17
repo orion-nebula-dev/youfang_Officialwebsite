@@ -362,7 +362,18 @@ main { padding-top: 80px; overflow: hidden; }
 .contact-form select { min-height: 50px; color: var(--ink); }
 .contact-form textarea { min-height: 140px; resize: vertical; }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(244,124,24,.12); }
+.contact-fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.contact-fieldset legend { margin-bottom: 8px; padding: 0; color: var(--muted); font-size: 13px; font-weight: 700; }
+.region-picker { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.region-picker select:disabled { color: #aaa; background: #f7f7f7; cursor: not-allowed; }
+.intent-brand-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.contact-form .intent-brand-option { display: flex; align-items: center; gap: 10px; min-height: 50px; padding: 12px 14px; border: 1px solid #ddd; border-radius: 10px; background: #fff; color: var(--ink); cursor: pointer; font-size: 14px; font-weight: 700; transition: border-color .2s ease, background .2s ease, box-shadow .2s ease; }
+.contact-form .intent-brand-option:hover { border-color: rgba(244,124,24,.55); }
+.contact-form .intent-brand-option:has(input:checked) { border-color: var(--orange); background: #fff7ed; box-shadow: 0 0 0 3px rgba(244,124,24,.1); }
+.contact-form .intent-brand-option input { width: auto; flex: 0 0 auto; margin: 0; padding: 0; accent-color: var(--orange); }
 .form-status { min-height: 24px; color: var(--green); font-size: 13px; }
+.form-status--warning { color: var(--orange); }
+.form-status--error { color: var(--red); }
 .fine-print a { color: var(--red); }
 
 .legal-page .prose { max-width: 920px; margin: 0 auto; }
@@ -507,6 +518,7 @@ main { padding-top: 80px; overflow: hidden; }
   .qr-item span { font-size: 11px; }
   .site-footer { padding-top: 112px; }
   .footer-secondary { float: none; display: block; margin-top: 8px; }
+  .region-picker, .intent-brand-list { grid-template-columns: 1fr; }
 }
 
 /* 品牌视频块（2026-09）：16:9 播放器 + 海报帧；竖版视频限高居中 */

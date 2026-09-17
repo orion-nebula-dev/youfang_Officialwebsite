@@ -425,28 +425,173 @@ function setupModal() {
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
 }
 
+function regionEntries(parentCode) {
+  return Object.entries(window.CHINA_REGION_DATA?.[parentCode] || {})
+    .map(([value, label]) => ({ value, label }));
+}
+
+function fillRegionSelect(select, options, placeholder) {
+  if (!select) return;
+  select.replaceChildren();
+  const first = document.createElement('option');
+  first.value = '';
+  first.textContent = placeholder;
+  select.append(first);
+  options.forEach(({ value, label }) => {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = label;
+    select.append(option);
+  });
+  select.disabled = options.length === 0;
+  select.value = '';
+}
+
+function setupRegionPicker(form) {
+  const picker = form.querySelector('[data-region-picker]');
+  if (!picker) return () => {};
+  const province = picker.querySelector('[data-region-level="province"]');
+  const city = picker.querySelector('[data-region-level="city"]');
+  const district = picker.querySelector('[data-region-level="district"]');
+  if (!province || !city || !district) return () => {};
+
+  const reset = () => {
+    fillRegionSelect(province, regionEntries('86'), '请选择省份');
+    fillRegionSelect(city, [], '请选择城市');
+    fillRegionSelect(district, [], '请选择区/县');
+  };
+  province.addEventListener('change', () => {
+    fillRegionSelect(city, regionEntries(province.value), '请选择城市');
+    fillRegionSelect(district, [], '请选择区/县');
+  });
+  city.addEventListener('change', () => {
+    fillRegionSelect(district, regionEntries(city.value), '请选择区/县');
+  });
+  reset();
+  return reset;
+}
+
+function renderIntentBrandChoices() {
+  document.querySelectorAll('[data-intent-brands]').forEach((holder) => {
+    const brands = Array.isArray(SITE_DATA.brands) ? SITE_DATA.brands : [];
+    holder.replaceChildren(...brands.map((brand) => {
+      const label = document.createElement('label');
+      label.className = 'intent-brand-option';
+      const input = document.createElement('input');
+      input.type = 'checkbox';
+      input.name = 'brand';
+      input.value = brand.slug;
+      input.dataset.intentBrand = brand.slug;
+      input.dataset.brandName = brand.name;
+      input.setAttribute('aria-label', brand.name);
+      const name = document.createElement('span');
+      name.textContent = brand.name;
+      label.append(input, name);
+      return label;
+    }));
+  });
+}
+
+function setupFormValidation(form) {
+  const phone = form.elements.phone;
+  const brands = [...form.querySelectorAll('[data-intent-brand]')];
+  const syncPhoneValidity = () => {
+    if (!phone) return;
+    const value = phone.value.trim();
+    phone.setCustomValidity(!value || /^1[3-9]\d{9}$/.test(value) ? '' : '请输入11位有效手机号码');
+  };
+  const syncBrandValidity = () => {
+    if (!brands.length) return;
+    brands[0].setCustomValidity(brands.some((input) => input.checked) ? '' : '请至少选择一个意向品牌');
+  };
+  if (phone) {
+    phone.addEventListener('input', () => {
+      phone.value = phone.value.replace(/\D/g, '').slice(0, 11);
+      syncPhoneValidity();
+    });
+    phone.addEventListener('blur', syncPhoneValidity);
+  }
+  brands.forEach((input) => input.addEventListener('change', syncBrandValidity));
+  syncPhoneValidity();
+  syncBrandValidity();
+  return () => {
+    syncPhoneValidity();
+    syncBrandValidity();
+  };
+};
+
+function selectedRegionValue(form, level) {
+  const select = form.querySelector(`[data-region-level="${level}"]`);
+  return select ? { code: select.value, name: select.selectedOptions[0]?.textContent || '' } : { code: '', name: '' };
+}
+
+function formPayload(form) {
+  const data = new FormData(form);
+  return {
+    name: String(data.get('name') || '').trim(),
+    phone: String(data.get('phone') || '').trim(),
+    province: selectedRegionValue(form, 'province'),
+    city: selectedRegionValue(form, 'city'),
+    district: selectedRegionValue(form, 'district'),
+    brands: data.getAll('brand'),
+    message: String(data.get('message') || '').trim(),
+  };
+}
+
+function setFormStatus(form, message, tone = '') {
+  const status = form.querySelector('.form-status');
+  if (!status) return;
+  status.className = `form-status${tone ? ` form-status--${tone}` : ''}`;
+  status.textContent = message;
+}
+
 function setupForms() {
   document.querySelectorAll('[data-contact-form]').forEach((form) => {
-    form.addEventListener('submit', (event) => {
+    const resetRegions = setupRegionPicker(form);
+    const syncValidation = setupFormValidation(form);
+    form.addEventListener('reset', () => window.setTimeout(resetRegions, 0));
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
-      const status = form.querySelector('.form-status');
-      if (status) status.textContent = '信息已提交，感谢你的咨询。';
-      form.reset();
+      syncValidation();
+      if (!form.reportValidity()) {
+        setFormStatus(form, '请按提示补全信息后再提交。', 'error');
+        return;
+      }
+      const endpoint = form.dataset.endpoint?.trim();
+      if (!endpoint) {
+        setFormStatus(form, '信息已校验，在线提交通道正在接入；如需咨询请拨打 400-008-0629。', 'warning');
+        return;
+      }
+      setFormStatus(form, '正在提交，请稍候。');
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formPayload(form)),
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        setFormStatus(form, '信息已提交，感谢你的咨询。');
+        form.reset();
+      } catch (error) {
+        console.error('[contact-form]', error);
+        setFormStatus(form, '暂时无法提交，请稍后重试或拨打 400-008-0629。', 'error');
+      }
     });
   });
 }
 
-// 招商咨询表单消费品牌详情页的 ?brand= 参数，自动填入品牌方向。
+// 招商咨询表单消费品牌详情页的 ?brand= 参数，自动勾选对应意向品牌。
 function setupConsultPreFill() {
-  const input = document.querySelector('[data-consult-brand]');
-  if (!input) return;
   const slug = new URLSearchParams(window.location.search).get('brand');
   const brand = slug && brandBySlug(slug);
-  if (brand) {
-    input.value = brand.name;
-    const status = input.closest('form')?.querySelector('.form-status');
-    if (status) status.textContent = `已为你带入「${brand.name}」方向，补充联系方式即可提交。`;
-  }
+  if (!brand) return;
+  document.querySelectorAll('[data-contact-form]').forEach((form) => {
+    const input = [...form.querySelectorAll('[data-intent-brand]')].find((item) => item.value === brand.slug);
+    if (!input) return;
+    input.checked = true;
+    const status = form.querySelector('.form-status');
+    if (status) status.textContent = `已为你选中「${brand.name}」品牌，补充联系方式即可提交。`;
+  });
 }
 
 // 品牌门店形态（当前仅奈晚推拿有店型数据）：填充 [data-brand-forms] 骨架
@@ -491,6 +636,7 @@ setupAccordions();
 setupTabs();
 setupCountUp();
 setupModal();
+renderIntentBrandChoices();
 setupForms();
 setupConsultPreFill();
 setupBackTop();

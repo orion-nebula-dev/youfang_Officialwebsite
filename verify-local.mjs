@@ -73,9 +73,40 @@ const platformScreens = await page.locator('[data-panel="platform"] .media-card 
 await page.goto(`${origin}/代码/zsjm.html`, { waitUntil: 'networkidle' });
 await page.locator('[data-contact-form]').first().evaluate((form) => form.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true })));
 const formStatus = await page.locator('[data-contact-form] .form-status').first().textContent();
+const formContract = await page.locator('[data-contact-form]').first().evaluate((form) => {
+  const phone = form.elements.phone;
+  const province = form.querySelector('[data-region-level="province"]');
+  const city = form.querySelector('[data-region-level="city"]');
+  const district = form.querySelector('[data-region-level="district"]');
+  phone.value = '19957175268';
+  phone.dispatchEvent(new Event('input', { bubbles: true }));
+  const validPhone = phone.checkValidity();
+  phone.value = '1995717526';
+  phone.dispatchEvent(new Event('input', { bubbles: true }));
+  const invalidPhone = !phone.checkValidity();
+  phone.value = '';
+  if (province.options.length > 1) {
+    province.value = province.options[1].value;
+    province.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+  const cityLoaded = city.options.length > 1 && !city.disabled;
+  if (cityLoaded) {
+    city.value = city.options[1].value;
+    city.dispatchEvent(new Event('change', { bubbles: true }));
+  }
+  const districtLoaded = district.options.length > 1 && !district.disabled;
+  return {
+    validPhone,
+    invalidPhone,
+    cityLoaded,
+    districtLoaded,
+    intentBrandCount: form.querySelectorAll('[data-intent-brand]').length,
+    oldFieldsRemoved: !form.elements.stage && !form.querySelector('[data-consult-brand]'),
+  };
+});
 const joinBrandCards = await page.locator('[data-brands-grid="join"] .brand-card').count();
 await page.goto(`${origin}/代码/zsjm.html?brand=guxiaotui#consult`, { waitUntil: 'networkidle' });
-const preFilledBrand = await page.locator('[data-consult-brand]').inputValue();
+const preFilledBrand = await page.locator('[data-intent-brand="guxiaotui"]').isChecked();
 const footerDisclosureLinks = await page.locator('.footer-disclosure a').count();
 await page.goto(`${origin}/代码/index.html`, { waitUntil: 'networkidle' });
 // Hero 仅一主一次两个 CTA（开发规范 §4.4），区块顺序由 HOME_CONFIG.sections 控制（§4.2/§9）
@@ -182,11 +213,12 @@ const simulationRemoved = simulationChecks.every(Boolean);
 await page.close();
 await browser.close();
 
-const interactions = { mobileMenuOpen, mobileMenuClosed, faqOpen, brandFaqOk, tabOpen, platformScreens, formStatus, modalOpen, homeHeroButtons, homeSectionOrder, homeInternalClean, publicCopyClean, simulationRemoved, homeBrandCards, homeLogoChips, homeLogoLoaded, homeVisionCards, homeScaleItems, homeScaleCounted, homePlatformLogos, homeAppShowcase, homeBrandOrder, homeHeroTitle: homeHeroTitle.replace(/\n/g, ''), headerLogo, faviconOk, heroLockupLoaded, naiwanForms, naiwanFormsVisible, otherFormsHidden, detailScreenLoaded, matrixScreens, galleryLogos, joinBrandCards, preFilledBrand, footerDisclosureLinks, programCards, programLogos, footerQrs, wechatQrLoaded, homePlatformQrs, storeCardLinks, disclaimerRemoved, storeGalleriesOk, naiwanVrCards, naiwanVrImgs, naiwanVrLink, guxiaotuiVrCards, guxiaotuiVrLink, guxiaotuiLightbox, aixiaowanVrHidden, brandVideoOk, aboutVideoOk, lingshuVideoOk };
+const interactions = { mobileMenuOpen, mobileMenuClosed, faqOpen, brandFaqOk, tabOpen, platformScreens, formStatus, formContract, modalOpen, homeHeroButtons, homeSectionOrder, homeInternalClean, publicCopyClean, simulationRemoved, homeBrandCards, homeLogoChips, homeLogoLoaded, homeVisionCards, homeScaleItems, homeScaleCounted, homePlatformLogos, homeAppShowcase, homeBrandOrder, homeHeroTitle: homeHeroTitle.replace(/\n/g, ''), headerLogo, faviconOk, heroLockupLoaded, naiwanForms, naiwanFormsVisible, otherFormsHidden, detailScreenLoaded, matrixScreens, galleryLogos, joinBrandCards, preFilledBrand, footerDisclosureLinks, programCards, programLogos, footerQrs, wechatQrLoaded, homePlatformQrs, storeCardLinks, disclaimerRemoved, storeGalleriesOk, naiwanVrCards, naiwanVrImgs, naiwanVrLink, guxiaotuiVrCards, guxiaotuiVrLink, guxiaotuiLightbox, aixiaowanVrHidden, brandVideoOk, aboutVideoOk, lingshuVideoOk };
 console.log(JSON.stringify({ checked, failures, interactions }, null, 2));
 const ok = failures.length === 0 && mobileMenuOpen && mobileMenuClosed && faqOpen && brandFaqOk && tabOpen && platformScreens && modalOpen && homeHeroButtons === 2 && homeSectionOrder === 'scale,brands,stores,capabilities,lingshu,process,mission,cta' && homeInternalClean && publicCopyClean
   && homeBrandCards === 7 && homeLogoChips === 7 && homeLogoLoaded && homeVisionCards === 4 && homeScaleItems === 4 && homeScaleCounted && homePlatformLogos && homeAppShowcase && homeBrandOrder.join('|') === '奈晚推拿|谷小推|足康树|恒青树|乐光里|艾小晚|廿肆巡' && homeHeroTitle.includes('产业运营与投资孵化') && headerLogo && faviconOk && heroLockupLoaded && naiwanForms && naiwanFormsVisible && otherFormsHidden && detailScreenLoaded && matrixScreens && galleryLogos === 7
-  && joinBrandCards === 7 && preFilledBrand === '谷小推' && footerDisclosureLinks === 5 && simulationRemoved
+  && joinBrandCards === 7 && preFilledBrand && footerDisclosureLinks === 5 && simulationRemoved
+  && formContract.validPhone && formContract.invalidPhone && formContract.cityLoaded && formContract.districtLoaded && formContract.intentBrandCount === 7 && formContract.oldFieldsRemoved
   && programCards === 3 && programLogos && footerQrs && wechatQrLoaded && homePlatformQrs
   && storeCardLinks === 7 && disclaimerRemoved && storeGalleriesOk
   && naiwanVrCards === 1 && naiwanVrImgs && naiwanVrLink > 0 && guxiaotuiVrCards === 1 && guxiaotuiVrLink > 0 && guxiaotuiLightbox && aixiaowanVrHidden
