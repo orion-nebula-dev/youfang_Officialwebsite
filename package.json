@@ -8,9 +8,10 @@
   },
   "scripts": {
     "sync:site": "node scripts/sync-site.mjs",
+    "build:seo": "node scripts/build-seo.mjs",
     "check:assets": "node scripts/verify-assets.mjs",
     "dev": "npm test && node scripts/serve-local.mjs",
-    "build": "npm test && node scripts/build-site.mjs",
+    "build": "npm run build:seo && npm test && node scripts/build-site.mjs",
     "start": "node scripts/serve-local.mjs",
     "test": "npm run sync:site && npm run check:assets"
   }

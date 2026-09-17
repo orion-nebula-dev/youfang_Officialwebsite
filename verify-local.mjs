@@ -9,7 +9,7 @@ const routes = [
   'mdzs/aixiaowan.html', 'mdzs/zukangshu.html', 'mdzs/leguangli.html', 'mdzs/shisixun.html',
   'video/2049311683814764544.html', 'tzgx.html', 'ztwj.html', 'yjbgs.html',
   'gggh.html', 'qyzl.html', 'tzrl.html', 'shzr.html', 'zsjm.html', 'contact.html',
-  'taglist.html', 'privacy.html', 'mnjy.html', 'pxyy.html',
+  'taglist.html', 'privacy.html', 'pxyy.html',
   'brands/index.html', 'brands/guxiaotui.html', 'brands/aixiaowan.html',
   'brands/zukangshu.html', 'brands/hengqingshu.html', 'brands/leguangli.html',
   'brands/naiwan.html', 'brands/shisixun.html',
@@ -88,7 +88,6 @@ const homeInternalClean = await page.evaluate(() => {
 await page.goto(`${origin}/代码/video/2049311683814764544.html`, { waitUntil: 'networkidle' });
 await page.click('[data-video-open]');
 const modalOpen = await page.locator('[data-modal].open').count() === 1;
-const simBrandOptions = await page.goto(`${origin}/代码/mnjy.html`, { waitUntil: 'networkidle' }).then(() => page.locator('[data-brand-options] option').count());
 const headerLogo = await page.locator('.brand-lockup-logo').evaluate((img) => img.naturalWidth > 0 && img.src.includes('group-wide'));
 const faviconOk = await page.evaluate(() => !!document.querySelector('link[rel="icon"]'));
 await page.goto(`${origin}/代码/brands/guxiaotui.html`, { waitUntil: 'networkidle' });
@@ -99,7 +98,7 @@ const naiwanForms = await page.locator('[data-brand-forms-grid] img').evaluateAl
 const naiwanFormsVisible = await page.locator('[data-brand-forms]').evaluate((node) => !node.hidden);
 await page.goto(`${origin}/代码/brands/guxiaotui.html`, { waitUntil: 'networkidle' });
 const otherFormsHidden = await page.locator('[data-brand-forms]').evaluate((node) => node.hidden);
-// 品牌详情页 FAQ（7 页 × 6 条，来自小程序逐字稿）+ 两处移除项（徽章 / 模拟经营按钮）
+// 品牌详情页 FAQ（7 页 × 6 条，来自小程序逐字稿）+ 两处移除项（徽章 / 旧入口）
 const brandFaqChecks = [];
 for (const slug of ['guxiaotui', 'aixiaowan', 'zukangshu', 'hengqingshu', 'leguangli', 'naiwan', 'shisixun']) {
   await page.goto(`${origin}/代码/brands/${slug}.html`, { waitUntil: 'networkidle' });
@@ -162,23 +161,32 @@ await page.goto(`${origin}/代码/about.html`, { waitUntil: 'networkidle' });
 const galleryLogos = await page.locator('.gallery-logo').count();
 // 公开文案审计：全站页面（含 alt）不出现内部状态与来源性措辞
 const publicCopyChecks = [];
-for (const route of ['zsjm.html', 'contact.html', 'news.html', 'about.html', 'gggh.html', 'qyzl.html', 'ztwj.html', 'yjbgs.html', 'tzrl.html', 'shzr.html', 'pxyy.html', 'mnjy.html', 'mdzs.html', 'tzgx.html', 'privacy.html', 'brands/index.html', 'mdzs/guxiaotui.html', 'mdzs/hengqingshu.html', 'mdzs/naiwan.html', 'mdzs/aixiaowan.html', 'mdzs/zukangshu.html', 'mdzs/leguangli.html', 'mdzs/shisixun.html', 'video/2049311683814764544.html', 'news_detail/digital-platform.html', 'news_detail/brand-and-model.html', 'news_detail/store-operations.html', 'news_detail/community-health.html']) {
+const simulationChecks = [];
+for (const route of ['zsjm.html', 'contact.html', 'news.html', 'about.html', 'gggh.html', 'qyzl.html', 'ztwj.html', 'yjbgs.html', 'tzrl.html', 'shzr.html', 'pxyy.html', 'mdzs.html', 'tzgx.html', 'privacy.html', 'brands/index.html', 'mdzs/guxiaotui.html', 'mdzs/hengqingshu.html', 'mdzs/naiwan.html', 'mdzs/aixiaowan.html', 'mdzs/zukangshu.html', 'mdzs/leguangli.html', 'mdzs/shisixun.html', 'video/2049311683814764544.html', 'news_detail/digital-platform.html', 'news_detail/brand-and-model.html', 'news_detail/store-operations.html', 'news_detail/community-health.html']) {
   await page.goto(`${origin}/代码/${route}`, { waitUntil: 'networkidle' });
   const clean = await page.evaluate(() => {
     const text = document.body.innerText + ' ' + [...document.images].map((img) => img.alt).join(' ');
     return !['待补充', '待业务', '待集团', '待确认', '演示', '原始材料', '集团介绍', '附件', '官网建设', '官网首期', '已提供', '招股文件', '原始装修方案'].some((word) => text.includes(word));
   });
+  const simulationFree = await page.evaluate(() => {
+    const text = document.body.innerText + ' ' + document.documentElement.innerHTML;
+    const links = [...document.querySelectorAll('a')].map((link) => link.getAttribute('href') || '').join(' ');
+    return !/模拟经营|模拟方案|模拟我的|mnjy\.html|data-sim|simulator/i.test(`${text} ${links}`)
+      && !document.querySelector('[data-brand-options]');
+  });
   publicCopyChecks.push(clean);
+  simulationChecks.push(simulationFree);
 }
 const publicCopyClean = publicCopyChecks.every(Boolean);
+const simulationRemoved = simulationChecks.every(Boolean);
 await page.close();
 await browser.close();
 
-const interactions = { mobileMenuOpen, mobileMenuClosed, faqOpen, brandFaqOk, tabOpen, platformScreens, formStatus, modalOpen, homeHeroButtons, homeSectionOrder, homeInternalClean, publicCopyClean, homeBrandCards, homeLogoChips, homeLogoLoaded, homeVisionCards, homeScaleItems, homeScaleCounted, homePlatformLogos, homeAppShowcase, homeBrandOrder, homeHeroTitle: homeHeroTitle.replace(/\n/g, ''), headerLogo, faviconOk, heroLockupLoaded, naiwanForms, naiwanFormsVisible, otherFormsHidden, detailScreenLoaded, matrixScreens, galleryLogos, joinBrandCards, preFilledBrand, footerDisclosureLinks, simBrandOptions, programCards, programLogos, footerQrs, wechatQrLoaded, homePlatformQrs, storeCardLinks, disclaimerRemoved, storeGalleriesOk, naiwanVrCards, naiwanVrImgs, naiwanVrLink, guxiaotuiVrCards, guxiaotuiVrLink, guxiaotuiLightbox, aixiaowanVrHidden, brandVideoOk, aboutVideoOk, lingshuVideoOk };
+const interactions = { mobileMenuOpen, mobileMenuClosed, faqOpen, brandFaqOk, tabOpen, platformScreens, formStatus, modalOpen, homeHeroButtons, homeSectionOrder, homeInternalClean, publicCopyClean, simulationRemoved, homeBrandCards, homeLogoChips, homeLogoLoaded, homeVisionCards, homeScaleItems, homeScaleCounted, homePlatformLogos, homeAppShowcase, homeBrandOrder, homeHeroTitle: homeHeroTitle.replace(/\n/g, ''), headerLogo, faviconOk, heroLockupLoaded, naiwanForms, naiwanFormsVisible, otherFormsHidden, detailScreenLoaded, matrixScreens, galleryLogos, joinBrandCards, preFilledBrand, footerDisclosureLinks, programCards, programLogos, footerQrs, wechatQrLoaded, homePlatformQrs, storeCardLinks, disclaimerRemoved, storeGalleriesOk, naiwanVrCards, naiwanVrImgs, naiwanVrLink, guxiaotuiVrCards, guxiaotuiVrLink, guxiaotuiLightbox, aixiaowanVrHidden, brandVideoOk, aboutVideoOk, lingshuVideoOk };
 console.log(JSON.stringify({ checked, failures, interactions }, null, 2));
 const ok = failures.length === 0 && mobileMenuOpen && mobileMenuClosed && faqOpen && brandFaqOk && tabOpen && platformScreens && modalOpen && homeHeroButtons === 2 && homeSectionOrder === 'scale,brands,stores,capabilities,lingshu,process,mission,cta' && homeInternalClean && publicCopyClean
   && homeBrandCards === 7 && homeLogoChips === 7 && homeLogoLoaded && homeVisionCards === 4 && homeScaleItems === 4 && homeScaleCounted && homePlatformLogos && homeAppShowcase && homeBrandOrder.join('|') === '奈晚推拿|谷小推|足康树|恒青树|乐光里|艾小晚|廿肆巡' && homeHeroTitle.includes('产业运营与投资孵化') && headerLogo && faviconOk && heroLockupLoaded && naiwanForms && naiwanFormsVisible && otherFormsHidden && detailScreenLoaded && matrixScreens && galleryLogos === 7
-  && joinBrandCards === 7 && preFilledBrand === '谷小推' && footerDisclosureLinks === 5 && simBrandOptions === 8
+  && joinBrandCards === 7 && preFilledBrand === '谷小推' && footerDisclosureLinks === 5 && simulationRemoved
   && programCards === 3 && programLogos && footerQrs && wechatQrLoaded && homePlatformQrs
   && storeCardLinks === 7 && disclaimerRemoved && storeGalleriesOk
   && naiwanVrCards === 1 && naiwanVrImgs && naiwanVrLink > 0 && guxiaotuiVrCards === 1 && guxiaotuiVrLink > 0 && guxiaotuiLightbox && aixiaowanVrHidden

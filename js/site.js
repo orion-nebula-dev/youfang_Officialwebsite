@@ -85,7 +85,6 @@ function renderFooter() {
 //   data-brands-grid="matrix" 品牌矩阵小卡（中文案，链接到同目录详情页）
 //   data-brands-strip         关于页品牌名称条
 //   data-brands-gallery       关于页品牌画廊
-//   data-brand-options        模拟经营品牌下拉（自动加“还不确定”首项）
 // 品牌详情页链接前缀用 data-brand-prefix 覆盖（默认 brands/）。
 function renderBrandSections() {
   document.querySelectorAll('[data-brands-grid]').forEach((grid) => {
@@ -124,11 +123,6 @@ function renderBrandSections() {
     `).join('');
   });
 
-  document.querySelectorAll('[data-brand-options]').forEach((select) => {
-    const options = ['<option value="">还不确定</option>']
-      .concat(SITE_DATA.brands.map((brand) => `<option value="${brand.slug}">${brand.name}</option>`));
-    select.innerHTML = options.join('');
-  });
 }
 
 // 结构化素材引用：页面用 data-asset-img / data-asset-bg 写素材 ID，
@@ -442,8 +436,7 @@ function setupForms() {
   });
 }
 
-// 招商咨询表单消费 ?brand= 参数：品牌详情页 / 模拟经营带参跳转后自动填入品牌方向，
-// 与「网站信息架构与留资路径」中“模拟结果后咨询只需补联系方式”的口径闭环。
+// 招商咨询表单消费品牌详情页的 ?brand= 参数，自动填入品牌方向。
 function setupConsultPreFill() {
   const input = document.querySelector('[data-consult-brand]');
   if (!input) return;
@@ -454,43 +447,6 @@ function setupConsultPreFill() {
     const status = input.closest('form')?.querySelector('.form-status');
     if (status) status.textContent = `已为你带入「${brand.name}」方向，补充联系方式即可提交。`;
   }
-}
-
-function setupSimulator() {
-  const root = document.querySelector('[data-simulator]');
-  if (!root) return;
-  const fields = Object.fromEntries([...root.querySelectorAll('[data-sim-field]')].map((field) => [field.dataset.simField, field]));
-  const title = root.querySelector('[data-sim-title]');
-  const summary = root.querySelector('[data-sim-summary]');
-  const brand = root.querySelector('[data-sim-brand]');
-  const next = root.querySelector('[data-sim-next]');
-  const points = root.querySelector('[data-sim-points]');
-  const status = root.querySelector('[data-sim-status]');
-  const consult = root.querySelector('[data-sim-consult]');
-  const plans = SITE_DATA.simPlans;
-  const phaseNext = SITE_DATA.simPhases;
-  const render = () => {
-    const plan = plans[fields.scenario?.value] || plans.community;
-    const selectedBrand = fields.brand?.value;
-    const selectedBrandName = selectedBrand && brandBySlug(selectedBrand)?.name;
-    const preferred = selectedBrandName || plan.brands.join(' / ');
-    const nextStep = phaseNext[fields.phase?.value] || phaseNext.learn;
-    if (title) title.textContent = selectedBrandName ? `${selectedBrandName} · ${plan.title}` : plan.title;
-    if (summary) summary.textContent = plan.summary;
-    if (brand) brand.textContent = preferred;
-    if (next) next.textContent = nextStep;
-    if (points) points.innerHTML = plan.points.map((point) => `<li>${point}</li>`).join('');
-    if (consult) consult.href = `${siteLink('zsjm.html')}?brand=${selectedBrand || ''}#consult`;
-  };
-  const queryBrand = new URLSearchParams(window.location.search).get('brand');
-  if (queryBrand && fields.brand && brandBySlug(queryBrand)) fields.brand.value = queryBrand;
-  root.addEventListener('change', render);
-  root.addEventListener('submit', (event) => {
-    event.preventDefault();
-    render();
-    if (status) status.textContent = '模拟方案已生成，可以继续预约官方咨询。';
-  });
-  render();
 }
 
 // 品牌门店形态（当前仅奈晚推拿有店型数据）：填充 [data-brand-forms] 骨架
@@ -537,5 +493,4 @@ setupCountUp();
 setupModal();
 setupForms();
 setupConsultPreFill();
-setupSimulator();
 setupBackTop();

@@ -14,6 +14,7 @@ const sourceAssets = hasExternalAssets ? externalAssets : publicAssets;
 
 const runtimeCodeDirectories = ['brands', 'js', 'mdzs', 'news_detail', 'video'];
 const runtimeAssetDirectories = ['logo', 'photo', 'qr', 'screen', 'visual', 'video'];
+const seoFiles = ['robots.txt', 'sitemap.xml'];
 
 await rm(publicCode, { recursive: true, force: true });
 await mkdir(publicCode, { recursive: true });
@@ -34,6 +35,13 @@ for (const directory of runtimeCodeDirectories) {
   await cp(path.join(sourceCode, directory), path.join(publicCode, directory), { recursive: true });
 }
 
+for (const file of seoFiles) {
+  const source = path.join(sourceCode, file);
+  if (await access(source).then(() => true).catch(() => false)) {
+    await cp(source, path.join(publicCode, file));
+  }
+}
+
 if (hasExternalAssets) {
   for (const directory of runtimeAssetDirectories) {
     await cp(path.join(sourceAssets, directory), path.join(publicAssets, directory), { recursive: true });
@@ -45,5 +53,5 @@ if (hasExternalAssets) {
 // video-parts/ as recovery material; they must not overwrite the web-sized files.
 
 console.log(
-  `[sync-site] synced ${runtimeCodeDirectories.length} code directories and ${runtimeAssetDirectories.length} asset directories${hasExternalAssets ? '' : ' from bundled runtime assets'}`,
+  `[sync-site] synced ${runtimeCodeDirectories.length} code directories, ${runtimeAssetDirectories.length} asset directories and SEO files${hasExternalAssets ? '' : ' from bundled runtime assets'}`,
 );

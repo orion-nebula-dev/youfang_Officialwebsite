@@ -25,7 +25,6 @@ npm run dev
 - 联系我们：`contact.html`（`#xiaochengxu` 为全站小程序码锚点唯一位置）
 - 品牌矩阵：`brands/index.html`
 - 品牌详情：`brands/{slug}.html` × 7（结构同构，内容来自 `js/data.js`）
-- 模拟经营：`mnjy.html`
 - 培训与运营支持：`pxyy.html`
 - 信息公开（页脚低曝光入口，`data-page="disclosure"`）：公告与通函 `gggh.html`、企业治理 `qyzl.html`、项目日历 `tzrl.html`、阶段报告 `yjbgs.html`、资料中心 `ztwj.html`
 - 隐私说明：`privacy.html`（仅在页脚低调入口展示）
@@ -37,12 +36,11 @@ npm run dev
 
 | 维护内容 | 位置 | 生效范围 |
 | --- | --- | --- |
-| 品牌主数据（名称、类目、文案、图片、logo、适配信息） | `SITE_DATA.brands` | 首页/招商/品牌矩阵品牌卡片、关于页画廊与名称条、品牌详情页全文、模拟经营品牌下拉与推荐 |
+| 品牌主数据（名称、类目、文案、图片、logo、适配信息） | `SITE_DATA.brands` | 首页/招商/品牌矩阵品牌卡片、关于页画廊与名称条、品牌详情页全文 |
 | 素材注册表（语义 ID → 素材/ 文件路径） | `SITE_DATA.assets` | 全站所有图片引用（见下） |
 | 主导航 | `SITE_DATA.nav` | 全站导航（8 项不变） |
 | 首页文案、CTA、素材 ID 与区块顺序 | `js/config/home.config.js`（HOME_CONFIG） | 仅 `index.html` |
 | 小程序、400 电话、三阶段、信息公开入口 | `SITE_DATA.programs/phone/stages/disclosure` | 页脚与相关区块 |
-| 模拟经营方案与品牌推荐口径 | `SITE_DATA.simPlans/simPhases` | 模拟经营页（与该页“四种经营思路”卡片口径一致） |
 
 ### 素材引用（结构化）
 
@@ -58,13 +56,12 @@ npm run dev
 - `<div class="brand-grid" data-brands-grid="join"></div>` 招商页小卡（短文案）
 - `<div class="brand-grid" data-brands-grid="matrix" data-brand-prefix=""></div>` 品牌矩阵小卡（同目录链接）
 - `<div class="brand-name-strip" data-brands-strip></div>` / `<div class="gallery-grid" data-brands-gallery></div>` 关于页
-- `<select data-brand-options></select>` 模拟经营品牌下拉（自动带“还不确定”首项）
 
 其他实现约定：
 
 - 新增/修改品牌时只改 `js/data.js` 的 `brands` 数组并补充 `素材/` 图片；所有页面自动同步。
 - 路径根从脚本自身 URL 推导（`site.js` / `brand-detail.js` 首行），站点部署在任意子路径或域名根均可，无需修改代码。
-- 招商加盟表单的“想了解的方向”输入框带 `data-consult-brand`，从品牌详情页 / 模拟经营带 `?brand={slug}` 跳转时自动带入品牌名。
+- 招商加盟表单的“想了解的方向”输入框带 `data-consult-brand`，从品牌详情页带 `?brand={slug}` 跳转时自动带入品牌名。
 - 新增页面后：8 项主导航保持不变；低曝光页面挂 `data-page="disclosure"`，在 `SITE_DATA.disclosure` 登记页脚入口。
 
 ## 验证

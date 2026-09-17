@@ -39,7 +39,6 @@ const PAGES = [
   { file: 'yjbgs.html', title: '阶段报告｜有方大健康', description: '有方大健康阶段报告：阶段性经营与能力建设情况。', keywords: '阶段报告,经营情况' },
   { file: 'ztwj.html', title: '资料中心｜有方大健康', description: '有方大健康资料中心：品牌与经营相关资料入口。', keywords: '资料中心,下载' },
   { file: 'privacy.html', title: '隐私说明｜有方大健康', description: '有方大健康隐私说明：了解本网站如何处理访问者信息。', keywords: '隐私说明,隐私政策' },
-  { file: 'mnjy.html', title: '模拟经营｜有方大健康', description: '有方大健康模拟经营：选择经营场景、品牌方向与所处阶段，形成一份可讨论的门店经营方案，并预约官方咨询。', keywords: '模拟经营,开店测算,经营方案,加盟模拟' },
   { file: 'pxyy.html', title: '培训与运营支持｜有方大健康', description: '有方大健康培训与运营支持：围绕开店训练、服务交付、日常经营和阶段复盘提供清晰协同。', keywords: '开店培训,运营支持,督导,服务标准' },
   { file: 'brands/index.html', title: '品牌矩阵｜有方大健康', description: '有方大健康七大品牌方向：谷小推、奈晚推拿、艾小晚、足康树、恒青树、乐光里、廿肆巡，从场景、门店表达与经营支持找到适合自己的方向。', keywords: '品牌矩阵,养生品牌,加盟品牌对比,推拿,艾灸,足疗,头疗,SPA' },
   { file: 'video/2049311683814764544.html', title: '品牌视频｜有方大健康', description: '有方大健康品牌视频入口。', keywords: '品牌视频', noindex: true },

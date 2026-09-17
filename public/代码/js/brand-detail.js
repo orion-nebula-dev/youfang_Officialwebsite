@@ -52,9 +52,6 @@ function renderBrandDetail() {
     const caption = document.querySelector('[data-brand-screen-caption]');
     if (caption) caption.textContent = `谷有方 · ${brand.name}品牌页`;
   }
-  // 「模拟我的经营方案」入口已按用户要求移除；保留判空防止旧骨架报错
-  const simulateNode = document.querySelector('[data-brand-simulate]');
-  if (simulateNode) simulateNode.href = `${brandSiteRoot}mnjy.html?brand=${slug}`;
   document.querySelector('[data-brand-consult]').href = `${brandSiteRoot}zsjm.html?brand=${slug}#consult`;
   document.querySelector('[data-brand-points]').innerHTML = brand.points.map((point) => `<li>${point}</li>`).join('');
   // 品牌常见问题（SITE_DATA.brands[].faq，文案来自谷有方商家小程序逐字稿）：
