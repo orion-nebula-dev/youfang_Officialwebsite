@@ -70,9 +70,17 @@ npm run dev
 npm test
 ```
 
+## 线索服务端接口
+
+- Worker 接口为 `POST /api/consultations`，接收称呼、手机号、省市区、意向品牌和补充说明。
+- D1 表 `consultation_leads` 记录线索状态、去重键、EC 客户 ID、目标部门和跟进人；同一手机号在同一天、同一地区和同一组品牌组合下只处理一次。
+- EC 调用只发生在 `server/index.js`，需要 Sites 运行时配置：`EC_CORP_ID`、`EC_APP_ID`、`EC_APP_SECRET`、`EC_OPERATOR_USER_ID`、`EC_DEPARTMENT_ID`、`EC_FOLLOW_USER_IDS`、`EC_ASSIGNMENT_MODE`。
+- `EC_ASSIGNMENT_MODE` 只接受 `fixed` 或 `round_robin`；前端表单在 EC 权限、组织 ID 和端到端测试完成前不会开启正式提交。
+- 使用 `EC_CORP_ID`、`EC_APP_ID`、`EC_APP_SECRET` 环境变量运行 `node scripts/ec-org.mjs`，只输出“测试部门”、葛子新和汪文皓的匹配 ID，不把密钥写入文件。
+
 ## 实现说明
 
-- 无框架、无构建步骤，使用 `style.css` 和 `js/site.js`、`js/data.js`、`js/brand-detail.js`；适合先在本地评审页面和素材。
+- 前端保持无框架，使用 `style.css` 和 `js/site.js`、`js/data.js`、`js/brand-detail.js`；服务端 Worker 由 `scripts/build-site.mjs` 生成，适合先在本地评审页面和素材。
 - `js/site.js` 统一注入导航、页脚、移动端菜单、品牌区块、折叠面板、选项卡、数字/状态交互、咨询表单校验和品牌带入。
 - 所有官网业务入口、素材链接和页面路由均为本地引用；没有继续引用原站图片、视频、统计脚本或外部 CDN。
 - 当前集团口径已统一为 7 个品牌、谷有方 / 有小方 / 方小匠 3 个小程序入口，以及招商 / 建店 / 运营 3 个门店阶段。
